@@ -1,0 +1,28 @@
+{
+  "narrative": [
+    "Shelton Graham, 22, has an elite-fitness physical profile.",
+    "VO2 max and resting heart rate both in ranges typical of trained endurance athletes. No chronic disease, and only a minor resolved ankle sprain in his history.",
+    "His most recent encounter also documents several active psychosocial findings — stress, social isolation, unhealthy alcohol use, intimate partner abuse victimization — reported here as they appear in the record, without further interpretation.",
+    "No chronic medications."
+  ],
+  "primary_conditions": [],
+  "medication_groups": [],
+  "conditions_extra": {},
+  "wearable_relevance": {
+    "steps": "high",
+    "resting_hr": "high",
+    "spo2": "low",
+    "sleep_efficiency": "medium",
+    "stress_score": "medium"
+  },
+  "flags": [],
+  "version": 1,
+  "version_history": [
+    {
+      "version": 1,
+      "date": "2026-07-28",
+      "change": "Initial profile import from generation pipeline",
+      "by": "System"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "narrative": [
+    "Tyler Jacobson, 28, has adult ADHD — diagnosed in childhood, still active, managed with methylphenidate.",
+    "Also carries obesity. His chart shows a 25-point monthly weight trajectory: an 8-month loss phase (−0.8 kg/month) followed by a plateau.",
+    "A deliberate test case for stimulant effects on appetite, sleep timing, and activity adherence.",
+    "A resolved ankle sprain and an earlier resolved stress episode round out his history."
+  ],
+  "primary_conditions": [
+    "406506008",
+    "162864005"
+  ],
+  "medication_groups": [
+    {
+      "label": "ADHD",
+      "codes": [
+        "Methylphenidate Hydrochloride 20 MG Oral Tablet"
+      ]
+    }
+  ],
+  "conditions_extra": {
+    "406506008": {
+      "detail": true,
+      "diagnosed_label": "Onset 2005-12-04",
+      "pathway": "Adult ADHD kept active past 18 by a custom Synthea module (stock modules end ADHD at adulthood). Methylphenidate is expected to suppress appetite and shift sleep onset later, both testable against the wearable trend.",
+      "relevant_biomarker_codes": [
+        "29463-7",
+        "39156-5"
+      ],
+      "relevant_wearables": [
+        "sleep_efficiency",
+        "resting_hr",
+        "steps"
+      ],
+      "relevant_medication_codes": [
+        "Methylphenidate Hydrochloride 20 MG Oral Tablet"
+      ]
+    }
+  },
+  "wearable_relevance": {
+    "steps": "high",
+    "resting_hr": "high",
+    "spo2": "low",
+    "sleep_efficiency": "high",
+    "stress_score": "medium"
+  },
+  "flags": [],
+  "version": 1,
+  "version_history": [
+    {
+      "version": 1,
+      "date": "2026-07-28",
+      "change": "Initial profile import from generation pipeline",
+      "by": "System"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Team Dashboard &mdash; Chart QA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="app-shell">
+  <header class="top-bar" id="topbar"></header>
+  <main class="page-body">
+    <h1 style="margin-bottom:20px;">Team Dashboard</h1>
+    <div class="dash-chips" id="dash-chips"></div>
+
+    <div class="dash-section">
+      <h2>Flags by patient</h2>
+      <div id="dash-by-patient"></div>
+    </div>
+
+    <div class="dash-section">
+      <h2>Flags by urgency</h2>
+      <div id="dash-by-type"></div>
+    </div>
+
+    <div class="dash-section">
+      <h2>Recent activity</h2>
+      <ul class="activity-feed" id="dash-activity"></ul>
+    </div>
+  </main>
+</div>
+
+<script src="assets/js/app.js"></script>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/charts.js"></script>
+<script src="assets/js/shared.js"></script>
+<script src="assets/js/dashboard.js"></script>
+</body>
+</html>

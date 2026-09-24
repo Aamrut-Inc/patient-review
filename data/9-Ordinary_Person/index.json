@@ -1,0 +1,1046 @@
+{
+  "source_file": "ordinary_patient_Mayte822_Brito172.json",
+  "biomarkers": [
+    {
+      "code": "8302-2",
+      "label": "Body Height",
+      "unit": "cm",
+      "reading_count": 3,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2023-12-20T15:34:01+05:30",
+        "value": 167.1
+      },
+      "readings": [
+        {
+          "date": "2017-12-13T15:34:01+05:30",
+          "value": 167.1
+        },
+        {
+          "date": "2020-12-16T15:34:01+05:30",
+          "value": 167.1
+        },
+        {
+          "date": "2023-12-20T15:34:01+05:30",
+          "value": 167.1
+        }
+      ]
+    },
+    {
+      "code": "29463-7",
+      "label": "Body Weight",
+      "unit": "kg",
+      "reading_count": 3,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2023-12-20T15:34:01+05:30",
+        "value": 80.8
+      },
+      "readings": [
+        {
+          "date": "2017-12-13T15:34:01+05:30",
+          "value": 78.7
+        },
+        {
+          "date": "2020-12-16T15:34:01+05:30",
+          "value": 83.6
+        },
+        {
+          "date": "2023-12-20T15:34:01+05:30",
+          "value": 80.8
+        }
+      ]
+    },
+    {
+      "code": "39156-5",
+      "label": "Body mass index (BMI) [Ratio]",
+      "unit": "kg/m2",
+      "reading_count": 3,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2023-12-20T15:34:01+05:30",
+        "value": 28.93
+      },
+      "readings": [
+        {
+          "date": "2017-12-13T15:34:01+05:30",
+          "value": 28.19
+        },
+        {
+          "date": "2020-12-16T15:34:01+05:30",
+          "value": 29.96
+        },
+        {
+          "date": "2023-12-20T15:34:01+05:30",
+          "value": 28.93
+        }
+      ]
+    },
+    {
+      "code": "8310-5",
+      "label": "Body temperature",
+      "unit": "Cel",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2020-04-13T09:34:01+05:30",
+        "value": 37.599
+      },
+      "readings": [
+        {
+          "date": "2020-04-13T09:34:01+05:30",
+          "value": 37.599
+        }
+      ]
+    },
+    {
+      "code": "2093-3",
+      "label": "Cholesterol [Mass/volume] in Serum or Plasma",
+      "unit": "mg/dL",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2023-12-20T15:34:01+05:30",
+        "value": 285.4
+      },
+      "readings": [
+        {
+          "date": "2023-12-20T15:34:01+05:30",
+          "value": 285.4
+        }
+      ]
+    },
+    {
+      "code": "2085-9",
+      "label": "Cholesterol in HDL [Mass/volume] in Serum or Plasma",
+      "unit": "mg/dL",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2023-12-20T15:34:01+05:30",
+        "value": 58.37
+      },
+      "readings": [
+        {
+          "date": "2023-12-20T15:34:01+05:30",
+          "value": 58.37
+        }
+      ]
+    },
+    {
+      "code": "18262-6",
+      "label": "Cholesterol in LDL [Mass/volume] in Serum or Plasma by Direct assay",
+      "unit": "mg/dL",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2023-12-20T15:34:01+05:30",
+        "value": 206.29
+      },
+      "readings": [
+        {
+          "date": "2023-12-20T15:34:01+05:30",
+          "value": 206.29
+        }
+      ]
+    },
+    {
+      "code": "8462-4",
+      "label": "Diastolic Blood Pressure",
+      "unit": "mm[Hg]",
+      "reading_count": 3,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2023-12-20T15:34:01+05:30",
+        "value": 88
+      },
+      "readings": [
+        {
+          "date": "2017-12-13T15:34:01+05:30",
+          "value": 93
+        },
+        {
+          "date": "2020-12-16T15:34:01+05:30",
+          "value": 99
+        },
+        {
+          "date": "2023-12-20T15:34:01+05:30",
+          "value": 88
+        }
+      ]
+    },
+    {
+      "code": "5787-7",
+      "label": "Epithelial cells [#/area] in Urine sediment by Microscopy high power field",
+      "unit": "/[HPF]",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2022-10-21T17:03:07+05:30",
+        "value": 2.1972
+      },
+      "readings": [
+        {
+          "date": "2022-10-21T17:03:07+05:30",
+          "value": 2.1972
+        }
+      ]
+    },
+    {
+      "code": "788-0",
+      "label": "Erythrocyte [DistWidth] in Blood by Automated count",
+      "unit": "fL",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2020-12-16T15:34:01+05:30",
+        "value": 45.205
+      },
+      "readings": [
+        {
+          "date": "2020-12-16T15:34:01+05:30",
+          "value": 45.205
+        }
+      ]
+    },
+    {
+      "code": "13945-1",
+      "label": "Erythrocytes [#/area] in Urine sediment by Microscopy high power field",
+      "unit": "/[HPF]",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2022-10-21T17:03:07+05:30",
+        "value": 2.0907
+      },
+      "readings": [
+        {
+          "date": "2022-10-21T17:03:07+05:30",
+          "value": 2.0907
+        }
+      ]
+    },
+    {
+      "code": "789-8",
+      "label": "Erythrocytes [#/volume] in Blood by Automated count",
+      "unit": "10*6/uL",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2020-12-16T15:34:01+05:30",
+        "value": 5.4234
+      },
+      "readings": [
+        {
+          "date": "2020-12-16T15:34:01+05:30",
+          "value": 5.4234
+        }
+      ]
+    },
+    {
+      "code": "70274-6",
+      "label": "Generalized anxiety disorder 7 item (GAD-7) total score [Reported.PHQ]",
+      "unit": "{score}",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2017-12-13T16:36:15+05:30",
+        "value": 2
+      },
+      "readings": [
+        {
+          "date": "2017-12-13T16:36:15+05:30",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "code": "5792-7",
+      "label": "Glucose [Mass/volume] in Urine by Test strip",
+      "unit": "mg/dL",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2022-10-21T17:03:07+05:30",
+        "value": 10.058
+      },
+      "readings": [
+        {
+          "date": "2022-10-21T17:03:07+05:30",
+          "value": 10.058
+        }
+      ]
+    },
+    {
+      "code": "8867-4",
+      "label": "Heart rate",
+      "unit": "/min",
+      "reading_count": 3,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2023-12-20T15:34:01+05:30",
+        "value": 68
+      },
+      "readings": [
+        {
+          "date": "2017-12-13T15:34:01+05:30",
+          "value": 98
+        },
+        {
+          "date": "2020-12-16T15:34:01+05:30",
+          "value": 72
+        },
+        {
+          "date": "2023-12-20T15:34:01+05:30",
+          "value": 68
+        }
+      ]
+    },
+    {
+      "code": "4544-3",
+      "label": "Hematocrit [Volume Fraction] of Blood by Automated count",
+      "unit": "%",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2020-12-16T15:34:01+05:30",
+        "value": 37.243
+      },
+      "readings": [
+        {
+          "date": "2020-12-16T15:34:01+05:30",
+          "value": 37.243
+        }
+      ]
+    },
+    {
+      "code": "718-7",
+      "label": "Hemoglobin [Mass/volume] in Blood",
+      "unit": "g/dL",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2020-12-16T15:34:01+05:30",
+        "value": 16.266
+      },
+      "readings": [
+        {
+          "date": "2020-12-16T15:34:01+05:30",
+          "value": 16.266
+        }
+      ]
+    },
+    {
+      "code": "5821-4",
+      "label": "Leukocytes [#/area] in Urine sediment by Microscopy high power field",
+      "unit": "/[HPF]",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2022-10-21T17:03:07+05:30",
+        "value": 13.735
+      },
+      "readings": [
+        {
+          "date": "2022-10-21T17:03:07+05:30",
+          "value": 13.735
+        }
+      ]
+    },
+    {
+      "code": "6690-2",
+      "label": "Leukocytes [#/volume] in Blood by Automated count",
+      "unit": "10*3/uL",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2020-12-16T15:34:01+05:30",
+        "value": 3.6171
+      },
+      "readings": [
+        {
+          "date": "2020-12-16T15:34:01+05:30",
+          "value": 3.6171
+        }
+      ]
+    },
+    {
+      "code": "785-6",
+      "label": "MCH [Entitic mass] by Automated count",
+      "unit": "pg",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2020-12-16T15:34:01+05:30",
+        "value": 32.252
+      },
+      "readings": [
+        {
+          "date": "2020-12-16T15:34:01+05:30",
+          "value": 32.252
+        }
+      ]
+    },
+    {
+      "code": "786-4",
+      "label": "MCHC [Entitic Mass/volume] in Red Blood Cells by Automated count",
+      "unit": "g/dL",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2020-12-16T15:34:01+05:30",
+        "value": 34.678
+      },
+      "readings": [
+        {
+          "date": "2020-12-16T15:34:01+05:30",
+          "value": 34.678
+        }
+      ]
+    },
+    {
+      "code": "787-2",
+      "label": "MCV [Entitic mean volume] in Red Blood Cells by Automated count",
+      "unit": "fL",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2020-12-16T15:34:01+05:30",
+        "value": 85.387
+      },
+      "readings": [
+        {
+          "date": "2020-12-16T15:34:01+05:30",
+          "value": 85.387
+        }
+      ]
+    },
+    {
+      "code": "72514-3",
+      "label": "Pain severity - 0-10 verbal numeric rating [Score] - Reported",
+      "unit": "{score}",
+      "reading_count": 3,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2023-12-20T15:34:01+05:30",
+        "value": 4
+      },
+      "readings": [
+        {
+          "date": "2017-12-13T15:34:01+05:30",
+          "value": 3
+        },
+        {
+          "date": "2020-12-16T15:34:01+05:30",
+          "value": 1
+        },
+        {
+          "date": "2023-12-20T15:34:01+05:30",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "code": "55758-7",
+      "label": "Patient Health Questionnaire 2 item (PHQ-2) total score [Reported]",
+      "unit": "{score}",
+      "reading_count": 2,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2023-12-20T17:08:24+05:30",
+        "value": 0
+      },
+      "readings": [
+        {
+          "date": "2017-12-13T17:12:17+05:30",
+          "value": 2
+        },
+        {
+          "date": "2023-12-20T17:08:24+05:30",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "code": "32623-1",
+      "label": "Platelet [Entitic mean volume] in Blood by Automated count",
+      "unit": "fL",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2020-12-16T15:34:01+05:30",
+        "value": 11.353
+      },
+      "readings": [
+        {
+          "date": "2020-12-16T15:34:01+05:30",
+          "value": 11.353
+        }
+      ]
+    },
+    {
+      "code": "32207-3",
+      "label": "Platelet distribution width [Entitic volume] in Blood by Automated count",
+      "unit": "fL",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2020-12-16T15:34:01+05:30",
+        "value": 10.2
+      },
+      "readings": [
+        {
+          "date": "2020-12-16T15:34:01+05:30",
+          "value": 10.2
+        }
+      ]
+    },
+    {
+      "code": "777-3",
+      "label": "Platelets [#/volume] in Blood by Automated count",
+      "unit": "10*3/uL",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2020-12-16T15:34:01+05:30",
+        "value": 224.84
+      },
+      "readings": [
+        {
+          "date": "2020-12-16T15:34:01+05:30",
+          "value": 224.84
+        }
+      ]
+    },
+    {
+      "code": "5804-0",
+      "label": "Protein [Mass/volume] in Urine by Test strip",
+      "unit": "mg/dL",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2022-10-21T17:03:07+05:30",
+        "value": 4.0116
+      },
+      "readings": [
+        {
+          "date": "2022-10-21T17:03:07+05:30",
+          "value": 4.0116
+        }
+      ]
+    },
+    {
+      "code": "9279-1",
+      "label": "Respiratory rate",
+      "unit": "/min",
+      "reading_count": 3,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2023-12-20T15:34:01+05:30",
+        "value": 14
+      },
+      "readings": [
+        {
+          "date": "2017-12-13T15:34:01+05:30",
+          "value": 15
+        },
+        {
+          "date": "2020-12-16T15:34:01+05:30",
+          "value": 14
+        },
+        {
+          "date": "2023-12-20T15:34:01+05:30",
+          "value": 14
+        }
+      ]
+    },
+    {
+      "code": "5811-5",
+      "label": "Specific gravity of Urine by Test strip",
+      "unit": "{nominal}",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2022-10-21T17:03:07+05:30",
+        "value": 1.0053
+      },
+      "readings": [
+        {
+          "date": "2022-10-21T17:03:07+05:30",
+          "value": 1.0053
+        }
+      ]
+    },
+    {
+      "code": "8480-6",
+      "label": "Systolic Blood Pressure",
+      "unit": "mm[Hg]",
+      "reading_count": 3,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2023-12-20T15:34:01+05:30",
+        "value": 121
+      },
+      "readings": [
+        {
+          "date": "2017-12-13T15:34:01+05:30",
+          "value": 118
+        },
+        {
+          "date": "2020-12-16T15:34:01+05:30",
+          "value": 117
+        },
+        {
+          "date": "2023-12-20T15:34:01+05:30",
+          "value": 121
+        }
+      ]
+    },
+    {
+      "code": "82667-7",
+      "label": "Total score [DAST-10]",
+      "unit": "{score}",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2020-12-16T16:41:54+05:30",
+        "value": 2
+      },
+      "readings": [
+        {
+          "date": "2020-12-16T16:41:54+05:30",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "code": "2571-8",
+      "label": "Triglyceride [Mass/volume] in Serum or Plasma",
+      "unit": "mg/dL",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2023-12-20T15:34:01+05:30",
+        "value": 103.68
+      },
+      "readings": [
+        {
+          "date": "2023-12-20T15:34:01+05:30",
+          "value": 103.68
+        }
+      ]
+    },
+    {
+      "code": "5803-2",
+      "label": "pH of Urine by Test strip",
+      "unit": "pH",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2022-10-21T17:03:07+05:30",
+        "value": 6.6059
+      },
+      "readings": [
+        {
+          "date": "2022-10-21T17:03:07+05:30",
+          "value": 6.6059
+        }
+      ]
+    }
+  ],
+  "qualitative_observations": [
+    {
+      "code": "5769-5",
+      "label": "Bacteria [#/area] in Urine sediment by Microscopy high power field",
+      "reading_count": 1,
+      "latest": {
+        "date": "2022-10-21T17:03:07+05:30",
+        "value": "Finding of presence of bacteria (finding)"
+      },
+      "readings": [
+        {
+          "date": "2022-10-21T17:03:07+05:30",
+          "value": "Finding of presence of bacteria (finding)"
+        }
+      ]
+    },
+    {
+      "code": "630-4",
+      "label": "Bacteria identified in Urine by Culture",
+      "reading_count": 1,
+      "latest": {
+        "date": "2022-10-21T17:03:07+05:30",
+        "value": "Greater than 100,000 colony forming units per mL Klebsiella oxytoca"
+      },
+      "readings": [
+        {
+          "date": "2022-10-21T17:03:07+05:30",
+          "value": "Greater than 100,000 colony forming units per mL Klebsiella oxytoca"
+        }
+      ]
+    },
+    {
+      "code": "24124-0",
+      "label": "Casts [Presence] in Urine sediment by Light microscopy",
+      "reading_count": 1,
+      "latest": {
+        "date": "2022-10-21T17:03:07+05:30",
+        "value": "Urine microscopy: no casts (finding)"
+      },
+      "readings": [
+        {
+          "date": "2022-10-21T17:03:07+05:30",
+          "value": "Urine microscopy: no casts (finding)"
+        }
+      ]
+    },
+    {
+      "code": "2106-3",
+      "label": "Choriogonadotropin [Presence] in Urine",
+      "reading_count": 1,
+      "latest": {
+        "date": "2022-10-21T16:43:07+05:30",
+        "value": "Negative (qualifier value)"
+      },
+      "readings": [
+        {
+          "date": "2022-10-21T16:43:07+05:30",
+          "value": "Negative (qualifier value)"
+        }
+      ]
+    },
+    {
+      "code": "5794-3",
+      "label": "Hemoglobin [Presence] in Urine by Test strip",
+      "reading_count": 1,
+      "latest": {
+        "date": "2022-10-21T17:03:07+05:30",
+        "value": "Urine blood test = + (finding)"
+      },
+      "readings": [
+        {
+          "date": "2022-10-21T17:03:07+05:30",
+          "value": "Urine blood test = + (finding)"
+        }
+      ]
+    },
+    {
+      "code": "2514-8",
+      "label": "Ketones [Presence] in Urine by Test strip",
+      "reading_count": 1,
+      "latest": {
+        "date": "2022-10-21T17:03:07+05:30",
+        "value": "Urine ketones not detected (finding)"
+      },
+      "readings": [
+        {
+          "date": "2022-10-21T17:03:07+05:30",
+          "value": "Urine ketones not detected (finding)"
+        }
+      ]
+    },
+    {
+      "code": "5799-2",
+      "label": "Leukocyte esterase [Presence] in Urine by Test strip",
+      "reading_count": 1,
+      "latest": {
+        "date": "2022-10-21T17:03:07+05:30",
+        "value": "Urine leukocyte test one plus (finding)"
+      },
+      "readings": [
+        {
+          "date": "2022-10-21T17:03:07+05:30",
+          "value": "Urine leukocyte test one plus (finding)"
+        }
+      ]
+    },
+    {
+      "code": "8247-9",
+      "label": "Mucus [Presence] in Urine sediment by Light microscopy",
+      "reading_count": 1,
+      "latest": {
+        "date": "2022-10-21T17:03:07+05:30",
+        "value": "Mucus in urine (finding)"
+      },
+      "readings": [
+        {
+          "date": "2022-10-21T17:03:07+05:30",
+          "value": "Mucus in urine (finding)"
+        }
+      ]
+    },
+    {
+      "code": "5802-4",
+      "label": "Nitrite [Presence] in Urine by Test strip",
+      "reading_count": 1,
+      "latest": {
+        "date": "2022-10-21T17:03:07+05:30",
+        "value": "Nitrite detected in urine (finding)"
+      },
+      "readings": [
+        {
+          "date": "2022-10-21T17:03:07+05:30",
+          "value": "Nitrite detected in urine (finding)"
+        }
+      ]
+    },
+    {
+      "code": "82810-3",
+      "label": "Pregnancy status",
+      "reading_count": 4,
+      "latest": {
+        "date": "2021-06-09T15:34:01+05:30",
+        "value": "Pregnant"
+      },
+      "readings": [
+        {
+          "date": "2017-05-03T15:34:01+05:30",
+          "value": "Pregnant"
+        },
+        {
+          "date": "2018-11-14T15:34:01+05:30",
+          "value": "Pregnant"
+        },
+        {
+          "date": "2021-01-06T15:34:01+05:30",
+          "value": "Pregnant"
+        },
+        {
+          "date": "2021-06-09T15:34:01+05:30",
+          "value": "Pregnant"
+        }
+      ]
+    },
+    {
+      "code": "72166-2",
+      "label": "Tobacco smoking status",
+      "reading_count": 3,
+      "latest": {
+        "date": "2023-12-20T15:34:01+05:30",
+        "value": "Never smoked tobacco (finding)"
+      },
+      "readings": [
+        {
+          "date": "2017-12-13T15:34:01+05:30",
+          "value": "Never smoked tobacco (finding)"
+        },
+        {
+          "date": "2020-12-16T15:34:01+05:30",
+          "value": "Never smoked tobacco (finding)"
+        },
+        {
+          "date": "2023-12-20T15:34:01+05:30",
+          "value": "Never smoked tobacco (finding)"
+        }
+      ]
+    }
+  ],
+  "conditions": [
+    {
+      "code": "195662009",
+      "label": "Acute viral pharyngitis (disorder)",
+      "clinical_status": "resolved",
+      "onset": "2020-04-13T09:34:01+05:30",
+      "recorded_date": "2020-04-13T09:34:01+05:30",
+      "abatement": "2020-04-25T18:34:01+05:30"
+    },
+    {
+      "code": "72892002",
+      "label": "Normal pregnancy (finding)",
+      "clinical_status": "resolved",
+      "onset": "2021-08-04T15:34:01+05:30",
+      "recorded_date": "2021-08-04T15:34:01+05:30",
+      "abatement": "2021-08-20T15:34:01+05:30"
+    },
+    {
+      "code": "307426000",
+      "label": "Acute infective cystitis (disorder)",
+      "clinical_status": "resolved",
+      "onset": "2022-10-21T15:34:01+05:30",
+      "recorded_date": "2022-10-21T15:34:01+05:30",
+      "abatement": "2022-10-21T21:13:07+05:30"
+    },
+    {
+      "code": "73595000",
+      "label": "Stress (finding)",
+      "clinical_status": "active",
+      "onset": "2023-12-20T16:31:19+05:30",
+      "recorded_date": "2023-12-20T16:31:19+05:30",
+      "abatement": null
+    },
+    {
+      "code": "66383009",
+      "label": "Gingivitis (disorder)",
+      "clinical_status": "resolved",
+      "onset": "2023-12-20T17:08:24+05:30",
+      "recorded_date": "2023-12-20T17:08:24+05:30",
+      "abatement": "2024-01-03T21:17:39+05:30"
+    },
+    {
+      "code": "18718003",
+      "label": "Gingival disease (disorder)",
+      "clinical_status": "resolved",
+      "onset": "2024-01-03T18:19:30+05:30",
+      "recorded_date": "2024-01-03T18:19:30+05:30",
+      "abatement": "2024-01-03T20:11:17+05:30"
+    },
+    {
+      "code": "312608009",
+      "label": "Laceration - injury (disorder)",
+      "clinical_status": "resolved",
+      "onset": "2024-10-01T15:59:09+05:30",
+      "recorded_date": "2024-10-01T15:59:09+05:30",
+      "abatement": "2024-10-16T16:25:38+05:30"
+    },
+    {
+      "code": "284551006",
+      "label": "Laceration of foot (disorder)",
+      "clinical_status": "resolved",
+      "onset": "2024-10-01T15:59:09+05:30",
+      "recorded_date": "2024-10-01T15:59:09+05:30",
+      "abatement": "2024-10-16T16:25:38+05:30"
+    }
+  ],
+  "medications": [
+    {
+      "code": "310965",
+      "text": "Ibuprofen 200 MG Oral Tablet",
+      "status": "completed",
+      "as_needed": true,
+      "dosage": "as needed",
+      "first_authored": "2024-10-01T16:25:38+05:30",
+      "last_authored": "2024-10-01T16:25:38+05:30",
+      "requester": "Dr. Thresa531 Kutch271",
+      "fill_count": 1
+    },
+    {
+      "code": "197454",
+      "text": "cephalexin 500 MG Oral Tablet",
+      "status": "completed",
+      "as_needed": false,
+      "dosage": "2x per 1.0 day",
+      "first_authored": "2022-10-21T17:13:07+05:30",
+      "last_authored": "2022-10-21T17:13:07+05:30",
+      "requester": "Dr. Jackelyn13 Pacocha935",
+      "fill_count": 1
+    },
+    {
+      "code": "748856",
+      "text": "{24 (drospirenone 3 MG / ethinyl estradiol 0.02 MG Oral Tablet) / 4 (inert ingredients 1 MG Oral Tablet) } Pack [Yaz 28 Day]",
+      "status": "completed",
+      "as_needed": false,
+      "dosage": null,
+      "first_authored": "2022-09-16T15:56:46+05:30",
+      "last_authored": "2022-09-16T15:56:46+05:30",
+      "requester": "Dr. Jackelyn13 Pacocha935",
+      "fill_count": 1
+    },
+    {
+      "code": "751905",
+      "text": "{7 (ethinyl estradiol 0.035 MG / norgestimate 0.18 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norgestimate 0.215 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norgestimate 0.25 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Trinessa 28 Day]",
+      "status": "completed",
+      "as_needed": false,
+      "dosage": null,
+      "first_authored": "2023-09-11T15:56:46+05:30",
+      "last_authored": "2023-09-11T15:56:46+05:30",
+      "requester": "Dr. Jackelyn13 Pacocha935",
+      "fill_count": 1
+    }
+  ],
+  "allergies": [],
+  "encounters": {
+    "total": 38,
+    "recent": [
+      {
+        "start": "2025-10-01T15:34:01+05:30",
+        "end": "2025-10-01T16:25:29+05:30",
+        "type": "Patient encounter procedure (procedure)",
+        "location": "WP ACQUISITION SUB LLC"
+      },
+      {
+        "start": "2024-10-01T15:59:09+05:30",
+        "end": "2024-10-01T16:59:09+05:30",
+        "type": "Emergency room admission (procedure)",
+        "location": "SUTTON HILL CENTER"
+      },
+      {
+        "start": "2024-01-03T15:34:01+05:30",
+        "end": "2024-01-03T21:22:39+05:30",
+        "type": "Encounter for check up (procedure)",
+        "location": "WP ACQUISITION SUB LLC"
+      },
+      {
+        "start": "2023-12-20T15:34:01+05:30",
+        "end": "2023-12-20T16:31:19+05:30",
+        "type": "General examination of patient (procedure)",
+        "location": "GEORGETOWN FAMILY MEDICINE LLC"
+      },
+      {
+        "start": "2023-09-11T15:56:46+05:30",
+        "end": "2023-09-11T16:11:46+05:30",
+        "type": "Consultation for treatment (procedure)",
+        "location": "WP ACQUISITION SUB LLC"
+      },
+      {
+        "start": "2022-10-21T15:34:01+05:30",
+        "end": "2022-10-21T17:13:07+05:30",
+        "type": "Encounter for symptom (procedure)",
+        "location": "WP ACQUISITION SUB LLC"
+      },
+      {
+        "start": "2022-09-16T15:56:46+05:30",
+        "end": "2022-09-16T16:11:46+05:30",
+        "type": "Consultation for treatment (procedure)",
+        "location": "WP ACQUISITION SUB LLC"
+      },
+      {
+        "start": "2021-09-21T15:34:01+05:30",
+        "end": "2021-09-21T15:56:46+05:30",
+        "type": "Consultation for treatment (procedure)",
+        "location": "WP ACQUISITION SUB LLC"
+      },
+      {
+        "start": "2021-08-20T15:34:01+05:30",
+        "end": "2021-08-20T15:49:01+05:30",
+        "type": "Prenatal visit (regime/therapy)",
+        "location": "WP ACQUISITION SUB LLC"
+      },
+      {
+        "start": "2021-08-13T15:34:01+05:30",
+        "end": "2021-08-13T15:49:01+05:30",
+        "type": "Patient-initiated encounter (procedure)",
+        "location": "WP ACQUISITION SUB LLC"
+      },
+      {
+        "start": "2021-08-04T15:34:01+05:30",
+        "end": "2021-08-04T15:49:01+05:30",
+        "type": "Prenatal initial visit (regime/therapy)",
+        "location": "WP ACQUISITION SUB LLC"
+      },
+      {
+        "start": "2021-04-01T15:34:01+05:30",
+        "end": "2021-04-01T15:49:01+05:30",
+        "type": "Prenatal visit (regime/therapy)",
+        "location": "WP ACQUISITION SUB LLC"
+      },
+      {
+        "start": "2021-03-24T15:34:01+05:30",
+        "end": "2021-03-24T15:49:01+05:30",
+        "type": "Administration of vaccine to produce active immunity (procedure)",
+        "location": "WP ACQUISITION SUB LLC"
+      },
+      {
+        "start": "2021-03-13T15:34:01+05:30",
+        "end": "2021-03-13T15:49:01+05:30",
+        "type": "Patient-initiated encounter (procedure)",
+        "location": "WP ACQUISITION SUB LLC"
+      },
+      {
+        "start": "2021-03-03T15:34:01+05:30",
+        "end": "2021-03-03T15:49:01+05:30",
+        "type": "Administration of vaccine to produce active immunity (procedure)",
+        "location": "WP ACQUISITION SUB LLC"
+      }
+    ]
+  }
+}

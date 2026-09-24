@@ -1,0 +1,179 @@
+================================================================================
+BUILD REPORT - Three test user profiles, Synthea WITH CUSTOM MODULES
+================================================================================
+Generated:    2026-09-08
+Deliverables: user_profiles_synthea_modules/
+Companions:   user_profiles/            Synthea, stock modules only
+              user_profiles_promptehr/  PromptEHR
+Both companions are UNTOUCHED by this build.
+
+This build exists to test one question: would writing custom Synthea modules have
+produced better profiles than generate-a-population-and-filter? Two modules were
+written, targeting the two limitations recorded as most damaging in the base build.
+
+
+================================================================================
+PART A - WHAT WAS BROKEN, AND WHAT THE MODULES FIX
+================================================================================
+A.1  ADULT ADHD
+     Stock attention_deficit_disorder.json states plainly: "Althought ADHD is
+     possible in adults we only model this in children." Its condition code is
+     192127007 "Child attention deficit disorder", onset is a Delay of 7-15 years,
+     and an Age_Guard transitions the patient to ADHD_Ends at 18.
+
+     Consequence in the base build: P01 HAD to be 16 years old, paired with a
+     young-ADULT (<30) LifeSnaps wearable trace, and several spec questions
+     (nighttime eating, caloric deficit, training for an event) sit oddly on a
+     16-year-old.
+
+     modules/adult_adhd.json keeps ADHD active into adulthood using SNOMED
+     406506008, with a 4.4% adult prevalence gate, childhood onset, an adult
+     confirmation encounter and annual review. RESULT: P01 is now 28.
+
+A.2  WEIGHT TRAJECTORY
+     Stock Synthea records a weight at wellness encounters but produces no
+     deliberate trajectory. P02 and P03 are both built around a WEIGHT PLATEAU
+     which, in the base build, appeared NOWHERE in the data - it could only be
+     asserted in prose. That was recorded as the single largest limitation.
+
+     modules/weight_trajectory.json emits monthly Body Weight (LOINC 29463-7) and
+     BMI (39156-5) over 24 months: 8 months of loss at about -0.9 kg/month, then a
+     PLATEAU at about -0.03 kg/month. RESULT: all three profiles now carry a real,
+     dated, correctly-coded weight series that shows the plateau.
+
+A.3  MEDICATION TIME-OF-DAY (partial)
+     The prescription schema across all 242 stock modules is dosage.{amount,
+     frequency, period, unit}, duration, refills, as_needed - NO clock-time field.
+     But `instructions` accepts SNOMED timing qualifiers and IS exported to FHIR
+     (FhirR4.java:2426). The ADHD module sets it, so P01's methylphenidate now
+     carries "Every morning (qualifier value)" through to the FHIR bundle.
+     This is CODED timing, not a clock time - an exact "08:00" remains impossible.
+
+
+================================================================================
+PART B - GMF CAPABILITIES USED (and two that were checked and rejected)
+================================================================================
+  SetAttribute.expression   CQL-lite, syntax "#{attribute}" (State.java:741).
+                            Supported by the engine, used by ZERO stock modules.
+                            Drives the weight arithmetic.
+  Observation.attribute     Emits a stored attribute as an Observation value.
+  Guard + condition_type    "And" of Age >= 25 and Date year >= 2019, so the
+                            trajectory OVERLAPS the 2021-22 wearable windows.
+                            Without the date gate it fires whenever the patient
+                            turns 25 and can land a decade before the window.
+  Counter / conditional_transition   the monthly loop and the loss/plateau switch.
+
+  REJECTED: VitalSign.expression. The intent was to drive Synthea's own "Weight"
+  vital sign from the trajectory so its wellness-encounter weights could not
+  contradict the curve. The field exists (State.java:1855) but the expression
+  evaluates once rather than per pass, freezing the whole series at its seed value.
+  Reverted; the interleaving is handled in post-processing instead (see D.2).
+
+  REJECTED: -d replacing the stock module set. It does not - Module.addModules()
+  ADDS to it, so these patients keep the full stock comorbidity model.
+
+
+================================================================================
+PART C - COMMANDS
+================================================================================
+  export JAVA_HOME=/opt/homebrew/opt/openjdk@17; export PATH="$JAVA_HOME/bin:$PATH"
+  cd synthea
+  M=../user_profiles_synthea_modules/modules
+
+  ./run_synthea --exporter.csv.export=true --exporter.baseDirectory=<out>/mod_adhd \
+     -d $M -p 400 -s 8801 -g M -a 25-45 -r 20210906     # P01 -> 419 patients
+  ./run_synthea --exporter.csv.export=true --exporter.baseDirectory=<out>/mod_older \
+     -d $M -p 210 -s 8802 -g F -a 65-72 -r 20220121     # P02 -> 289 patients
+  ./run_synthea --exporter.csv.export=true --exporter.baseDirectory=<out>/mod_adult \
+     -d $M -p 200 -s 8803 -g F -a 35-45 -r 20220119     # P03 -> 205 patients
+
+  python3 scripts/build_profiles_modules.py
+  python3 scripts/build_fhir.py
+
+  Note the age ranges changed from the base build: P01 is now -a 25-45 (adults),
+  where the base build was forced to -a 15-17 by the stock module's Age_Guard.
+
+  YIELDS
+    mod_adhd    419 patients   18 with ACTIVE adult ADHD   246 with >=12 weigh-ins
+    mod_older   289 patients   15                          145
+    mod_adult   205 patients   11                          107
+
+
+================================================================================
+PART D - RESULTS
+================================================================================
+D.1  THE THREE PROFILES
+
+  P01  37da1608  M, 28   ADHD (406506008) + obesity
+       methylphenidate 20 mg, EVERY MORNING
+       weight 89.1 -> 81.42 kg over 25 weigh-ins (2019-01-07 .. 2020-12-27)
+       loss -0.80 kg/mo, then PLATEAU -0.03 kg/mo from weigh-in 9
+
+  P02  846bd130  F, 70   OBSTRUCTIVE SLEEP APNEA, sleep disorder, prediabetes,
+                         obesity, anaemia (18 active conditions)
+       weight 72.8 -> 65.12 kg over 21 weigh-ins
+       loss -0.72 kg/mo, then PLATEAU -0.03 kg/mo from weigh-in 10
+       This is a BETTER archetype fit than the base build: sleep apnoea is a
+       genuine physiological mechanism for a sleep-driven plateau, where the base
+       build offered only osteoarthritis.
+
+  P03  9b442820  F, 39   obesity (BMI 30.3), asthma - otherwise unremarkable
+       weight 72.0 -> 64.32 kg over 23 weigh-ins
+       loss -0.80 kg/mo, then PLATEAU -0.03 kg/mo from weigh-in 9
+       Still the archetype that needs NO medical explanation for a plateau, and
+       now the plateau is in the data rather than only in the prose.
+
+D.2  THE INTERLEAVING PROBLEM, AND HOW IT IS HANDLED
+     Synthea records its own weight at wellness encounters under the SAME LOINC
+     29463-7, and those points follow its independent growth model - they rise
+     while the trajectory falls. Raw example from a test patient:
+
+         2018-02-19  75.20   <- module
+         2018-03-07  80.60   <- SYNTHEA, contradicts
+         2018-03-21  74.30   <- module
+
+     The builder isolates the monthly cadence, then removes strays with an
+     interpolation test: a true point sits within 1.0 kg of the midpoint of its
+     neighbours, because the curve moves at most 0.9 kg/month. Applied iteratively.
+     COST: it also drops a few legitimate points, which is why the series are 21-25
+     long rather than a full 25. All three final series decline monotonically.
+
+D.3  FHIR
+     3 bundles, all validated as R4B documents:
+       P01 526 resources (26 Body Weight observations)
+       P02 498 resources (22)
+       P03 561 resources (24)
+     The trajectory is exported as dated Body Weight and BMI Observations plus a
+     summary Observation carrying start/end/loss-rate/plateau-rate components, and
+     the Composition gains a "Weight trajectory" section.
+
+
+================================================================================
+PART E - LIMITATIONS
+================================================================================
+E.1  Medication time-of-day is a SNOMED qualifier, not a clock time. An exact
+     dosing time remains impossible - the schema has no field for it.
+E.2  SNOMED codes could not be validated offline; Synthea ships no terminology
+     file. 406506008 and 307145004 should be checked against a terminology server.
+E.3  The stray-removal filter is a heuristic and discards some real points.
+E.4  Occupation, training, caffeine, diet and family history remain unmodelled. A
+     module could only supply them by inventing content wholesale, which would
+     discard the epidemiological grounding that is Synthea's whole value.
+E.5  Different patients from the base build. Same archetypes and the same LifeSnaps
+     wearable traces, but the clinical records are NOT the same people - the cohorts
+     were regenerated with a different module set and age ranges.
+E.6  The wearable half is unchanged, so every wearable limitation from the base
+     build still applies (P02 capped at 77 days, P01 has 33 stress-score days, etc).
+
+
+================================================================================
+PART F - WHAT WAS NOT DONE
+================================================================================
+F.1  PromptEHR was NOT regenerated - it has no module system, so neither module
+     applies. The user asked for Synthea alone.
+F.2  No module was written for occupation, training, caffeine or diet (see E.4).
+F.3  The base build was not modified or replaced; this is an additional variant.
+F.4  Evaluation questions, rubric and harness remain unwritten.
+================================================================================
+END OF REPORT
+================================================================================

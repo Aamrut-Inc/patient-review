@@ -1,0 +1,44 @@
+{
+  "narrative": [
+    "Theo, 26, is a graduate student and teaching assistant with generalized anxiety disorder, diagnosed 3 years ago.",
+    "Also a history of disordered eating — a binge-eating pattern from his second year of college, partially resolved through CBT but with a residual night-eating habit.",
+    "Takes mirtazapine 15 mg at bedtime for anxiety and sleep — a medication known to stimulate appetite in the hours after dosing, sitting directly on top of his existing night-eating pattern.",
+    "The only one of these profiles carrying a mental-health-sensitive history, by design."
+  ],
+  "primary_conditions": [
+    "21897009"
+  ],
+  "medication_groups": [
+    {
+      "label": "Psychiatric",
+      "codes": [
+        "Mirtazapine 15 MG Oral Tablet"
+      ]
+    },
+    {
+      "label": "Allergy",
+      "codes": [
+        "Fexofenadine hydrochloride 30 MG Oral Tablet",
+        "NDA020800 0.3 ML Epinephrine 1 MG/ML Auto-Injector"
+      ]
+    }
+  ],
+  "conditions_extra": {},
+  "wearable_relevance": {
+    "steps": "medium",
+    "resting_hr": "medium",
+    "spo2": "low",
+    "sleep_efficiency": "high",
+    "stress_score": "high"
+  },
+  "flags": [],
+  "version": 1,
+  "version_history": [
+    {
+      "version": 1,
+      "date": "2026-07-28",
+      "change": "Initial profile import from generation pipeline",
+      "by": "System"
+    }
+  ]
+}

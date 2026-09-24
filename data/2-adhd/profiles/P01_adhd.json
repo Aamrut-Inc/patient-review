@@ -1,0 +1,473 @@
+{
+  "profile_id": "P01",
+  "archetype": "ADHD (adult)",
+  "scenario": {
+    "intent": "ADHD population. Exercises reasoning over delayed and irregular sleep timing, stimulant medication effects on sleep onset / appetite / heart rate, and erratic adherence to activity.",
+    "purpose": "Test-design metadata; not a clinical finding."
+  },
+  "generator": {
+    "name": "Synthea",
+    "mode": "custom modules via -d",
+    "custom_modules": [
+      "adult_adhd.json",
+      "weight_trajectory.json"
+    ],
+    "cohort": "mod_adhd",
+    "reference_date": "2021-09-06",
+    "patient_id": "37da1608-bcdc-1bdf-b4ef-095e19d59253"
+  },
+  "basic_facts": {
+    "name": "Tyler Jacobson",
+    "age": 28,
+    "sex": "male",
+    "height_cm": 171.8,
+    "weight_kg": 81.41999999999999,
+    "bmi": 27.58574892,
+    "measured_on": "2020-12-27",
+    "race": "asian",
+    "ethnicity": "nonhispanic",
+    "marital_status": "M",
+    "employment_and_education": [
+      "Received higher education (finding)",
+      "Not in labor force (finding)"
+    ],
+    "occupation": "NOT AVAILABLE - Synthea models employment status only; no job-title concept.",
+    "weight_trajectory": {
+      "source": "synthea custom module weight_trajectory.json (monthly weigh-ins)",
+      "n_points": 25,
+      "first": "2019-01-07",
+      "last": "2020-12-27",
+      "start_kg": 89.1,
+      "end_kg": 81.42,
+      "total_change_kg": -7.68,
+      "loss_phase_kg_per_month": -0.8,
+      "plateau_starts_at_point": 9,
+      "plateau_kg_per_month": -0.03,
+      "series": [
+        {
+          "date": "2019-01-07",
+          "weight_kg": 89.1,
+          "bmi": 30.2
+        },
+        {
+          "date": "2019-02-06",
+          "weight_kg": 88.2,
+          "bmi": 29.9
+        },
+        {
+          "date": "2019-03-08",
+          "weight_kg": 87.3,
+          "bmi": 29.6
+        },
+        {
+          "date": "2019-04-07",
+          "weight_kg": 86.4,
+          "bmi": 29.3
+        },
+        {
+          "date": "2019-05-07",
+          "weight_kg": 85.5,
+          "bmi": 29.0
+        },
+        {
+          "date": "2019-06-06",
+          "weight_kg": 84.6,
+          "bmi": 28.7
+        },
+        {
+          "date": "2019-07-06",
+          "weight_kg": 83.7,
+          "bmi": 28.4
+        },
+        {
+          "date": "2019-08-05",
+          "weight_kg": 82.8,
+          "bmi": 28.1
+        },
+        {
+          "date": "2019-09-04",
+          "weight_kg": 81.9,
+          "bmi": 27.7
+        },
+        {
+          "date": "2019-10-04",
+          "weight_kg": 81.87,
+          "bmi": 27.7
+        },
+        {
+          "date": "2019-11-03",
+          "weight_kg": 81.84,
+          "bmi": 27.7
+        },
+        {
+          "date": "2019-12-03",
+          "weight_kg": 81.81,
+          "bmi": 27.7
+        },
+        {
+          "date": "2020-01-02",
+          "weight_kg": 81.78,
+          "bmi": 27.7
+        },
+        {
+          "date": "2020-02-01",
+          "weight_kg": 81.75,
+          "bmi": 27.7
+        },
+        {
+          "date": "2020-03-02",
+          "weight_kg": 81.72,
+          "bmi": 27.7
+        },
+        {
+          "date": "2020-04-01",
+          "weight_kg": 81.69,
+          "bmi": 27.7
+        },
+        {
+          "date": "2020-05-01",
+          "weight_kg": 81.66,
+          "bmi": 27.7
+        },
+        {
+          "date": "2020-05-31",
+          "weight_kg": 81.63,
+          "bmi": 27.7
+        },
+        {
+          "date": "2020-06-30",
+          "weight_kg": 81.6,
+          "bmi": 27.6
+        },
+        {
+          "date": "2020-07-30",
+          "weight_kg": 81.57,
+          "bmi": 27.6
+        },
+        {
+          "date": "2020-08-29",
+          "weight_kg": 81.54,
+          "bmi": 27.6
+        },
+        {
+          "date": "2020-09-28",
+          "weight_kg": 81.51,
+          "bmi": 27.6
+        },
+        {
+          "date": "2020-10-28",
+          "weight_kg": 81.48,
+          "bmi": 27.6
+        },
+        {
+          "date": "2020-11-27",
+          "weight_kg": 81.45,
+          "bmi": 27.6
+        },
+        {
+          "date": "2020-12-27",
+          "weight_kg": 81.42,
+          "bmi": 27.6
+        }
+      ],
+      "note": "3 additional Body Weight observations from Synthea's own wellness encounters were excluded from this series - they use the same LOINC code but follow Synthea's independent growth model, not this trajectory."
+    },
+    "training": {
+      "source": "lifesnaps (observed, not self-reported)",
+      "logged_workout_days": 49,
+      "mean_workout_days_per_week": 3.81,
+      "workout_days_by_week": [
+        4,
+        5,
+        4,
+        3,
+        3,
+        6,
+        3,
+        4,
+        4,
+        2,
+        4,
+        2,
+        5
+      ],
+      "activity_types": {
+        "Walk": 29,
+        "Bike": 21,
+        "Aerobic Workout": 2,
+        "Sport": 1,
+        "Tennis": 1
+      },
+      "mindfulness_session_days": 0,
+      "note": "From the Fitbit activityType logged in the window. Synthea models no training data."
+    },
+    "source": "synthea (custom modules) + lifesnaps (training)"
+  },
+  "medical_history": {
+    "record_current_as_of": "2021-09-06",
+    "active_conditions": [
+      {
+        "condition": "Attention deficit hyperactivity disorder (disorder)",
+        "snomed": "406506008",
+        "onset": "2005-12-04"
+      },
+      {
+        "condition": "Body mass index 30+ - obesity (finding)",
+        "snomed": "162864005",
+        "onset": "2018-10-23"
+      }
+    ],
+    "resolved_history": [
+      {
+        "condition": "Stress (finding)",
+        "snomed": "73595000",
+        "onset": "2011-10-11",
+        "resolved": "2018-10-23"
+      },
+      {
+        "condition": "Medication review due (situation)",
+        "snomed": "314529007",
+        "onset": "2015-10-20",
+        "resolved": "2018-10-23"
+      },
+      {
+        "condition": "Part-time employment (finding)",
+        "snomed": "160904001",
+        "onset": "2015-10-20",
+        "resolved": "2018-10-23"
+      },
+      {
+        "condition": "Sprain (morphologic abnormality)",
+        "snomed": "384709000",
+        "onset": "2018-08-13",
+        "resolved": "2018-09-16"
+      },
+      {
+        "condition": "Sprain of ankle (disorder)",
+        "snomed": "44465007",
+        "onset": "2018-08-13",
+        "resolved": "2018-09-16"
+      }
+    ],
+    "medications": [
+      {
+        "name": "Methylphenidate Hydrochloride 20 MG Oral Tablet",
+        "rxnorm": "1091392",
+        "started": "2005-12-03",
+        "indication": "Attention deficit hyperactivity disorder (disorder)",
+        "time_of_day": "Every morning (qualifier value)",
+        "time_of_day_status": "From prescription.instructions, set by the custom module and exported to FHIR as dosageInstruction.additionalInstruction."
+      }
+    ],
+    "allergies": [],
+    "procedures_last_12mo": [],
+    "care_plans": [
+      "Care plan (record artifact)"
+    ],
+    "immunizations_last_5y": [
+      "Influenza  split virus  trivalent  PF (2018-10-22)"
+    ],
+    "mental_health": {
+      "active_findings": [
+        {
+          "finding": "Attention deficit hyperactivity disorder (disorder)",
+          "snomed": "406506008",
+          "onset": "2005-12-04"
+        }
+      ],
+      "screenings": [
+        {
+          "procedure": "Depression screening (procedure)",
+          "date": "2018-10-22"
+        }
+      ],
+      "note": "Synthea has no anxiety/depression disease module; absence is not evidence of absence."
+    },
+    "family_history": "NOT AVAILABLE - Synthea does not generate family history.",
+    "vitals": {
+      "systolic_bp": 125.0,
+      "diastolic_bp": 74.0,
+      "clinic_heart_rate": 93.0,
+      "measured_on": "2018-10-22"
+    },
+    "source": "synthea (stock modules + adult_adhd.json + weight_trajectory.json)"
+  },
+  "lifestyle": {
+    "smoking": "Ex-smoker (finding)",
+    "alcohol": "No alcohol-related finding recorded",
+    "caffeine": "NOT AVAILABLE - not modelled by Synthea",
+    "diet_pattern": "NOT AVAILABLE - not modelled by Synthea",
+    "self_reported_context": {
+      "source": "LifeSnaps SEMA3 (prompted self-report)",
+      "days_prompted": 48,
+      "days_with_a_mood_answer": 48,
+      "prompts_per_day": 4.0,
+      "ema_compliance_mean": 0.9,
+      "mood_response_latency_median_s": 2.0,
+      "mood_distribution_pct": {
+        "alert": 0.0,
+        "happy": 5.6,
+        "neutral": 20.2,
+        "rested_relaxed": 39.3,
+        "sad": 0.0,
+        "tense_anxious": 1.1,
+        "tired": 33.7
+      },
+      "place_distribution_pct": {
+        "entertainment": 6.6,
+        "gym": 2.6,
+        "home": 56.6,
+        "home_office": 0.0,
+        "other": 1.3,
+        "outdoors": 5.3,
+        "transit": 10.5,
+        "work_school": 17.1
+      },
+      "note": "Shares of mood/place FLAGS, not prompts; ~2/3 of prompts cohort-wide went unanswered."
+    }
+  },
+  "wearable_data": {
+    "granularity": "daily",
+    "window_days": 90,
+    "window_start": "2021-06-09",
+    "window_end": "2021-09-06",
+    "days_with_any_data": 90,
+    "daily_file": "wearable/P01_adhd_daily.csv",
+    "weekly_summary_file": "wearable/P01_adhd_weekly.csv",
+    "source_dataset": "LifeSnaps / RAIS",
+    "lifesnaps_participant_id": "621e351a67b776a240f6204b",
+    "lifesnaps_participant_attributes": {
+      "age_band": "<30",
+      "sex": "MALE",
+      "bmi": 22.0,
+      "note": "Attributes of the REAL participant; kept out of the CSV."
+    },
+    "why_this_participant": "Of the 8 LifeSnaps participants with >=75 of 90 usable days, this one has the most extreme delayed sleep phase (median bedtime 02:37; 94.5% of nights asleep after 00:30), the lowest sleep efficiency (88.3%), the most wake-after-sleep-onset (71 min/night) and highly variable daily step counts (CV 0.61).",
+    "per_signal_day_counts": {
+      "steps": 90,
+      "bpm": 90,
+      "resting_hr": 88,
+      "sleep_hours": 88,
+      "sleep_efficiency": 88,
+      "bedtime": 88,
+      "stress_score": 24,
+      "spo2": 49,
+      "full_sleep_breathing_rate": 87,
+      "nightly_temperature": 88,
+      "rmssd": 86,
+      "activityType": 49
+    },
+    "identical_to_base_build": "Yes - same LifeSnaps participants, windows and values as user_profiles/.",
+    "values": "verbatim LifeSnaps values; no imputation.",
+    "summary": {
+      "steps": {
+        "mean": 7541.0,
+        "sd": 4630.0,
+        "min": 1014.0,
+        "max": 24450.0,
+        "n_days": 90
+      },
+      "resting_hr": {
+        "mean": 64.1,
+        "sd": 3.2,
+        "min": 57.9,
+        "max": 72.4,
+        "n_days": 88
+      },
+      "bpm": {
+        "mean": 79.6,
+        "sd": 9.0,
+        "min": 61.3,
+        "max": 106.9,
+        "n_days": 90
+      },
+      "sleep_hours": {
+        "mean": 7.04,
+        "sd": 1.7,
+        "min": 3.22,
+        "max": 10.55,
+        "n_days": 88
+      },
+      "sleep_efficiency": {
+        "mean": 88.2,
+        "sd": 3.4,
+        "min": 78.0,
+        "max": 95.0,
+        "n_days": 88
+      },
+      "minutes_awake": {
+        "mean": 71.1,
+        "sd": 22.8,
+        "min": 21.0,
+        "max": 130.0,
+        "n_days": 88
+      },
+      "very_active_minutes": {
+        "mean": 30.8,
+        "sd": 33.4,
+        "min": 0.0,
+        "max": 144.0,
+        "n_days": 90
+      },
+      "sedentary_minutes": {
+        "mean": 773.7,
+        "sd": 149.8,
+        "min": 523.0,
+        "max": 1393.0,
+        "n_days": 90
+      },
+      "stress_score": {
+        "mean": 53.8,
+        "sd": 35.4,
+        "min": 0.0,
+        "max": 80.0,
+        "n_days": 24
+      },
+      "rmssd": {
+        "mean": 40.8,
+        "sd": 20.9,
+        "min": 0.0,
+        "max": 85.5,
+        "n_days": 86
+      },
+      "spo2": {
+        "mean": 95.9,
+        "sd": 1.2,
+        "min": 92.9,
+        "max": 98.1,
+        "n_days": 49
+      },
+      "full_sleep_breathing_rate": {
+        "mean": 14.7,
+        "sd": 1.2,
+        "min": 12.6,
+        "max": 18.8,
+        "n_days": 87
+      },
+      "nightly_temperature": {
+        "mean": 33.52,
+        "sd": 0.44,
+        "min": 32.45,
+        "max": 34.68,
+        "n_days": 88
+      },
+      "sema_compliance": {
+        "mean": 0.9,
+        "sd": 0.15,
+        "min": 0.5,
+        "max": 1.0,
+        "n_days": 48
+      },
+      "sema_mood_rt_median_s": {
+        "mean": 2.5,
+        "sd": 2.9,
+        "min": 0.8,
+        "max": 21.3,
+        "n_days": 48
+      },
+      "bedtime_median_clock": "02:38",
+      "bedtime_sd_hours": 1.82,
+      "pct_nights_asleep_after_0030": 94.3
+    }
+  }
+}

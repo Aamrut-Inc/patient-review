@@ -1,0 +1,66 @@
+{
+  "narrative": [
+    "Edda Fisher, 70, has obstructive sleep apnea and a broader sedentary-lifestyle profile.",
+    "Active conditions include prediabetes, hypertension, metabolic syndrome, hyperlipidemia, anemia, and chronic low back/neck pain.",
+    "Her chart shows a 21-point monthly weight trajectory: an early loss phase followed by a plateau, framed around her sleep disorder as a genuine physiological driver.",
+    "Medication list spans cardiac/BP drugs plus a heavy pain regimen — hydrocodone, transdermal fentanyl, and tramadol concurrently."
+  ],
+  "primary_conditions": [
+    "78275009",
+    "162864005",
+    "59621000"
+  ],
+  "medication_groups": [
+    {
+      "label": "Cardiac / blood pressure",
+      "codes": [
+        "Hydrochlorothiazide 25 MG Oral Tablet",
+        "lisinopril 10 MG Oral Tablet",
+        "Simvastatin 10 MG Oral Tablet"
+      ]
+    },
+    {
+      "label": "Pain management",
+      "codes": [
+        "12 HR Hydrocodone Bitartrate 10 MG Extended Release Oral Capsule",
+        "72 HR Fentanyl 0.025 MG/HR Transdermal System",
+        "tramadol hydrochloride 50 MG Oral Tablet",
+        "Naproxen sodium 220 MG Oral Tablet"
+      ]
+    }
+  ],
+  "conditions_extra": {
+    "78275009": {
+      "detail": true,
+      "diagnosed_label": "Onset 1989-12-08",
+      "pathway": "Obstructive sleep apnea offers a genuine physiological mechanism for the sedentary archetype's weight plateau — fragmented sleep and daytime fatigue reinforcing low activity, distinct from the base build's osteoarthritis framing.",
+      "relevant_biomarker_codes": [
+        "29463-7",
+        "39156-5"
+      ],
+      "relevant_wearables": [
+        "sleep_efficiency",
+        "resting_hr",
+        "spo2"
+      ],
+      "relevant_medication_codes": []
+    }
+  },
+  "wearable_relevance": {
+    "steps": "medium",
+    "resting_hr": "high",
+    "spo2": "high",
+    "sleep_efficiency": "high",
+    "stress_score": "medium"
+  },
+  "flags": [],
+  "version": 1,
+  "version_history": [
+    {
+      "version": 1,
+      "date": "2026-07-28",
+      "change": "Initial profile import from generation pipeline",
+      "by": "System"
+    }
+  ]
+}

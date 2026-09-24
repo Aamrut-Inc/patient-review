@@ -1,0 +1,18 @@
+# Cloudflare Pages project: static site (dist/, built by scripts/build_site.sh)
+# + API routes in functions/ (shared review state in D1, assistant relay).
+name = "patient-review"
+pages_build_output_dir = "dist"
+compatibility_date = "2026-01-01"
+
+[vars]
+ALLOWED_EMAIL_DOMAIN = "aamrut.com"
+# OAuth client ID from Google Cloud Console (public, not a secret) — see DEPLOY.md:
+GOOGLE_CLIENT_ID = ""
+# Standalone Worker that holds the OpenAI key (used when OPENAI_API_KEY isn't set here):
+ASSISTANT_WORKER_URL = "https://patient-review-assistant.aamrutpatientreview.workers.dev"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "patient-review"
+database_id = "29d69519-6c4d-4faa-bee9-7236f34f24ee"
+migrations_dir = "migrations"

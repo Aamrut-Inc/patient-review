@@ -1,0 +1,994 @@
+{
+  "source_file": "athlete_profile_Shelton25_Graham902.json",
+  "biomarkers": [
+    {
+      "code": "8302-2",
+      "label": "Body Height",
+      "unit": "cm",
+      "reading_count": 7,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2025-09-05T04:50:24+05:30",
+        "value": 169.1
+      },
+      "readings": [
+        {
+          "date": "2017-08-04T04:50:24+05:30",
+          "value": 155.9
+        },
+        {
+          "date": "2018-08-10T04:50:24+05:30",
+          "value": 161.8
+        },
+        {
+          "date": "2019-08-16T04:50:24+05:30",
+          "value": 165.5
+        },
+        {
+          "date": "2020-08-21T04:50:24+05:30",
+          "value": 167.5
+        },
+        {
+          "date": "2021-08-27T04:50:24+05:30",
+          "value": 168.4
+        },
+        {
+          "date": "2022-09-02T04:50:24+05:30",
+          "value": 168.9
+        },
+        {
+          "date": "2025-09-05T04:50:24+05:30",
+          "value": 169.1
+        }
+      ]
+    },
+    {
+      "code": "29463-7",
+      "label": "Body Weight",
+      "unit": "kg",
+      "reading_count": 7,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2025-09-05T04:50:24+05:30",
+        "value": 63.8
+      },
+      "readings": [
+        {
+          "date": "2017-08-04T04:50:24+05:30",
+          "value": 48.9
+        },
+        {
+          "date": "2018-08-10T04:50:24+05:30",
+          "value": 53.5
+        },
+        {
+          "date": "2019-08-16T04:50:24+05:30",
+          "value": 59.8
+        },
+        {
+          "date": "2020-08-21T04:50:24+05:30",
+          "value": 64.9
+        },
+        {
+          "date": "2021-08-27T04:50:24+05:30",
+          "value": 69
+        },
+        {
+          "date": "2022-09-02T04:50:24+05:30",
+          "value": 64.8
+        },
+        {
+          "date": "2025-09-05T04:50:24+05:30",
+          "value": 63.8
+        }
+      ]
+    },
+    {
+      "code": "59576-9",
+      "label": "Body mass index (BMI) [Percentile] Per age and sex",
+      "unit": "%",
+      "reading_count": 6,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2022-09-02T04:50:24+05:30",
+        "value": 52.198
+      },
+      "readings": [
+        {
+          "date": "2017-08-04T04:50:24+05:30",
+          "value": 62.824
+        },
+        {
+          "date": "2018-08-10T04:50:24+05:30",
+          "value": 57.217
+        },
+        {
+          "date": "2019-08-16T04:50:24+05:30",
+          "value": 65.527
+        },
+        {
+          "date": "2020-08-21T04:50:24+05:30",
+          "value": 71.865
+        },
+        {
+          "date": "2021-08-27T04:50:24+05:30",
+          "value": 75.864
+        },
+        {
+          "date": "2022-09-02T04:50:24+05:30",
+          "value": 52.198
+        }
+      ]
+    },
+    {
+      "code": "39156-5",
+      "label": "Body mass index (BMI) [Ratio]",
+      "unit": "kg/m2",
+      "reading_count": 7,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2025-09-05T04:50:24+05:30",
+        "value": 22.31
+      },
+      "readings": [
+        {
+          "date": "2017-08-04T04:50:24+05:30",
+          "value": 20.13
+        },
+        {
+          "date": "2018-08-10T04:50:24+05:30",
+          "value": 20.43
+        },
+        {
+          "date": "2019-08-16T04:50:24+05:30",
+          "value": 21.82
+        },
+        {
+          "date": "2020-08-21T04:50:24+05:30",
+          "value": 23.15
+        },
+        {
+          "date": "2021-08-27T04:50:24+05:30",
+          "value": 24.3
+        },
+        {
+          "date": "2022-09-02T04:50:24+05:30",
+          "value": 22.72
+        },
+        {
+          "date": "2025-09-05T04:50:24+05:30",
+          "value": 22.31
+        }
+      ]
+    },
+    {
+      "code": "8462-4",
+      "label": "Diastolic Blood Pressure",
+      "unit": "mm[Hg]",
+      "reading_count": 7,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2025-09-05T04:50:24+05:30",
+        "value": 78
+      },
+      "readings": [
+        {
+          "date": "2017-08-04T04:50:24+05:30",
+          "value": 82
+        },
+        {
+          "date": "2018-08-10T04:50:24+05:30",
+          "value": 82
+        },
+        {
+          "date": "2019-08-16T04:50:24+05:30",
+          "value": 78
+        },
+        {
+          "date": "2020-08-21T04:50:24+05:30",
+          "value": 75
+        },
+        {
+          "date": "2021-08-27T04:50:24+05:30",
+          "value": 78
+        },
+        {
+          "date": "2022-09-02T04:50:24+05:30",
+          "value": 82
+        },
+        {
+          "date": "2025-09-05T04:50:24+05:30",
+          "value": 78
+        }
+      ]
+    },
+    {
+      "code": "788-0",
+      "label": "Erythrocyte [DistWidth] in Blood by Automated count",
+      "unit": "fL",
+      "reading_count": 2,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2025-09-05T04:50:24+05:30",
+        "value": 41.732
+      },
+      "readings": [
+        {
+          "date": "2019-08-16T04:50:24+05:30",
+          "value": 41.912
+        },
+        {
+          "date": "2025-09-05T04:50:24+05:30",
+          "value": 41.732
+        }
+      ]
+    },
+    {
+      "code": "789-8",
+      "label": "Erythrocytes [#/volume] in Blood by Automated count",
+      "unit": "10*6/uL",
+      "reading_count": 2,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2025-09-05T04:50:24+05:30",
+        "value": 4.5446
+      },
+      "readings": [
+        {
+          "date": "2019-08-16T04:50:24+05:30",
+          "value": 5.0949
+        },
+        {
+          "date": "2025-09-05T04:50:24+05:30",
+          "value": 4.5446
+        }
+      ]
+    },
+    {
+      "code": "70274-6",
+      "label": "Generalized anxiety disorder 7 item (GAD-7) total score [Reported.PHQ]",
+      "unit": "{score}",
+      "reading_count": 5,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2025-09-05T06:05:38+05:30",
+        "value": 1
+      },
+      "readings": [
+        {
+          "date": "2017-08-04T05:05:30+05:30",
+          "value": 8
+        },
+        {
+          "date": "2018-08-10T05:19:33+05:30",
+          "value": 3
+        },
+        {
+          "date": "2019-08-16T05:18:04+05:30",
+          "value": 1
+        },
+        {
+          "date": "2020-08-21T05:16:35+05:30",
+          "value": 3
+        },
+        {
+          "date": "2025-09-05T06:05:38+05:30",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "code": "8867-4",
+      "label": "Heart rate",
+      "unit": "/min",
+      "reading_count": 7,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2025-09-05T04:50:24+05:30",
+        "value": 71
+      },
+      "readings": [
+        {
+          "date": "2017-08-04T04:50:24+05:30",
+          "value": 64
+        },
+        {
+          "date": "2018-08-10T04:50:24+05:30",
+          "value": 92
+        },
+        {
+          "date": "2019-08-16T04:50:24+05:30",
+          "value": 74
+        },
+        {
+          "date": "2020-08-21T04:50:24+05:30",
+          "value": 68
+        },
+        {
+          "date": "2021-08-27T04:50:24+05:30",
+          "value": 73
+        },
+        {
+          "date": "2022-09-02T04:50:24+05:30",
+          "value": 65
+        },
+        {
+          "date": "2025-09-05T04:50:24+05:30",
+          "value": 71
+        }
+      ]
+    },
+    {
+      "code": "40443-4",
+      "label": "Heart rate --resting",
+      "unit": "beats/minute",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2026-08-20T09:15:00+05:30",
+        "value": 47
+      },
+      "readings": [
+        {
+          "date": "2026-08-20T09:15:00+05:30",
+          "value": 47
+        }
+      ]
+    },
+    {
+      "code": "4544-3",
+      "label": "Hematocrit [Volume Fraction] of Blood by Automated count",
+      "unit": "%",
+      "reading_count": 2,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2025-09-05T04:50:24+05:30",
+        "value": 44.931
+      },
+      "readings": [
+        {
+          "date": "2019-08-16T04:50:24+05:30",
+          "value": 40.073
+        },
+        {
+          "date": "2025-09-05T04:50:24+05:30",
+          "value": 44.931
+        }
+      ]
+    },
+    {
+      "code": "718-7",
+      "label": "Hemoglobin [Mass/volume] in Blood",
+      "unit": "g/dL",
+      "reading_count": 2,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2025-09-05T04:50:24+05:30",
+        "value": 13.705
+      },
+      "readings": [
+        {
+          "date": "2019-08-16T04:50:24+05:30",
+          "value": 12.277
+        },
+        {
+          "date": "2025-09-05T04:50:24+05:30",
+          "value": 13.705
+        }
+      ]
+    },
+    {
+      "code": "6690-2",
+      "label": "Leukocytes [#/volume] in Blood by Automated count",
+      "unit": "10*3/uL",
+      "reading_count": 2,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2025-09-05T04:50:24+05:30",
+        "value": 5.1458
+      },
+      "readings": [
+        {
+          "date": "2019-08-16T04:50:24+05:30",
+          "value": 4.3977
+        },
+        {
+          "date": "2025-09-05T04:50:24+05:30",
+          "value": 5.1458
+        }
+      ]
+    },
+    {
+      "code": "785-6",
+      "label": "MCH [Entitic mass] by Automated count",
+      "unit": "pg",
+      "reading_count": 2,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2025-09-05T04:50:24+05:30",
+        "value": 31.393
+      },
+      "readings": [
+        {
+          "date": "2019-08-16T04:50:24+05:30",
+          "value": 29.101
+        },
+        {
+          "date": "2025-09-05T04:50:24+05:30",
+          "value": 31.393
+        }
+      ]
+    },
+    {
+      "code": "786-4",
+      "label": "MCHC [Entitic Mass/volume] in Red Blood Cells by Automated count",
+      "unit": "g/dL",
+      "reading_count": 2,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2025-09-05T04:50:24+05:30",
+        "value": 35.166
+      },
+      "readings": [
+        {
+          "date": "2019-08-16T04:50:24+05:30",
+          "value": 35.508
+        },
+        {
+          "date": "2025-09-05T04:50:24+05:30",
+          "value": 35.166
+        }
+      ]
+    },
+    {
+      "code": "787-2",
+      "label": "MCV [Entitic mean volume] in Red Blood Cells by Automated count",
+      "unit": "fL",
+      "reading_count": 2,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2025-09-05T04:50:24+05:30",
+        "value": 86.978
+      },
+      "readings": [
+        {
+          "date": "2019-08-16T04:50:24+05:30",
+          "value": 88.213
+        },
+        {
+          "date": "2025-09-05T04:50:24+05:30",
+          "value": 86.978
+        }
+      ]
+    },
+    {
+      "code": "60842-2",
+      "label": "Oxygen consumption (VO2)",
+      "unit": "mL/kg/min",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2026-08-20T09:15:00+05:30",
+        "value": 58.4
+      },
+      "readings": [
+        {
+          "date": "2026-08-20T09:15:00+05:30",
+          "value": 58.4
+        }
+      ]
+    },
+    {
+      "code": "72514-3",
+      "label": "Pain severity - 0-10 verbal numeric rating [Score] - Reported",
+      "unit": "{score}",
+      "reading_count": 7,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2025-09-05T04:50:24+05:30",
+        "value": 2
+      },
+      "readings": [
+        {
+          "date": "2017-08-04T04:50:24+05:30",
+          "value": 0
+        },
+        {
+          "date": "2018-08-10T04:50:24+05:30",
+          "value": 4
+        },
+        {
+          "date": "2019-08-16T04:50:24+05:30",
+          "value": 2
+        },
+        {
+          "date": "2020-08-21T04:50:24+05:30",
+          "value": 3
+        },
+        {
+          "date": "2021-08-27T04:50:24+05:30",
+          "value": 1
+        },
+        {
+          "date": "2022-09-02T04:50:24+05:30",
+          "value": 3
+        },
+        {
+          "date": "2025-09-05T04:50:24+05:30",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "code": "55758-7",
+      "label": "Patient Health Questionnaire 2 item (PHQ-2) total score [Reported]",
+      "unit": "{score}",
+      "reading_count": 2,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2025-09-05T06:44:28+05:30",
+        "value": 6
+      },
+      "readings": [
+        {
+          "date": "2022-09-02T06:55:53+05:30",
+          "value": 6
+        },
+        {
+          "date": "2025-09-05T06:44:28+05:30",
+          "value": 6
+        }
+      ]
+    },
+    {
+      "code": "44261-6",
+      "label": "Patient Health Questionnaire 9 item (PHQ-9) total score [Reported]",
+      "unit": "{score}",
+      "reading_count": 2,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2025-09-05T07:13:10+05:30",
+        "value": 7
+      },
+      "readings": [
+        {
+          "date": "2022-09-02T07:24:52+05:30",
+          "value": 27
+        },
+        {
+          "date": "2025-09-05T07:13:10+05:30",
+          "value": 7
+        }
+      ]
+    },
+    {
+      "code": "89204-2",
+      "label": "Patient Health Questionnaire-9: Modified for Teens total score [Reported.PHQ.Teen]",
+      "unit": "{score}",
+      "reading_count": 3,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2020-08-21T05:50:03+05:30",
+        "value": 7
+      },
+      "readings": [
+        {
+          "date": "2017-08-04T05:46:28+05:30",
+          "value": 18
+        },
+        {
+          "date": "2018-08-10T05:52:31+05:30",
+          "value": 3
+        },
+        {
+          "date": "2020-08-21T05:50:03+05:30",
+          "value": 7
+        }
+      ]
+    },
+    {
+      "code": "32623-1",
+      "label": "Platelet [Entitic mean volume] in Blood by Automated count",
+      "unit": "fL",
+      "reading_count": 2,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2025-09-05T04:50:24+05:30",
+        "value": 9.98
+      },
+      "readings": [
+        {
+          "date": "2019-08-16T04:50:24+05:30",
+          "value": 11.624
+        },
+        {
+          "date": "2025-09-05T04:50:24+05:30",
+          "value": 9.98
+        }
+      ]
+    },
+    {
+      "code": "32207-3",
+      "label": "Platelet distribution width [Entitic volume] in Blood by Automated count",
+      "unit": "fL",
+      "reading_count": 2,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2025-09-05T04:50:24+05:30",
+        "value": 16.298
+      },
+      "readings": [
+        {
+          "date": "2019-08-16T04:50:24+05:30",
+          "value": 14.6
+        },
+        {
+          "date": "2025-09-05T04:50:24+05:30",
+          "value": 16.298
+        }
+      ]
+    },
+    {
+      "code": "777-3",
+      "label": "Platelets [#/volume] in Blood by Automated count",
+      "unit": "10*3/uL",
+      "reading_count": 2,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2025-09-05T04:50:24+05:30",
+        "value": 357.51
+      },
+      "readings": [
+        {
+          "date": "2019-08-16T04:50:24+05:30",
+          "value": 273.95
+        },
+        {
+          "date": "2025-09-05T04:50:24+05:30",
+          "value": 357.51
+        }
+      ]
+    },
+    {
+      "code": "9279-1",
+      "label": "Respiratory rate",
+      "unit": "/min",
+      "reading_count": 7,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2025-09-05T04:50:24+05:30",
+        "value": 15
+      },
+      "readings": [
+        {
+          "date": "2017-08-04T04:50:24+05:30",
+          "value": 14
+        },
+        {
+          "date": "2018-08-10T04:50:24+05:30",
+          "value": 16
+        },
+        {
+          "date": "2019-08-16T04:50:24+05:30",
+          "value": 12
+        },
+        {
+          "date": "2020-08-21T04:50:24+05:30",
+          "value": 13
+        },
+        {
+          "date": "2021-08-27T04:50:24+05:30",
+          "value": 13
+        },
+        {
+          "date": "2022-09-02T04:50:24+05:30",
+          "value": 13
+        },
+        {
+          "date": "2025-09-05T04:50:24+05:30",
+          "value": 15
+        }
+      ]
+    },
+    {
+      "code": "8480-6",
+      "label": "Systolic Blood Pressure",
+      "unit": "mm[Hg]",
+      "reading_count": 7,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2025-09-05T04:50:24+05:30",
+        "value": 136
+      },
+      "readings": [
+        {
+          "date": "2017-08-04T04:50:24+05:30",
+          "value": 133
+        },
+        {
+          "date": "2018-08-10T04:50:24+05:30",
+          "value": 136
+        },
+        {
+          "date": "2019-08-16T04:50:24+05:30",
+          "value": 135
+        },
+        {
+          "date": "2020-08-21T04:50:24+05:30",
+          "value": 135
+        },
+        {
+          "date": "2021-08-27T04:50:24+05:30",
+          "value": 129
+        },
+        {
+          "date": "2022-09-02T04:50:24+05:30",
+          "value": 138
+        },
+        {
+          "date": "2025-09-05T04:50:24+05:30",
+          "value": 136
+        }
+      ]
+    },
+    {
+      "code": "75626-2",
+      "label": "Total score [AUDIT-C]",
+      "unit": "{score}",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2022-09-02T08:04:40+05:30",
+        "value": 11
+      },
+      "readings": [
+        {
+          "date": "2022-09-02T08:04:40+05:30",
+          "value": 11
+        }
+      ]
+    },
+    {
+      "code": "76504-0",
+      "label": "Total score [HARK]",
+      "unit": "{score}",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2022-09-02T06:21:32+05:30",
+        "value": 0
+      },
+      "readings": [
+        {
+          "date": "2022-09-02T06:21:32+05:30",
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "qualitative_observations": [
+    {
+      "code": "89555-7",
+      "label": "Physical activity",
+      "reading_count": 1,
+      "latest": {
+        "date": "2026-08-20T09:15:00+05:30",
+        "value": "Competitive club-level distance runner and triathlete. Trains ~10-12 hours/week (running, cycling, swimming). Presented for annual sports physical / pre-season clearance."
+      },
+      "readings": [
+        {
+          "date": "2026-08-20T09:15:00+05:30",
+          "value": "Competitive club-level distance runner and triathlete. Trains ~10-12 hours/week (running, cycling, swimming). Presented for annual sports physical / pre-season clearance."
+        }
+      ]
+    },
+    {
+      "code": "72166-2",
+      "label": "Tobacco smoking status",
+      "reading_count": 7,
+      "latest": {
+        "date": "2025-09-05T04:50:24+05:30",
+        "value": "Never smoked tobacco (finding)"
+      },
+      "readings": [
+        {
+          "date": "2017-08-04T04:50:24+05:30",
+          "value": "Never smoked tobacco (finding)"
+        },
+        {
+          "date": "2018-08-10T04:50:24+05:30",
+          "value": "Never smoked tobacco (finding)"
+        },
+        {
+          "date": "2019-08-16T04:50:24+05:30",
+          "value": "Never smoked tobacco (finding)"
+        },
+        {
+          "date": "2020-08-21T04:50:24+05:30",
+          "value": "Never smoked tobacco (finding)"
+        },
+        {
+          "date": "2021-08-27T04:50:24+05:30",
+          "value": "Never smoked tobacco (finding)"
+        },
+        {
+          "date": "2022-09-02T04:50:24+05:30",
+          "value": "Never smoked tobacco (finding)"
+        },
+        {
+          "date": "2025-09-05T04:50:24+05:30",
+          "value": "Never smoked tobacco (finding)"
+        }
+      ]
+    }
+  ],
+  "conditions": [
+    {
+      "code": "66383009",
+      "label": "Gingivitis (disorder)",
+      "clinical_status": "resolved",
+      "onset": "2018-08-10T06:41:19+05:30",
+      "recorded_date": "2018-08-10T06:41:19+05:30",
+      "abatement": "2018-08-24T07:15:17+05:30"
+    },
+    {
+      "code": "444814009",
+      "label": "Viral sinusitis (disorder)",
+      "clinical_status": "resolved",
+      "onset": "2021-03-07T12:50:24+05:30",
+      "recorded_date": "2021-03-07T12:50:24+05:30",
+      "abatement": "2021-03-18T12:50:24+05:30"
+    },
+    {
+      "code": "10939881000119105",
+      "label": "Unhealthy alcohol drinking behavior (finding)",
+      "clinical_status": "active",
+      "onset": "2022-09-02T08:04:40+05:30",
+      "recorded_date": "2022-09-02T08:04:40+05:30",
+      "abatement": null
+    },
+    {
+      "code": "384709000",
+      "label": "Sprain (morphologic abnormality)",
+      "clinical_status": "resolved",
+      "onset": "2024-05-12T04:50:24+05:30",
+      "recorded_date": "2024-05-12T04:50:24+05:30",
+      "abatement": "2024-05-28T04:50:24+05:30"
+    },
+    {
+      "code": "44465007",
+      "label": "Sprain of ankle (disorder)",
+      "clinical_status": "resolved",
+      "onset": "2024-05-12T04:50:24+05:30",
+      "recorded_date": "2024-05-12T04:50:24+05:30",
+      "abatement": "2024-05-28T04:50:24+05:30"
+    },
+    {
+      "code": "73595000",
+      "label": "Stress (finding)",
+      "clinical_status": "active",
+      "onset": "2025-09-05T05:46:04+05:30",
+      "recorded_date": "2025-09-05T05:46:04+05:30",
+      "abatement": null
+    },
+    {
+      "code": "422650009",
+      "label": "Social isolation (finding)",
+      "clinical_status": "active",
+      "onset": "2025-09-05T05:46:04+05:30",
+      "recorded_date": "2025-09-05T05:46:04+05:30",
+      "abatement": null
+    },
+    {
+      "code": "706893006",
+      "label": "Victim of intimate partner abuse (finding)",
+      "clinical_status": "active",
+      "onset": "2025-09-05T05:46:04+05:30",
+      "recorded_date": "2025-09-05T05:46:04+05:30",
+      "abatement": null
+    }
+  ],
+  "medications": [
+    {
+      "code": "310965",
+      "text": "Ibuprofen 200 MG Oral Tablet",
+      "status": "completed",
+      "as_needed": true,
+      "dosage": "as needed",
+      "first_authored": "2024-05-12T04:50:24+05:30",
+      "last_authored": "2024-05-12T04:50:24+05:30",
+      "requester": "Dr. Orpha286 Marks830",
+      "fill_count": 1
+    }
+  ],
+  "allergies": [],
+  "encounters": {
+    "total": 14,
+    "recent": [
+      {
+        "start": "2025-09-05T04:50:24+05:30",
+        "end": "2025-09-05T05:46:04+05:30",
+        "type": "General examination of patient (procedure)",
+        "location": "NEW BEDFORD INTERNAL MEDICINE & GERIATRICS, LLC"
+      },
+      {
+        "start": "2024-05-12T04:50:24+05:30",
+        "end": "2024-05-12T05:50:24+05:30",
+        "type": "Emergency room admission (procedure)",
+        "location": "HATHAWAY MANOR EXTENDED CARE"
+      },
+      {
+        "start": "2022-09-02T04:50:24+05:30",
+        "end": "2022-09-02T05:39:51+05:30",
+        "type": "General examination of patient (procedure)",
+        "location": "NEW BEDFORD INTERNAL MEDICINE & GERIATRICS, LLC"
+      },
+      {
+        "start": "2021-11-26T04:50:24+05:30",
+        "end": "2021-11-26T05:05:24+05:30",
+        "type": "Administration of vaccine to produce active immunity (procedure)",
+        "location": "NORTHEAST BEHAVIORAL HEALTH LLC"
+      },
+      {
+        "start": "2021-11-05T04:50:24+05:30",
+        "end": "2021-11-05T05:05:24+05:30",
+        "type": "Administration of vaccine to produce active immunity (procedure)",
+        "location": "NORTHEAST BEHAVIORAL HEALTH LLC"
+      },
+      {
+        "start": "2021-08-27T04:50:24+05:30",
+        "end": "2021-08-27T05:41:03+05:30",
+        "type": "General examination of patient (procedure)",
+        "location": "NEW BEDFORD INTERNAL MEDICINE & GERIATRICS, LLC"
+      },
+      {
+        "start": "2021-03-07T12:50:24+05:30",
+        "end": "2021-03-07T13:05:24+05:30",
+        "type": "Encounter for symptom (procedure)",
+        "location": "NORTHEAST BEHAVIORAL HEALTH LLC"
+      },
+      {
+        "start": "2020-08-21T04:50:24+05:30",
+        "end": "2020-08-21T05:16:35+05:30",
+        "type": "Well child visit (procedure)",
+        "location": "NEW BEDFORD INTERNAL MEDICINE & GERIATRICS, LLC"
+      },
+      {
+        "start": "2019-08-30T04:50:24+05:30",
+        "end": "2019-08-30T08:14:43+05:30",
+        "type": "Encounter for check up (procedure)",
+        "location": "NORTHEAST BEHAVIORAL HEALTH LLC"
+      },
+      {
+        "start": "2019-08-16T04:50:24+05:30",
+        "end": "2019-08-16T05:18:04+05:30",
+        "type": "Well child visit (procedure)",
+        "location": "NEW BEDFORD INTERNAL MEDICINE & GERIATRICS, LLC"
+      },
+      {
+        "start": "2018-08-24T04:50:24+05:30",
+        "end": "2018-08-24T07:53:34+05:30",
+        "type": "Encounter for check up (procedure)",
+        "location": "NORTHEAST BEHAVIORAL HEALTH LLC"
+      },
+      {
+        "start": "2018-08-10T04:50:24+05:30",
+        "end": "2018-08-10T05:19:33+05:30",
+        "type": "Well child visit (procedure)",
+        "location": "NEW BEDFORD INTERNAL MEDICINE & GERIATRICS, LLC"
+      },
+      {
+        "start": "2017-08-04T04:50:24+05:30",
+        "end": "2017-08-04T05:05:30+05:30",
+        "type": "Well child visit (procedure)",
+        "location": "NEW BEDFORD INTERNAL MEDICINE & GERIATRICS, LLC"
+      },
+      {
+        "start": "2016-07-29T04:50:24+05:30",
+        "end": "2016-07-29T05:18:54+05:30",
+        "type": "Well child visit (procedure)",
+        "location": "NEW BEDFORD INTERNAL MEDICINE & GERIATRICS, LLC"
+      }
+    ]
+  }
+}

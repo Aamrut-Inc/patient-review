@@ -1,0 +1,65 @@
+[
+  {
+    "id": "ckd",
+    "folder": "1- CKD",
+    "name": "Azalee Maggio",
+    "condition_tag": "CKD Stage 3",
+    "age_sex": "84, female"
+  },
+  {
+    "id": "adhd",
+    "folder": "2-adhd",
+    "name": "Tyler Jacobson",
+    "condition_tag": "ADHD (adult)",
+    "age_sex": "28, male"
+  },
+  {
+    "id": "family-history",
+    "folder": "3-family history",
+    "name": "Vernon Wunsch",
+    "condition_tag": "Family History, No Conditions",
+    "age_sex": "68, male"
+  },
+  {
+    "id": "athlete",
+    "folder": "4-athlete",
+    "name": "Shelton Graham",
+    "condition_tag": "Athlete",
+    "age_sex": "22, male"
+  },
+  {
+    "id": "sedentary",
+    "folder": "5-sedentary",
+    "name": "Edda Fisher",
+    "condition_tag": "Sedentary, Sleep Apnea",
+    "age_sex": "70, female"
+  },
+  {
+    "id": "deficit",
+    "folder": "6-deficit",
+    "name": "Jaunita Hilll",
+    "condition_tag": "Caloric Deficit Mismatch",
+    "age_sex": "39, female"
+  },
+  {
+    "id": "hypothyroidism",
+    "folder": "7-Hypothyroidism",
+    "name": "Marcus",
+    "condition_tag": "Hypothyroidism, Undisclosed",
+    "age_sex": "34, male"
+  },
+  {
+    "id": "disordered-eating",
+    "folder": "8-Disordered_Eating",
+    "name": "Theo",
+    "condition_tag": "Disordered Eating, GAD",
+    "age_sex": "26, male"
+  },
+  {
+    "id": "ordinary",
+    "folder": "9-Ordinary_Person",
+    "name": "Elena",
+    "condition_tag": "Ordinary, Baseline",
+    "age_sex": "34, female"
+  }
+]

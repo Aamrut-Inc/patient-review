@@ -1,0 +1,652 @@
+{
+  "profile_id": "P02",
+  "archetype": "Sedentary older adult",
+  "scenario": {
+    "intent": "Sedentary older adult. Covers the low-activity end of the heart-rate question and supplies a genuine sleep-driven explanation for a weight plateau.",
+    "purpose": "Test-design metadata; not a clinical finding."
+  },
+  "generator": {
+    "name": "Synthea",
+    "mode": "custom modules via -d",
+    "custom_modules": [
+      "adult_adhd.json",
+      "weight_trajectory.json"
+    ],
+    "cohort": "mod_older",
+    "reference_date": "2022-01-21",
+    "patient_id": "846bd130-581e-b760-7aaf-ca6e8d5bd2f6"
+  },
+  "basic_facts": {
+    "name": "Edda Fisher",
+    "age": 70,
+    "sex": "female",
+    "height_cm": 161.4,
+    "weight_kg": 72.8,
+    "bmi": 28.0,
+    "measured_on": "2021-06-12",
+    "race": "white",
+    "ethnicity": "nonhispanic",
+    "marital_status": "M",
+    "employment_and_education": [
+      "Full-time employment (finding)"
+    ],
+    "occupation": "NOT AVAILABLE - Synthea models employment status only; no job-title concept.",
+    "weight_trajectory": {
+      "source": "synthea custom module weight_trajectory.json (monthly weigh-ins)",
+      "n_points": 21,
+      "first": "2019-01-05",
+      "last": "2020-12-25",
+      "start_kg": 72.8,
+      "end_kg": 65.12,
+      "total_change_kg": -7.68,
+      "loss_phase_kg_per_month": -1.03,
+      "plateau_starts_at_point": 7,
+      "plateau_kg_per_month": -0.035,
+      "series": [
+        {
+          "date": "2019-01-05",
+          "weight_kg": 72.8,
+          "bmi": 27.9
+        },
+        {
+          "date": "2019-02-04",
+          "weight_kg": 71.9,
+          "bmi": 27.6
+        },
+        {
+          "date": "2019-03-06",
+          "weight_kg": 71.0,
+          "bmi": 27.3
+        },
+        {
+          "date": "2019-04-05",
+          "weight_kg": 70.1,
+          "bmi": 26.9
+        },
+        {
+          "date": "2019-07-04",
+          "weight_kg": 67.4,
+          "bmi": 25.9
+        },
+        {
+          "date": "2019-08-03",
+          "weight_kg": 66.5,
+          "bmi": 25.5
+        },
+        {
+          "date": "2019-09-02",
+          "weight_kg": 65.6,
+          "bmi": 25.2
+        },
+        {
+          "date": "2019-10-02",
+          "weight_kg": 65.57,
+          "bmi": 25.2
+        },
+        {
+          "date": "2019-11-01",
+          "weight_kg": 65.54,
+          "bmi": 25.2
+        },
+        {
+          "date": "2019-12-01",
+          "weight_kg": 65.51,
+          "bmi": 25.1
+        },
+        {
+          "date": "2019-12-31",
+          "weight_kg": 65.48,
+          "bmi": 25.1
+        },
+        {
+          "date": "2020-01-30",
+          "weight_kg": 65.45,
+          "bmi": 25.1
+        },
+        {
+          "date": "2020-02-29",
+          "weight_kg": 65.42,
+          "bmi": 25.1
+        },
+        {
+          "date": "2020-03-30",
+          "weight_kg": 65.39,
+          "bmi": 25.1
+        },
+        {
+          "date": "2020-04-29",
+          "weight_kg": 65.36,
+          "bmi": 25.1
+        },
+        {
+          "date": "2020-07-28",
+          "weight_kg": 65.27,
+          "bmi": 25.1
+        },
+        {
+          "date": "2020-08-27",
+          "weight_kg": 65.24,
+          "bmi": 25.0
+        },
+        {
+          "date": "2020-09-26",
+          "weight_kg": 65.21,
+          "bmi": 25.0
+        },
+        {
+          "date": "2020-10-26",
+          "weight_kg": 65.18,
+          "bmi": 25.0
+        },
+        {
+          "date": "2020-11-25",
+          "weight_kg": 65.15,
+          "bmi": 25.0
+        },
+        {
+          "date": "2020-12-25",
+          "weight_kg": 65.12,
+          "bmi": 25.0
+        }
+      ],
+      "note": "14 additional Body Weight observations from Synthea's own wellness encounters were excluded from this series - they use the same LOINC code but follow Synthea's independent growth model, not this trajectory."
+    },
+    "training": {
+      "source": "lifesnaps (observed, not self-reported)",
+      "logged_workout_days": 6,
+      "mean_workout_days_per_week": 0.55,
+      "workout_days_by_week": [
+        1,
+        1,
+        3,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "activity_types": {
+        "Yoga/Pilates": 3,
+        "Walk": 2,
+        "Martial Arts": 1,
+        "Circuit Training": 1
+      },
+      "mindfulness_session_days": 8,
+      "note": "From the Fitbit activityType logged in the window. Synthea models no training data."
+    },
+    "source": "synthea (custom modules) + lifesnaps (training)"
+  },
+  "medical_history": {
+    "record_current_as_of": "2022-01-21",
+    "active_conditions": [
+      {
+        "condition": "Educated to high school level (finding)",
+        "snomed": "473461003",
+        "onset": "1970-01-17"
+      },
+      {
+        "condition": "Prediabetes (finding)",
+        "snomed": "714628002",
+        "onset": "1974-01-26"
+      },
+      {
+        "condition": "Body mass index 30+ - obesity (finding)",
+        "snomed": "162864005",
+        "onset": "1977-01-29"
+      },
+      {
+        "condition": "Past pregnancy history of miscarriage (situation)",
+        "snomed": "161744009",
+        "onset": "1978-03-26"
+      },
+      {
+        "condition": "Anemia (disorder)",
+        "snomed": "271737000",
+        "onset": "1980-02-02"
+      },
+      {
+        "condition": "Sleep disorder (disorder)",
+        "snomed": "39898005",
+        "onset": "1989-11-14"
+      },
+      {
+        "condition": "Obstructive sleep apnea syndrome (disorder)",
+        "snomed": "78275009",
+        "onset": "1989-12-08"
+      },
+      {
+        "condition": "Essential hypertension (disorder)",
+        "snomed": "59621000",
+        "onset": "1997-12-13"
+      },
+      {
+        "condition": "Hyperlipidemia (disorder)",
+        "snomed": "55822004",
+        "onset": "1999-12-25"
+      },
+      {
+        "condition": "Osteoarthritis of knee (disorder)",
+        "snomed": "239873007",
+        "onset": "2000-07-22"
+      },
+      {
+        "condition": "Metabolic syndrome X (disorder)",
+        "snomed": "237602007",
+        "onset": "2000-12-30"
+      },
+      {
+        "condition": "Social isolation (finding)",
+        "snomed": "422650009",
+        "onset": "2000-12-30"
+      },
+      {
+        "condition": "Limited social contact (finding)",
+        "snomed": "423315002",
+        "onset": "2005-01-22"
+      },
+      {
+        "condition": "Chronic pain (finding)",
+        "snomed": "82423001",
+        "onset": "2014-02-03"
+      },
+      {
+        "condition": "Chronic low back pain (finding)",
+        "snomed": "278860009",
+        "onset": "2014-02-03"
+      },
+      {
+        "condition": "Chronic neck pain (finding)",
+        "snomed": "1121000119107",
+        "onset": "2014-02-03"
+      },
+      {
+        "condition": "Has a criminal record (finding)",
+        "snomed": "266948004",
+        "onset": "2018-05-26"
+      },
+      {
+        "condition": "Stress (finding)",
+        "snomed": "73595000",
+        "onset": "2020-06-06"
+      }
+    ],
+    "resolved_history": [
+      {
+        "condition": "Medication review due (situation)",
+        "snomed": "314529007",
+        "onset": "2014-05-03",
+        "resolved": "2017-05-20"
+      },
+      {
+        "condition": "Stress (finding)",
+        "snomed": "73595000",
+        "onset": "2016-05-14",
+        "resolved": "2017-05-20"
+      },
+      {
+        "condition": "Gingivitis (disorder)",
+        "snomed": "66383009",
+        "onset": "2017-05-20",
+        "resolved": "2017-06-03"
+      },
+      {
+        "condition": "Medication review due (situation)",
+        "snomed": "314529007",
+        "onset": "2018-05-26",
+        "resolved": "2018-05-26"
+      },
+      {
+        "condition": "Stress (finding)",
+        "snomed": "73595000",
+        "onset": "2018-05-26",
+        "resolved": "2019-06-01"
+      },
+      {
+        "condition": "Severe anxiety (panic) (finding)",
+        "snomed": "80583007",
+        "onset": "2018-05-26",
+        "resolved": "2019-06-01"
+      },
+      {
+        "condition": "Medication review due (situation)",
+        "snomed": "314529007",
+        "onset": "2019-06-01",
+        "resolved": "2019-06-01"
+      },
+      {
+        "condition": "Gingivitis (disorder)",
+        "snomed": "66383009",
+        "onset": "2019-06-01",
+        "resolved": "2019-06-15"
+      },
+      {
+        "condition": "Gingivitis (disorder)",
+        "snomed": "66383009",
+        "onset": "2020-06-06",
+        "resolved": "2020-06-20"
+      }
+    ],
+    "medications": [
+      {
+        "name": "Simvastatin 10 MG Oral Tablet",
+        "rxnorm": "314231",
+        "started": "2000-01-15",
+        "indication": "Hyperlipidemia (disorder)",
+        "time_of_day": null,
+        "time_of_day_status": "NOT AVAILABLE - stock Synthea modules set no timing instruction; the prescription schema has no clock-time field."
+      },
+      {
+        "name": "Naproxen sodium 220 MG Oral Tablet",
+        "rxnorm": "849574",
+        "started": "2000-07-22",
+        "indication": "Osteoarthritis of knee (disorder)",
+        "time_of_day": null,
+        "time_of_day_status": "NOT AVAILABLE - stock Synthea modules set no timing instruction; the prescription schema has no clock-time field."
+      },
+      {
+        "name": "Simvastatin 10 MG Oral Tablet",
+        "rxnorm": "314231",
+        "started": "2021-04-18",
+        "indication": "Hyperlipidemia (disorder)",
+        "time_of_day": null,
+        "time_of_day_status": "NOT AVAILABLE - stock Synthea modules set no timing instruction; the prescription schema has no clock-time field."
+      },
+      {
+        "name": "Hydrochlorothiazide 25 MG Oral Tablet",
+        "rxnorm": "310798",
+        "started": "2021-06-12",
+        "indication": "Essential hypertension (disorder)",
+        "time_of_day": null,
+        "time_of_day_status": "NOT AVAILABLE - stock Synthea modules set no timing instruction; the prescription schema has no clock-time field."
+      },
+      {
+        "name": "72 HR Fentanyl 0.025 MG/HR Transdermal System",
+        "rxnorm": "245134",
+        "started": "2021-06-12",
+        "indication": null,
+        "time_of_day": "Every seventy two hours (qualifier value)",
+        "time_of_day_status": "From prescription.instructions, set by the custom module and exported to FHIR as dosageInstruction.additionalInstruction."
+      },
+      {
+        "name": "tramadol hydrochloride 50 MG Oral Tablet",
+        "rxnorm": "835603",
+        "started": "2021-06-12",
+        "indication": null,
+        "time_of_day": null,
+        "time_of_day_status": "NOT AVAILABLE - stock Synthea modules set no timing instruction; the prescription schema has no clock-time field."
+      },
+      {
+        "name": "lisinopril 10 MG Oral Tablet",
+        "rxnorm": "314076",
+        "started": "2021-06-12",
+        "indication": "Essential hypertension (disorder)",
+        "time_of_day": null,
+        "time_of_day_status": "NOT AVAILABLE - stock Synthea modules set no timing instruction; the prescription schema has no clock-time field."
+      },
+      {
+        "name": "12 HR Hydrocodone Bitartrate 10 MG Extended Release Oral Capsule",
+        "rxnorm": "1860491",
+        "started": "2021-06-12",
+        "indication": null,
+        "time_of_day": "Every twelve hours as required (qualifier value)",
+        "time_of_day_status": "From prescription.instructions, set by the custom module and exported to FHIR as dosageInstruction.additionalInstruction."
+      }
+    ],
+    "allergies": [],
+    "procedures_last_12mo": [
+      {
+        "procedure": "Depression screening (procedure)",
+        "date": "2021-06-12"
+      },
+      {
+        "procedure": "Sleep apnea assessment (procedure)",
+        "date": "2021-06-12"
+      },
+      {
+        "procedure": "Assessment of substance use (procedure)",
+        "date": "2021-06-12"
+      },
+      {
+        "procedure": "Assessment of health and social care needs (procedure)",
+        "date": "2021-06-12"
+      },
+      {
+        "procedure": "Screening for drug abuse (procedure)",
+        "date": "2021-06-12"
+      }
+    ],
+    "care_plans": [
+      "Care plan (record artifact)",
+      "Diabetes self management plan (record artifact)",
+      "Hyperlipidemia clinical management plan (record artifact)",
+      "Lifestyle education regarding hypertension (procedure)",
+      "Therapy (regime/therapy)"
+    ],
+    "immunizations_last_5y": [
+      "COVID-19  mRNA  LNP-S  PF  100 mcg/0.5mL dose or 50 mcg/0.25mL dose (2021-03-13)",
+      "COVID-19  mRNA  LNP-S  PF  100 mcg/0.5mL dose or 50 mcg/0.25mL dose (2021-04-10)",
+      "Influenza  split virus  trivalent  PF (2017-05-20)",
+      "Influenza  split virus  trivalent  PF (2018-05-26)",
+      "Influenza  split virus  trivalent  PF (2019-06-01)",
+      "Influenza  split virus  trivalent  PF (2020-06-06)",
+      "Influenza  split virus  trivalent  PF (2021-06-12)",
+      "Pneumococcal conjugate PCV 13 (2017-05-20)",
+      "pneumococcal polysaccharide vaccine  23 valent (2018-05-26)"
+    ],
+    "mental_health": {
+      "active_findings": [
+        {
+          "finding": "Stress (finding)",
+          "snomed": "73595000",
+          "onset": "2020-06-06"
+        }
+      ],
+      "screenings": [
+        {
+          "procedure": "Depression screening (procedure)",
+          "date": "2017-05-20"
+        },
+        {
+          "procedure": "Depression screening (procedure)",
+          "date": "2018-05-26"
+        },
+        {
+          "procedure": "Depression screening (procedure)",
+          "date": "2019-06-01"
+        },
+        {
+          "procedure": "Depression screening (procedure)",
+          "date": "2020-06-06"
+        },
+        {
+          "procedure": "Depression screening (procedure)",
+          "date": "2021-06-12"
+        }
+      ],
+      "note": "Synthea has no anxiety/depression disease module; absence is not evidence of absence."
+    },
+    "family_history": "NOT AVAILABLE - Synthea does not generate family history.",
+    "vitals": {
+      "systolic_bp": 135.0,
+      "diastolic_bp": 87.0,
+      "clinic_heart_rate": 93.0,
+      "measured_on": "2021-06-12"
+    },
+    "source": "synthea (stock modules + adult_adhd.json + weight_trajectory.json)"
+  },
+  "lifestyle": {
+    "smoking": "Never smoked tobacco (finding)",
+    "alcohol": "No alcohol-related finding recorded",
+    "caffeine": "NOT AVAILABLE - not modelled by Synthea",
+    "diet_pattern": "NOT AVAILABLE - not modelled by Synthea",
+    "self_reported_context": {
+      "source": "LifeSnaps SEMA3 (prompted self-report)",
+      "days_prompted": 57,
+      "days_with_a_mood_answer": 46,
+      "prompts_per_day": 4.0,
+      "ema_compliance_mean": 0.42,
+      "mood_response_latency_median_s": 4.9,
+      "mood_distribution_pct": {
+        "alert": 4.8,
+        "happy": 1.6,
+        "neutral": 33.3,
+        "rested_relaxed": 4.8,
+        "sad": 1.6,
+        "tense_anxious": 28.6,
+        "tired": 25.4
+      },
+      "place_distribution_pct": {
+        "entertainment": 0.0,
+        "gym": 0.0,
+        "home": 84.9,
+        "home_office": 0.0,
+        "other": 1.9,
+        "outdoors": 3.8,
+        "transit": 1.9,
+        "work_school": 7.5
+      },
+      "note": "Shares of mood/place FLAGS, not prompts; ~2/3 of prompts cohort-wide went unanswered."
+    }
+  },
+  "wearable_data": {
+    "granularity": "daily",
+    "window_days": 77,
+    "window_start": "2021-11-06",
+    "window_end": "2022-01-21",
+    "days_with_any_data": 77,
+    "daily_file": "wearable/P02_sedentary_daily.csv",
+    "weekly_summary_file": "wearable/P02_sedentary_weekly.csv",
+    "source_dataset": "LifeSnaps / RAIS",
+    "lifesnaps_participant_id": "621e2f1b67b776a240b3d87c",
+    "lifesnaps_participant_attributes": {
+      "age_band": ">=30",
+      "sex": "FEMALE",
+      "bmi": 22.0,
+      "note": "Attributes of the REAL participant; kept out of the CSV."
+    },
+    "why_this_participant": "Lowest vigorous-activity load of any participant with usable coverage (0.9 very-active min/day; 6 workout days) with the clearest deterioration arc: weeks 5-11 show 0 vigorous minutes and 0 workouts while wake-after-sleep-onset rises to 94 min/night.",
+    "per_signal_day_counts": {
+      "steps": 76,
+      "bpm": 76,
+      "resting_hr": 75,
+      "sleep_hours": 76,
+      "sleep_efficiency": 76,
+      "bedtime": 76,
+      "stress_score": 76,
+      "spo2": 0,
+      "full_sleep_breathing_rate": 75,
+      "nightly_temperature": 74,
+      "rmssd": 75,
+      "activityType": 6
+    },
+    "identical_to_base_build": "Yes - same LifeSnaps participants, windows and values as user_profiles/.",
+    "values": "verbatim LifeSnaps values; no imputation.",
+    "summary": {
+      "steps": {
+        "mean": 6678.0,
+        "sd": 3047.0,
+        "min": 521.0,
+        "max": 14470.0,
+        "n_days": 76
+      },
+      "resting_hr": {
+        "mean": 65.3,
+        "sd": 3.7,
+        "min": 58.0,
+        "max": 71.1,
+        "n_days": 75
+      },
+      "bpm": {
+        "mean": 73.9,
+        "sd": 4.2,
+        "min": 66.0,
+        "max": 85.1,
+        "n_days": 76
+      },
+      "sleep_hours": {
+        "mean": 8.54,
+        "sd": 2.03,
+        "min": 1.0,
+        "max": 12.42,
+        "n_days": 76
+      },
+      "sleep_efficiency": {
+        "mean": 91.5,
+        "sd": 3.7,
+        "min": 80.0,
+        "max": 99.0,
+        "n_days": 76
+      },
+      "minutes_awake": {
+        "mean": 73.0,
+        "sd": 25.7,
+        "min": 8.0,
+        "max": 149.0,
+        "n_days": 76
+      },
+      "very_active_minutes": {
+        "mean": 0.9,
+        "sd": 2.5,
+        "min": 0.0,
+        "max": 13.0,
+        "n_days": 77
+      },
+      "sedentary_minutes": {
+        "mean": 619.9,
+        "sd": 177.4,
+        "min": 289.0,
+        "max": 1434.0,
+        "n_days": 77
+      },
+      "stress_score": {
+        "mean": 69.3,
+        "sd": 12.8,
+        "min": 0.0,
+        "max": 84.0,
+        "n_days": 76
+      },
+      "rmssd": {
+        "mean": 24.7,
+        "sd": 4.9,
+        "min": 13.3,
+        "max": 36.1,
+        "n_days": 75
+      },
+      "spo2": null,
+      "full_sleep_breathing_rate": {
+        "mean": 16.1,
+        "sd": 0.8,
+        "min": 14.6,
+        "max": 19.4,
+        "n_days": 75
+      },
+      "nightly_temperature": {
+        "mean": 33.8,
+        "sd": 0.63,
+        "min": 31.65,
+        "max": 35.9,
+        "n_days": 74
+      },
+      "sema_compliance": {
+        "mean": 0.42,
+        "sd": 0.28,
+        "min": 0.0,
+        "max": 1.0,
+        "n_days": 57
+      },
+      "sema_mood_rt_median_s": {
+        "mean": 5.8,
+        "sd": 3.1,
+        "min": 2.5,
+        "max": 15.3,
+        "n_days": 45
+      },
+      "bedtime_median_clock": "23:15",
+      "bedtime_sd_hours": 1.73,
+      "pct_nights_asleep_after_0030": 23.7
+    }
+  }
+}

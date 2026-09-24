@@ -1,0 +1,1316 @@
+{
+  "source_file": "disordered_eating_patient_Nathan164_Schaden604.json",
+  "biomarkers": [
+    {
+      "code": "6095-4",
+      "label": "American house dust mite IgE Ab [Units/volume] in Serum",
+      "unit": "kU/L",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2017-07-31T01:48:47+05:30",
+        "value": 0.034283
+      },
+      "readings": [
+        {
+          "date": "2017-07-31T01:48:47+05:30",
+          "value": 0.034283
+        }
+      ]
+    },
+    {
+      "code": "8302-2",
+      "label": "Body Height",
+      "unit": "cm",
+      "reading_count": 7,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2025-10-15T09:06:03+05:30",
+        "value": 154.5
+      },
+      "readings": [
+        {
+          "date": "2016-09-21T09:06:03+05:30",
+          "value": 148.8
+        },
+        {
+          "date": "2017-09-27T09:06:03+05:30",
+          "value": 151.9
+        },
+        {
+          "date": "2018-10-03T09:06:03+05:30",
+          "value": 153.5
+        },
+        {
+          "date": "2019-08-07T09:06:03+05:30",
+          "value": 154.2
+        },
+        {
+          "date": "2019-10-09T09:06:03+05:30",
+          "value": 154.3
+        },
+        {
+          "date": "2022-10-12T09:06:03+05:30",
+          "value": 154.5
+        },
+        {
+          "date": "2025-10-15T09:06:03+05:30",
+          "value": 154.5
+        }
+      ]
+    },
+    {
+      "code": "29463-7",
+      "label": "Body Weight",
+      "unit": "kg",
+      "reading_count": 7,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2025-10-15T09:06:03+05:30",
+        "value": 55.6
+      },
+      "readings": [
+        {
+          "date": "2016-09-21T09:06:03+05:30",
+          "value": 42.2
+        },
+        {
+          "date": "2017-09-27T09:06:03+05:30",
+          "value": 45.4
+        },
+        {
+          "date": "2018-10-03T09:06:03+05:30",
+          "value": 47
+        },
+        {
+          "date": "2019-08-07T09:06:03+05:30",
+          "value": 46.6
+        },
+        {
+          "date": "2019-10-09T09:06:03+05:30",
+          "value": 47
+        },
+        {
+          "date": "2022-10-12T09:06:03+05:30",
+          "value": 51.2
+        },
+        {
+          "date": "2025-10-15T09:06:03+05:30",
+          "value": 55.6
+        }
+      ]
+    },
+    {
+      "code": "59576-9",
+      "label": "Body mass index (BMI) [Percentile] Per age and sex",
+      "unit": "%",
+      "reading_count": 5,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2019-10-09T09:06:03+05:30",
+        "value": 12.294
+      },
+      "readings": [
+        {
+          "date": "2016-09-21T09:06:03+05:30",
+          "value": 26.379
+        },
+        {
+          "date": "2017-09-27T09:06:03+05:30",
+          "value": 25.819
+        },
+        {
+          "date": "2018-10-03T09:06:03+05:30",
+          "value": 21.125
+        },
+        {
+          "date": "2019-08-07T09:06:03+05:30",
+          "value": 12.377
+        },
+        {
+          "date": "2019-10-09T09:06:03+05:30",
+          "value": 12.294
+        }
+      ]
+    },
+    {
+      "code": "39156-5",
+      "label": "Body mass index (BMI) [Ratio]",
+      "unit": "kg/m2",
+      "reading_count": 7,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2025-10-15T09:06:03+05:30",
+        "value": 23.31
+      },
+      "readings": [
+        {
+          "date": "2016-09-21T09:06:03+05:30",
+          "value": 19.07
+        },
+        {
+          "date": "2017-09-27T09:06:03+05:30",
+          "value": 19.67
+        },
+        {
+          "date": "2018-10-03T09:06:03+05:30",
+          "value": 19.92
+        },
+        {
+          "date": "2019-08-07T09:06:03+05:30",
+          "value": 19.62
+        },
+        {
+          "date": "2019-10-09T09:06:03+05:30",
+          "value": 19.73
+        },
+        {
+          "date": "2022-10-12T09:06:03+05:30",
+          "value": 21.43
+        },
+        {
+          "date": "2025-10-15T09:06:03+05:30",
+          "value": 23.31
+        }
+      ]
+    },
+    {
+      "code": "8310-5",
+      "label": "Body temperature",
+      "unit": "Cel",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2025-12-29T21:06:03+05:30",
+        "value": 37.239
+      },
+      "readings": [
+        {
+          "date": "2025-12-29T21:06:03+05:30",
+          "value": 37.239
+        }
+      ]
+    },
+    {
+      "code": "6833-8",
+      "label": "Cat dander IgE Ab [Units/volume] in Serum",
+      "unit": "kU/L",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2017-07-31T01:48:47+05:30",
+        "value": 0.21247
+      },
+      "readings": [
+        {
+          "date": "2017-07-31T01:48:47+05:30",
+          "value": 0.21247
+        }
+      ]
+    },
+    {
+      "code": "6075-6",
+      "label": "Cladosporium herbarum IgE Ab [Units/volume] in Serum",
+      "unit": "kU/L",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2017-07-31T01:48:47+05:30",
+        "value": 0.094759
+      },
+      "readings": [
+        {
+          "date": "2017-07-31T01:48:47+05:30",
+          "value": 0.094759
+        }
+      ]
+    },
+    {
+      "code": "6082-2",
+      "label": "Codfish IgE Ab [Units/volume] in Serum",
+      "unit": "kU/L",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2017-07-31T01:48:47+05:30",
+        "value": 0.19331
+      },
+      "readings": [
+        {
+          "date": "2017-07-31T01:48:47+05:30",
+          "value": 0.19331
+        }
+      ]
+    },
+    {
+      "code": "6085-5",
+      "label": "Common Ragweed IgE Ab [Units/volume] in Serum",
+      "unit": "kU/L",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2017-07-31T01:48:47+05:30",
+        "value": 0.20672
+      },
+      "readings": [
+        {
+          "date": "2017-07-31T01:48:47+05:30",
+          "value": 0.20672
+        }
+      ]
+    },
+    {
+      "code": "7258-7",
+      "label": "Cow milk IgE Ab [Units/volume] in Serum",
+      "unit": "kU/L",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2017-07-31T01:48:47+05:30",
+        "value": 0.33217
+      },
+      "readings": [
+        {
+          "date": "2017-07-31T01:48:47+05:30",
+          "value": 0.33217
+        }
+      ]
+    },
+    {
+      "code": "8462-4",
+      "label": "Diastolic Blood Pressure",
+      "unit": "mm[Hg]",
+      "reading_count": 7,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2025-10-15T09:06:03+05:30",
+        "value": 98
+      },
+      "readings": [
+        {
+          "date": "2016-09-21T09:06:03+05:30",
+          "value": 93
+        },
+        {
+          "date": "2017-09-27T09:06:03+05:30",
+          "value": 97
+        },
+        {
+          "date": "2018-10-03T09:06:03+05:30",
+          "value": 91
+        },
+        {
+          "date": "2019-08-07T09:06:03+05:30",
+          "value": 88
+        },
+        {
+          "date": "2019-10-09T09:06:03+05:30",
+          "value": 95
+        },
+        {
+          "date": "2022-10-12T09:06:03+05:30",
+          "value": 92
+        },
+        {
+          "date": "2025-10-15T09:06:03+05:30",
+          "value": 98
+        }
+      ]
+    },
+    {
+      "code": "6106-9",
+      "label": "Egg white IgE Ab [Units/volume] in Serum",
+      "unit": "kU/L",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2017-07-31T01:48:47+05:30",
+        "value": 0.027036
+      },
+      "readings": [
+        {
+          "date": "2017-07-31T01:48:47+05:30",
+          "value": 0.027036
+        }
+      ]
+    },
+    {
+      "code": "788-0",
+      "label": "Erythrocyte [DistWidth] in Blood by Automated count",
+      "unit": "fL",
+      "reading_count": 2,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2022-10-12T09:06:03+05:30",
+        "value": 40.742
+      },
+      "readings": [
+        {
+          "date": "2016-09-21T09:06:03+05:30",
+          "value": 40.493
+        },
+        {
+          "date": "2022-10-12T09:06:03+05:30",
+          "value": 40.742
+        }
+      ]
+    },
+    {
+      "code": "789-8",
+      "label": "Erythrocytes [#/volume] in Blood by Automated count",
+      "unit": "10*6/uL",
+      "reading_count": 2,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2022-10-12T09:06:03+05:30",
+        "value": 4.7974
+      },
+      "readings": [
+        {
+          "date": "2016-09-21T09:06:03+05:30",
+          "value": 4.8428
+        },
+        {
+          "date": "2022-10-12T09:06:03+05:30",
+          "value": 4.7974
+        }
+      ]
+    },
+    {
+      "code": "70274-6",
+      "label": "Generalized anxiety disorder 7 item (GAD-7) total score [Reported.PHQ]",
+      "unit": "{score}",
+      "reading_count": 2,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2019-08-07T09:54:24+05:30",
+        "value": 1
+      },
+      "readings": [
+        {
+          "date": "2017-09-27T09:30:35+05:30",
+          "value": 11
+        },
+        {
+          "date": "2019-08-07T09:54:24+05:30",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "code": "8867-4",
+      "label": "Heart rate",
+      "unit": "/min",
+      "reading_count": 7,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2025-10-15T09:06:03+05:30",
+        "value": 79
+      },
+      "readings": [
+        {
+          "date": "2016-09-21T09:06:03+05:30",
+          "value": 73
+        },
+        {
+          "date": "2017-09-27T09:06:03+05:30",
+          "value": 74
+        },
+        {
+          "date": "2018-10-03T09:06:03+05:30",
+          "value": 76
+        },
+        {
+          "date": "2019-08-07T09:06:03+05:30",
+          "value": 79
+        },
+        {
+          "date": "2019-10-09T09:06:03+05:30",
+          "value": 91
+        },
+        {
+          "date": "2022-10-12T09:06:03+05:30",
+          "value": 73
+        },
+        {
+          "date": "2025-10-15T09:06:03+05:30",
+          "value": 79
+        }
+      ]
+    },
+    {
+      "code": "4544-3",
+      "label": "Hematocrit [Volume Fraction] of Blood by Automated count",
+      "unit": "%",
+      "reading_count": 2,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2022-10-12T09:06:03+05:30",
+        "value": 45.159
+      },
+      "readings": [
+        {
+          "date": "2016-09-21T09:06:03+05:30",
+          "value": 44.077
+        },
+        {
+          "date": "2022-10-12T09:06:03+05:30",
+          "value": 45.159
+        }
+      ]
+    },
+    {
+      "code": "718-7",
+      "label": "Hemoglobin [Mass/volume] in Blood",
+      "unit": "g/dL",
+      "reading_count": 2,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2022-10-12T09:06:03+05:30",
+        "value": 13.763
+      },
+      "readings": [
+        {
+          "date": "2016-09-21T09:06:03+05:30",
+          "value": 14.278
+        },
+        {
+          "date": "2022-10-12T09:06:03+05:30",
+          "value": 13.763
+        }
+      ]
+    },
+    {
+      "code": "6844-5",
+      "label": "Honey bee IgE Ab [Units/volume] in Serum",
+      "unit": "kU/L",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2017-07-31T01:48:47+05:30",
+        "value": 0.24778
+      },
+      "readings": [
+        {
+          "date": "2017-07-31T01:48:47+05:30",
+          "value": 0.24778
+        }
+      ]
+    },
+    {
+      "code": "6158-0",
+      "label": "Latex IgE Ab [Units/volume] in Serum",
+      "unit": "kU/L",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2017-07-31T01:48:47+05:30",
+        "value": 0.1078
+      },
+      "readings": [
+        {
+          "date": "2017-07-31T01:48:47+05:30",
+          "value": 0.1078
+        }
+      ]
+    },
+    {
+      "code": "6690-2",
+      "label": "Leukocytes [#/volume] in Blood by Automated count",
+      "unit": "10*3/uL",
+      "reading_count": 2,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2022-10-12T09:06:03+05:30",
+        "value": 5.6063
+      },
+      "readings": [
+        {
+          "date": "2016-09-21T09:06:03+05:30",
+          "value": 9.704
+        },
+        {
+          "date": "2022-10-12T09:06:03+05:30",
+          "value": 5.6063
+        }
+      ]
+    },
+    {
+      "code": "785-6",
+      "label": "MCH [Entitic mass] by Automated count",
+      "unit": "pg",
+      "reading_count": 2,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2022-10-12T09:06:03+05:30",
+        "value": 28.912
+      },
+      "readings": [
+        {
+          "date": "2016-09-21T09:06:03+05:30",
+          "value": 27.56
+        },
+        {
+          "date": "2022-10-12T09:06:03+05:30",
+          "value": 28.912
+        }
+      ]
+    },
+    {
+      "code": "786-4",
+      "label": "MCHC [Entitic Mass/volume] in Red Blood Cells by Automated count",
+      "unit": "g/dL",
+      "reading_count": 2,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2022-10-12T09:06:03+05:30",
+        "value": 33.36
+      },
+      "readings": [
+        {
+          "date": "2016-09-21T09:06:03+05:30",
+          "value": 33.17
+        },
+        {
+          "date": "2022-10-12T09:06:03+05:30",
+          "value": 33.36
+        }
+      ]
+    },
+    {
+      "code": "787-2",
+      "label": "MCV [Entitic mean volume] in Red Blood Cells by Automated count",
+      "unit": "fL",
+      "reading_count": 2,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2022-10-12T09:06:03+05:30",
+        "value": 86.519
+      },
+      "readings": [
+        {
+          "date": "2016-09-21T09:06:03+05:30",
+          "value": 90.259
+        },
+        {
+          "date": "2022-10-12T09:06:03+05:30",
+          "value": 86.519
+        }
+      ]
+    },
+    {
+      "code": "72514-3",
+      "label": "Pain severity - 0-10 verbal numeric rating [Score] - Reported",
+      "unit": "{score}",
+      "reading_count": 7,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2025-10-15T09:06:03+05:30",
+        "value": 4
+      },
+      "readings": [
+        {
+          "date": "2016-09-21T09:06:03+05:30",
+          "value": 3
+        },
+        {
+          "date": "2017-09-27T09:06:03+05:30",
+          "value": 0
+        },
+        {
+          "date": "2018-10-03T09:06:03+05:30",
+          "value": 4
+        },
+        {
+          "date": "2019-08-07T09:06:03+05:30",
+          "value": 0
+        },
+        {
+          "date": "2019-10-09T09:06:03+05:30",
+          "value": 2
+        },
+        {
+          "date": "2022-10-12T09:06:03+05:30",
+          "value": 3
+        },
+        {
+          "date": "2025-10-15T09:06:03+05:30",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "code": "55758-7",
+      "label": "Patient Health Questionnaire 2 item (PHQ-2) total score [Reported]",
+      "unit": "{score}",
+      "reading_count": 3,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2022-10-12T10:50:00+05:30",
+        "value": 2
+      },
+      "readings": [
+        {
+          "date": "2019-08-07T11:06:29+05:30",
+          "value": 0
+        },
+        {
+          "date": "2019-10-09T11:04:23+05:30",
+          "value": 1
+        },
+        {
+          "date": "2022-10-12T10:50:00+05:30",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "code": "89204-2",
+      "label": "Patient Health Questionnaire-9: Modified for Teens total score [Reported.PHQ.Teen]",
+      "unit": "{score}",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2016-09-21T09:37:05+05:30",
+        "value": 2
+      },
+      "readings": [
+        {
+          "date": "2016-09-21T09:37:05+05:30",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "code": "6206-7",
+      "label": "Peanut IgE Ab [Units/volume] in Serum",
+      "unit": "kU/L",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2017-07-31T01:48:47+05:30",
+        "value": 0.069327
+      },
+      "readings": [
+        {
+          "date": "2017-07-31T01:48:47+05:30",
+          "value": 0.069327
+        }
+      ]
+    },
+    {
+      "code": "32623-1",
+      "label": "Platelet [Entitic mean volume] in Blood by Automated count",
+      "unit": "fL",
+      "reading_count": 2,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2022-10-12T09:06:03+05:30",
+        "value": 10.471
+      },
+      "readings": [
+        {
+          "date": "2016-09-21T09:06:03+05:30",
+          "value": 9.4735
+        },
+        {
+          "date": "2022-10-12T09:06:03+05:30",
+          "value": 10.471
+        }
+      ]
+    },
+    {
+      "code": "32207-3",
+      "label": "Platelet distribution width [Entitic volume] in Blood by Automated count",
+      "unit": "fL",
+      "reading_count": 2,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2022-10-12T09:06:03+05:30",
+        "value": 9.6783
+      },
+      "readings": [
+        {
+          "date": "2016-09-21T09:06:03+05:30",
+          "value": 9.6887
+        },
+        {
+          "date": "2022-10-12T09:06:03+05:30",
+          "value": 9.6783
+        }
+      ]
+    },
+    {
+      "code": "777-3",
+      "label": "Platelets [#/volume] in Blood by Automated count",
+      "unit": "10*3/uL",
+      "reading_count": 2,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2022-10-12T09:06:03+05:30",
+        "value": 293.44
+      },
+      "readings": [
+        {
+          "date": "2016-09-21T09:06:03+05:30",
+          "value": 367.76
+        },
+        {
+          "date": "2022-10-12T09:06:03+05:30",
+          "value": 293.44
+        }
+      ]
+    },
+    {
+      "code": "9279-1",
+      "label": "Respiratory rate",
+      "unit": "/min",
+      "reading_count": 7,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2025-10-15T09:06:03+05:30",
+        "value": 13
+      },
+      "readings": [
+        {
+          "date": "2016-09-21T09:06:03+05:30",
+          "value": 14
+        },
+        {
+          "date": "2017-09-27T09:06:03+05:30",
+          "value": 15
+        },
+        {
+          "date": "2018-10-03T09:06:03+05:30",
+          "value": 13
+        },
+        {
+          "date": "2019-08-07T09:06:03+05:30",
+          "value": 16
+        },
+        {
+          "date": "2019-10-09T09:06:03+05:30",
+          "value": 15
+        },
+        {
+          "date": "2022-10-12T09:06:03+05:30",
+          "value": 13
+        },
+        {
+          "date": "2025-10-15T09:06:03+05:30",
+          "value": 13
+        }
+      ]
+    },
+    {
+      "code": "6246-3",
+      "label": "Shrimp IgE Ab [Units/volume] in Serum",
+      "unit": "kU/L",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2017-07-31T01:48:47+05:30",
+        "value": 0.096633
+      },
+      "readings": [
+        {
+          "date": "2017-07-31T01:48:47+05:30",
+          "value": 0.096633
+        }
+      ]
+    },
+    {
+      "code": "6248-9",
+      "label": "Soybean IgE Ab [Units/volume] in Serum",
+      "unit": "kU/L",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2017-07-31T01:48:47+05:30",
+        "value": 0.27672
+      },
+      "readings": [
+        {
+          "date": "2017-07-31T01:48:47+05:30",
+          "value": 0.27672
+        }
+      ]
+    },
+    {
+      "code": "8480-6",
+      "label": "Systolic Blood Pressure",
+      "unit": "mm[Hg]",
+      "reading_count": 7,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2025-10-15T09:06:03+05:30",
+        "value": 116
+      },
+      "readings": [
+        {
+          "date": "2016-09-21T09:06:03+05:30",
+          "value": 124
+        },
+        {
+          "date": "2017-09-27T09:06:03+05:30",
+          "value": 117
+        },
+        {
+          "date": "2018-10-03T09:06:03+05:30",
+          "value": 114
+        },
+        {
+          "date": "2019-08-07T09:06:03+05:30",
+          "value": 111
+        },
+        {
+          "date": "2019-10-09T09:06:03+05:30",
+          "value": 117
+        },
+        {
+          "date": "2022-10-12T09:06:03+05:30",
+          "value": 118
+        },
+        {
+          "date": "2025-10-15T09:06:03+05:30",
+          "value": 116
+        }
+      ]
+    },
+    {
+      "code": "75626-2",
+      "label": "Total score [AUDIT-C]",
+      "unit": "{score}",
+      "reading_count": 3,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2019-10-09T11:43:17+05:30",
+        "value": 2
+      },
+      "readings": [
+        {
+          "date": "2018-10-03T10:56:39+05:30",
+          "value": 0
+        },
+        {
+          "date": "2019-08-07T11:49:09+05:30",
+          "value": 1
+        },
+        {
+          "date": "2019-10-09T11:43:17+05:30",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "code": "76504-0",
+      "label": "Total score [HARK]",
+      "unit": "{score}",
+      "reading_count": 4,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2022-10-12T10:16:31+05:30",
+        "value": 0
+      },
+      "readings": [
+        {
+          "date": "2018-10-03T10:21:03+05:30",
+          "value": 0
+        },
+        {
+          "date": "2019-08-07T10:25:58+05:30",
+          "value": 0
+        },
+        {
+          "date": "2019-10-09T10:21:46+05:30",
+          "value": 0
+        },
+        {
+          "date": "2022-10-12T10:16:31+05:30",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "code": "6273-7",
+      "label": "Walnut IgE Ab [Units/volume] in Serum",
+      "unit": "kU/L",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2017-07-31T01:48:47+05:30",
+        "value": 0.056607
+      },
+      "readings": [
+        {
+          "date": "2017-07-31T01:48:47+05:30",
+          "value": 0.056607
+        }
+      ]
+    },
+    {
+      "code": "6276-0",
+      "label": "Wheat IgE Ab [Units/volume] in Serum",
+      "unit": "kU/L",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2017-07-31T01:48:47+05:30",
+        "value": 0.29182
+      },
+      "readings": [
+        {
+          "date": "2017-07-31T01:48:47+05:30",
+          "value": 0.29182
+        }
+      ]
+    },
+    {
+      "code": "6189-5",
+      "label": "White oak IgE Ab [Units/volume] in Serum",
+      "unit": "kU/L",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2017-07-31T01:48:47+05:30",
+        "value": 0.21114
+      },
+      "readings": [
+        {
+          "date": "2017-07-31T01:48:47+05:30",
+          "value": 0.21114
+        }
+      ]
+    }
+  ],
+  "qualitative_observations": [
+    {
+      "code": "72166-2",
+      "label": "Tobacco smoking status",
+      "reading_count": 7,
+      "latest": {
+        "date": "2025-10-15T09:06:03+05:30",
+        "value": "Never smoked tobacco (finding)"
+      },
+      "readings": [
+        {
+          "date": "2016-09-21T09:06:03+05:30",
+          "value": "Never smoked tobacco (finding)"
+        },
+        {
+          "date": "2017-09-27T09:06:03+05:30",
+          "value": "Never smoked tobacco (finding)"
+        },
+        {
+          "date": "2018-10-03T09:06:03+05:30",
+          "value": "Never smoked tobacco (finding)"
+        },
+        {
+          "date": "2019-08-07T09:06:03+05:30",
+          "value": "Never smoked tobacco (finding)"
+        },
+        {
+          "date": "2019-10-09T09:06:03+05:30",
+          "value": "Never smoked tobacco (finding)"
+        },
+        {
+          "date": "2022-10-12T09:06:03+05:30",
+          "value": "Never smoked tobacco (finding)"
+        },
+        {
+          "date": "2025-10-15T09:06:03+05:30",
+          "value": "Never smoked tobacco (finding)"
+        }
+      ]
+    }
+  ],
+  "conditions": [
+    {
+      "code": "446096008",
+      "label": "Perennial allergic rhinitis (disorder)",
+      "clinical_status": "resolved",
+      "onset": "2005-07-21T09:06:03+05:30",
+      "recorded_date": "2005-07-21T09:06:03+05:30",
+      "abatement": "2019-08-14T09:06:03+05:30"
+    },
+    {
+      "code": "10509002",
+      "label": "Acute bronchitis (disorder)",
+      "clinical_status": "resolved",
+      "onset": "2019-08-21T09:06:03+05:30",
+      "recorded_date": "2019-08-21T09:06:03+05:30",
+      "abatement": "2019-08-28T09:06:03+05:30"
+    },
+    {
+      "code": "18718003",
+      "label": "Gingival disease (disorder)",
+      "clinical_status": "resolved",
+      "onset": "2019-08-21T11:29:10+05:30",
+      "recorded_date": "2019-08-21T11:29:10+05:30",
+      "abatement": "2019-08-21T13:38:03+05:30"
+    },
+    {
+      "code": "73595000",
+      "label": "Stress (finding)",
+      "clinical_status": "active",
+      "onset": "2022-10-12T09:44:23+05:30",
+      "recorded_date": "2022-10-12T09:44:23+05:30",
+      "abatement": null
+    },
+    {
+      "code": "422650009",
+      "label": "Social isolation (finding)",
+      "clinical_status": "resolved",
+      "onset": "2022-10-12T09:44:23+05:30",
+      "recorded_date": "2022-10-12T09:44:23+05:30",
+      "abatement": "2025-10-15T09:43:17+05:30"
+    },
+    {
+      "code": "66383009",
+      "label": "Gingivitis (disorder)",
+      "clinical_status": "resolved",
+      "onset": "2022-10-12T10:50:00+05:30",
+      "recorded_date": "2022-10-12T10:50:00+05:30",
+      "abatement": "2022-10-26T12:29:36+05:30"
+    },
+    {
+      "code": "21897009",
+      "label": "Generalized anxiety disorder (disorder)",
+      "clinical_status": "active",
+      "onset": "2022-10-26T09:06:03+05:30",
+      "recorded_date": "2022-10-26T09:06:03+05:30",
+      "abatement": null
+    },
+    {
+      "code": "109570002",
+      "label": "Primary dental caries (disorder)",
+      "clinical_status": "resolved",
+      "onset": "2022-10-26T12:29:36+05:30",
+      "recorded_date": "2022-10-26T12:29:36+05:30",
+      "abatement": "2022-10-26T13:03:41+05:30"
+    },
+    {
+      "code": "195662009",
+      "label": "Acute viral pharyngitis (disorder)",
+      "clinical_status": "resolved",
+      "onset": "2025-12-29T21:06:03+05:30",
+      "recorded_date": "2025-12-29T21:06:03+05:30",
+      "abatement": "2026-01-12T17:06:03+05:30"
+    }
+  ],
+  "medications": [
+    {
+      "code": "1043400",
+      "text": "Acetaminophen 21.7 MG/ML / Dextromethorphan Hydrobromide 1 MG/ML / doxylamine succinate 0.417 MG/ML Oral Solution",
+      "status": "completed",
+      "as_needed": false,
+      "dosage": null,
+      "first_authored": "2019-08-21T09:06:03+05:30",
+      "last_authored": "2019-08-21T09:06:03+05:30",
+      "requester": "Dr. Azucena377 Crona259",
+      "fill_count": 1
+    },
+    {
+      "code": "997488",
+      "text": "Fexofenadine hydrochloride 30 MG Oral Tablet",
+      "status": "active",
+      "as_needed": true,
+      "dosage": "as needed",
+      "first_authored": "2001-03-19T09:40:26+05:30",
+      "last_authored": "2001-03-19T09:40:26+05:30",
+      "requester": "Dr. Azucena377 Crona259",
+      "fill_count": 1
+    },
+    {
+      "code": "351249",
+      "text": "Mirtazapine 15 MG Oral Tablet",
+      "status": "active",
+      "as_needed": false,
+      "dosage": "once per day",
+      "first_authored": "2025-12-29T21:06:03+05:30",
+      "last_authored": "2025-12-29T21:06:03+05:30",
+      "requester": "Hand-authored entry, no simulated prescriber",
+      "fill_count": 1
+    },
+    {
+      "code": "1870230",
+      "text": "NDA020800 0.3 ML Epinephrine 1 MG/ML Auto-Injector",
+      "status": "active",
+      "as_needed": true,
+      "dosage": "as needed",
+      "first_authored": "2001-03-19T09:40:26+05:30",
+      "last_authored": "2001-03-19T09:40:26+05:30",
+      "requester": "Dr. Azucena377 Crona259",
+      "fill_count": 1
+    }
+  ],
+  "allergies": [
+    {
+      "code": "609328004",
+      "label": "Allergic disposition (finding)",
+      "category": "environment",
+      "criticality": "low",
+      "clinical_status": "active",
+      "recorded_date": "2001-03-19T09:06:03+05:30"
+    },
+    {
+      "code": "111088007",
+      "label": "Latex (substance)",
+      "category": "environment",
+      "criticality": "low",
+      "clinical_status": "active",
+      "recorded_date": "2001-03-19T09:06:03+05:30"
+    },
+    {
+      "code": "84489001",
+      "label": "Mold (organism)",
+      "category": "environment",
+      "criticality": "low",
+      "clinical_status": "active",
+      "recorded_date": "2001-03-19T09:06:03+05:30"
+    },
+    {
+      "code": "260147004",
+      "label": "House dust mite (organism)",
+      "category": "environment",
+      "criticality": "low",
+      "clinical_status": "active",
+      "recorded_date": "2001-03-19T09:06:03+05:30"
+    },
+    {
+      "code": "264287008",
+      "label": "Animal dander (substance)",
+      "category": "environment",
+      "criticality": "low",
+      "clinical_status": "active",
+      "recorded_date": "2001-03-19T09:06:03+05:30"
+    },
+    {
+      "code": "256277009",
+      "label": "Grass pollen (substance)",
+      "category": "environment",
+      "criticality": "low",
+      "clinical_status": "active",
+      "recorded_date": "2001-03-19T09:06:03+05:30"
+    },
+    {
+      "code": "782576004",
+      "label": "Tree pollen (substance)",
+      "category": "environment",
+      "criticality": "low",
+      "clinical_status": "active",
+      "recorded_date": "2001-03-19T09:06:03+05:30"
+    },
+    {
+      "code": "7984",
+      "label": "Penicillin V",
+      "category": "medication",
+      "criticality": "low",
+      "clinical_status": "active",
+      "recorded_date": "2001-03-19T09:06:03+05:30"
+    },
+    {
+      "code": "735971005",
+      "label": "Fish (substance)",
+      "category": "food",
+      "criticality": "low",
+      "clinical_status": "active",
+      "recorded_date": "2001-03-19T09:06:03+05:30"
+    }
+  ],
+  "encounters": {
+    "total": 35,
+    "recent": [
+      {
+        "start": "2025-12-29T21:06:03+05:30",
+        "end": "2025-12-29T21:21:03+05:30",
+        "type": "Encounter for symptom (procedure)",
+        "location": "HOLY FAMILY HOSPITAL"
+      },
+      {
+        "start": "2025-10-15T09:06:03+05:30",
+        "end": "2025-10-15T09:43:17+05:30",
+        "type": "General examination of patient (procedure)",
+        "location": "BLUESKIES WELLNESS INC"
+      },
+      {
+        "start": "2022-10-26T09:06:03+05:30",
+        "end": "2022-10-26T13:24:53+05:30",
+        "type": "Encounter for check up (procedure)",
+        "location": "HOLY FAMILY HOSPITAL"
+      },
+      {
+        "start": "2022-10-12T09:06:03+05:30",
+        "end": "2022-10-12T09:44:23+05:30",
+        "type": "General examination of patient (procedure)",
+        "location": "BLUESKIES WELLNESS INC"
+      },
+      {
+        "start": "2021-11-03T09:06:03+05:30",
+        "end": "2021-11-03T09:21:03+05:30",
+        "type": "Administration of vaccine to produce active immunity (procedure)",
+        "location": "HOLY FAMILY HOSPITAL"
+      },
+      {
+        "start": "2021-10-13T09:06:03+05:30",
+        "end": "2021-10-13T09:21:03+05:30",
+        "type": "Administration of vaccine to produce active immunity (procedure)",
+        "location": "HOLY FAMILY HOSPITAL"
+      },
+      {
+        "start": "2019-10-23T09:06:03+05:30",
+        "end": "2019-10-23T11:48:17+05:30",
+        "type": "Encounter for check up (procedure)",
+        "location": "HOLY FAMILY HOSPITAL"
+      },
+      {
+        "start": "2019-10-09T09:06:03+05:30",
+        "end": "2019-10-09T09:38:11+05:30",
+        "type": "General examination of patient (procedure)",
+        "location": "BLUESKIES WELLNESS INC"
+      },
+      {
+        "start": "2019-08-21T09:06:03+05:30",
+        "end": "2019-08-21T09:21:03+05:30",
+        "type": "Encounter for symptom (procedure)",
+        "location": "HOLY FAMILY HOSPITAL"
+      },
+      {
+        "start": "2019-08-21T09:06:03+05:30",
+        "end": "2019-08-21T15:02:50+05:30",
+        "type": "Encounter for check up (procedure)",
+        "location": "HOLY FAMILY HOSPITAL"
+      },
+      {
+        "start": "2019-08-14T09:06:03+05:30",
+        "end": "2019-08-14T09:21:03+05:30",
+        "type": "Encounter for check up (procedure)",
+        "location": "HOLY FAMILY HOSPITAL"
+      },
+      {
+        "start": "2019-08-07T09:06:03+05:30",
+        "end": "2019-08-07T09:36:30+05:30",
+        "type": "Urgent care clinic (environment)",
+        "location": "URGENT HELP CHELMSFORD PC"
+      },
+      {
+        "start": "2018-10-17T09:06:03+05:30",
+        "end": "2018-10-17T11:58:40+05:30",
+        "type": "Encounter for check up (procedure)",
+        "location": "HOLY FAMILY HOSPITAL"
+      },
+      {
+        "start": "2018-10-03T09:06:03+05:30",
+        "end": "2018-10-03T09:49:52+05:30",
+        "type": "General examination of patient (procedure)",
+        "location": "BLUESKIES WELLNESS INC"
+      },
+      {
+        "start": "2017-09-27T09:06:03+05:30",
+        "end": "2017-09-27T09:30:35+05:30",
+        "type": "Well child visit (procedure)",
+        "location": "BLUESKIES WELLNESS INC"
+      }
+    ]
+  }
+}

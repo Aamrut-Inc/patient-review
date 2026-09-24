@@ -1,0 +1,2441 @@
+{
+  "source_file": "P01_adhd.fhir.json",
+  "biomarkers": [
+    {
+      "code": "8302-2",
+      "label": "Body height",
+      "unit": "cm",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2020-12-27",
+        "value": 171.8
+      },
+      "readings": [
+        {
+          "date": "2020-12-27",
+          "value": 171.8
+        }
+      ]
+    },
+    {
+      "code": "39156-5",
+      "label": "Body mass index",
+      "unit": "kg/m2",
+      "reading_count": 26,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2020-12-27",
+        "value": 27.6
+      },
+      "readings": [
+        {
+          "date": "2019-01-07",
+          "value": 30.2
+        },
+        {
+          "date": "2019-02-06",
+          "value": 29.9
+        },
+        {
+          "date": "2019-03-08",
+          "value": 29.6
+        },
+        {
+          "date": "2019-04-07",
+          "value": 29.3
+        },
+        {
+          "date": "2019-05-07",
+          "value": 29.0
+        },
+        {
+          "date": "2019-06-06",
+          "value": 28.7
+        },
+        {
+          "date": "2019-07-06",
+          "value": 28.4
+        },
+        {
+          "date": "2019-08-05",
+          "value": 28.1
+        },
+        {
+          "date": "2019-09-04",
+          "value": 27.7
+        },
+        {
+          "date": "2019-10-04",
+          "value": 27.7
+        },
+        {
+          "date": "2019-11-03",
+          "value": 27.7
+        },
+        {
+          "date": "2019-12-03",
+          "value": 27.7
+        },
+        {
+          "date": "2020-01-02",
+          "value": 27.7
+        },
+        {
+          "date": "2020-02-01",
+          "value": 27.7
+        },
+        {
+          "date": "2020-03-02",
+          "value": 27.7
+        },
+        {
+          "date": "2020-04-01",
+          "value": 27.7
+        },
+        {
+          "date": "2020-05-01",
+          "value": 27.7
+        },
+        {
+          "date": "2020-05-31",
+          "value": 27.7
+        },
+        {
+          "date": "2020-06-30",
+          "value": 27.6
+        },
+        {
+          "date": "2020-07-30",
+          "value": 27.6
+        },
+        {
+          "date": "2020-08-29",
+          "value": 27.6
+        },
+        {
+          "date": "2020-09-28",
+          "value": 27.6
+        },
+        {
+          "date": "2020-10-28",
+          "value": 27.6
+        },
+        {
+          "date": "2020-11-27",
+          "value": 27.6
+        },
+        {
+          "date": "2020-12-27",
+          "value": 27.5857
+        },
+        {
+          "date": "2020-12-27",
+          "value": 27.6
+        }
+      ]
+    },
+    {
+      "code": "29463-7",
+      "label": "Body weight",
+      "unit": "kg",
+      "reading_count": 26,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2020-12-27",
+        "value": 81.42
+      },
+      "readings": [
+        {
+          "date": "2019-01-07",
+          "value": 89.1
+        },
+        {
+          "date": "2019-02-06",
+          "value": 88.2
+        },
+        {
+          "date": "2019-03-08",
+          "value": 87.3
+        },
+        {
+          "date": "2019-04-07",
+          "value": 86.4
+        },
+        {
+          "date": "2019-05-07",
+          "value": 85.5
+        },
+        {
+          "date": "2019-06-06",
+          "value": 84.6
+        },
+        {
+          "date": "2019-07-06",
+          "value": 83.7
+        },
+        {
+          "date": "2019-08-05",
+          "value": 82.8
+        },
+        {
+          "date": "2019-09-04",
+          "value": 81.9
+        },
+        {
+          "date": "2019-10-04",
+          "value": 81.87
+        },
+        {
+          "date": "2019-11-03",
+          "value": 81.84
+        },
+        {
+          "date": "2019-12-03",
+          "value": 81.81
+        },
+        {
+          "date": "2020-01-02",
+          "value": 81.78
+        },
+        {
+          "date": "2020-02-01",
+          "value": 81.75
+        },
+        {
+          "date": "2020-03-02",
+          "value": 81.72
+        },
+        {
+          "date": "2020-04-01",
+          "value": 81.69
+        },
+        {
+          "date": "2020-05-01",
+          "value": 81.66
+        },
+        {
+          "date": "2020-05-31",
+          "value": 81.63
+        },
+        {
+          "date": "2020-06-30",
+          "value": 81.6
+        },
+        {
+          "date": "2020-07-30",
+          "value": 81.57
+        },
+        {
+          "date": "2020-08-29",
+          "value": 81.54
+        },
+        {
+          "date": "2020-09-28",
+          "value": 81.51
+        },
+        {
+          "date": "2020-10-28",
+          "value": 81.48
+        },
+        {
+          "date": "2020-11-27",
+          "value": 81.45
+        },
+        {
+          "date": "2020-12-27",
+          "value": 81.42
+        },
+        {
+          "date": "2020-12-27",
+          "value": 81.42
+        }
+      ]
+    },
+    {
+      "code": "8462-4",
+      "label": "Diastolic blood pressure",
+      "unit": "mm[Hg]",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2018-10-22",
+        "value": 74.0
+      },
+      "readings": [
+        {
+          "date": "2018-10-22",
+          "value": 74.0
+        }
+      ]
+    },
+    {
+      "code": "sema_mood_rt_median_s",
+      "label": "EMA mood response latency (window mean)",
+      "unit": "s",
+      "reading_count": 0,
+      "trajectory_available": false,
+      "latest": null,
+      "readings": []
+    },
+    {
+      "code": "sema_compliance",
+      "label": "EMA prompt compliance (window mean)",
+      "unit": "{ratio}",
+      "reading_count": 0,
+      "trajectory_available": false,
+      "latest": null,
+      "readings": []
+    },
+    {
+      "code": "calories",
+      "label": "Energy expenditure (window mean)",
+      "unit": "kcal/d",
+      "reading_count": 0,
+      "trajectory_available": false,
+      "latest": null,
+      "readings": []
+    },
+    {
+      "code": "stress_score",
+      "label": "Fitbit daily stress score (window mean)",
+      "unit": "{score}",
+      "reading_count": 0,
+      "trajectory_available": false,
+      "latest": null,
+      "readings": []
+    },
+    {
+      "code": "8867-4",
+      "label": "Heart rate",
+      "unit": "/min",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2018-10-22",
+        "value": 93.0
+      },
+      "readings": [
+        {
+          "date": "2018-10-22",
+          "value": 93.0
+        }
+      ]
+    },
+    {
+      "code": "40443-4",
+      "label": "Heart rate --resting",
+      "unit": "beats/minute",
+      "reading_count": 88,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2021-09-06",
+        "value": 64.2
+      },
+      "readings": [
+        {
+          "date": "2021-06-09",
+          "value": 69.85
+        },
+        {
+          "date": "2021-06-10",
+          "value": 72.38
+        },
+        {
+          "date": "2021-06-11",
+          "value": 70.54
+        },
+        {
+          "date": "2021-06-12",
+          "value": 68.72
+        },
+        {
+          "date": "2021-06-13",
+          "value": 67.0
+        },
+        {
+          "date": "2021-06-14",
+          "value": 68.73
+        },
+        {
+          "date": "2021-06-15",
+          "value": 66.41
+        },
+        {
+          "date": "2021-06-16",
+          "value": 66.46
+        },
+        {
+          "date": "2021-06-17",
+          "value": 64.24
+        },
+        {
+          "date": "2021-06-18",
+          "value": 65.84
+        },
+        {
+          "date": "2021-06-19",
+          "value": 67.4
+        },
+        {
+          "date": "2021-06-20",
+          "value": 65.71
+        },
+        {
+          "date": "2021-06-21",
+          "value": 66.99
+        },
+        {
+          "date": "2021-06-22",
+          "value": 65.53
+        },
+        {
+          "date": "2021-06-23",
+          "value": 66.07
+        },
+        {
+          "date": "2021-06-24",
+          "value": 66.95
+        },
+        {
+          "date": "2021-06-26",
+          "value": 65.52
+        },
+        {
+          "date": "2021-06-27",
+          "value": 67.52
+        },
+        {
+          "date": "2021-06-28",
+          "value": 69.07
+        },
+        {
+          "date": "2021-06-29",
+          "value": 68.09
+        },
+        {
+          "date": "2021-06-30",
+          "value": 66.08
+        },
+        {
+          "date": "2021-07-01",
+          "value": 65.46
+        },
+        {
+          "date": "2021-07-02",
+          "value": 65.16
+        },
+        {
+          "date": "2021-07-03",
+          "value": 66.51
+        },
+        {
+          "date": "2021-07-04",
+          "value": 64.78
+        },
+        {
+          "date": "2021-07-05",
+          "value": 62.11
+        },
+        {
+          "date": "2021-07-06",
+          "value": 61.48
+        },
+        {
+          "date": "2021-07-07",
+          "value": 63.01
+        },
+        {
+          "date": "2021-07-08",
+          "value": 64.34
+        },
+        {
+          "date": "2021-07-09",
+          "value": 62.15
+        },
+        {
+          "date": "2021-07-10",
+          "value": 63.8
+        },
+        {
+          "date": "2021-07-11",
+          "value": 61.23
+        },
+        {
+          "date": "2021-07-12",
+          "value": 61.7
+        },
+        {
+          "date": "2021-07-13",
+          "value": 61.11
+        },
+        {
+          "date": "2021-07-14",
+          "value": 60.96
+        },
+        {
+          "date": "2021-07-15",
+          "value": 61.52
+        },
+        {
+          "date": "2021-07-16",
+          "value": 60.84
+        },
+        {
+          "date": "2021-07-17",
+          "value": 61.13
+        },
+        {
+          "date": "2021-07-18",
+          "value": 62.32
+        },
+        {
+          "date": "2021-07-19",
+          "value": 62.01
+        },
+        {
+          "date": "2021-07-20",
+          "value": 60.41
+        },
+        {
+          "date": "2021-07-21",
+          "value": 58.2
+        },
+        {
+          "date": "2021-07-22",
+          "value": 57.92
+        },
+        {
+          "date": "2021-07-23",
+          "value": 57.94
+        },
+        {
+          "date": "2021-07-24",
+          "value": 59.85
+        },
+        {
+          "date": "2021-07-25",
+          "value": 59.19
+        },
+        {
+          "date": "2021-07-26",
+          "value": 60.72
+        },
+        {
+          "date": "2021-07-27",
+          "value": 62.28
+        },
+        {
+          "date": "2021-07-28",
+          "value": 62.89
+        },
+        {
+          "date": "2021-07-29",
+          "value": 62.27
+        },
+        {
+          "date": "2021-07-31",
+          "value": 62.64
+        },
+        {
+          "date": "2021-08-01",
+          "value": 60.96
+        },
+        {
+          "date": "2021-08-02",
+          "value": 60.48
+        },
+        {
+          "date": "2021-08-03",
+          "value": 62.6
+        },
+        {
+          "date": "2021-08-04",
+          "value": 64.13
+        },
+        {
+          "date": "2021-08-05",
+          "value": 62.68
+        },
+        {
+          "date": "2021-08-06",
+          "value": 60.15
+        },
+        {
+          "date": "2021-08-07",
+          "value": 61.59
+        },
+        {
+          "date": "2021-08-08",
+          "value": 63.21
+        },
+        {
+          "date": "2021-08-09",
+          "value": 65.24
+        },
+        {
+          "date": "2021-08-10",
+          "value": 64.26
+        },
+        {
+          "date": "2021-08-11",
+          "value": 66.48
+        },
+        {
+          "date": "2021-08-12",
+          "value": 64.4
+        },
+        {
+          "date": "2021-08-13",
+          "value": 63.16
+        },
+        {
+          "date": "2021-08-14",
+          "value": 64.51
+        },
+        {
+          "date": "2021-08-15",
+          "value": 63.13
+        },
+        {
+          "date": "2021-08-16",
+          "value": 60.48
+        },
+        {
+          "date": "2021-08-17",
+          "value": 60.17
+        },
+        {
+          "date": "2021-08-18",
+          "value": 59.45
+        },
+        {
+          "date": "2021-08-19",
+          "value": 61.52
+        },
+        {
+          "date": "2021-08-20",
+          "value": 63.12
+        },
+        {
+          "date": "2021-08-21",
+          "value": 64.85
+        },
+        {
+          "date": "2021-08-22",
+          "value": 64.25
+        },
+        {
+          "date": "2021-08-23",
+          "value": 66.95
+        },
+        {
+          "date": "2021-08-24",
+          "value": 68.23
+        },
+        {
+          "date": "2021-08-25",
+          "value": 70.51
+        },
+        {
+          "date": "2021-08-26",
+          "value": 68.56
+        },
+        {
+          "date": "2021-08-27",
+          "value": 67.88
+        },
+        {
+          "date": "2021-08-28",
+          "value": 69.27
+        },
+        {
+          "date": "2021-08-29",
+          "value": 67.84
+        },
+        {
+          "date": "2021-08-30",
+          "value": 66.83
+        },
+        {
+          "date": "2021-08-31",
+          "value": 65.99
+        },
+        {
+          "date": "2021-09-01",
+          "value": 63.64
+        },
+        {
+          "date": "2021-09-02",
+          "value": 61.92
+        },
+        {
+          "date": "2021-09-03",
+          "value": 61.99
+        },
+        {
+          "date": "2021-09-04",
+          "value": 60.39
+        },
+        {
+          "date": "2021-09-05",
+          "value": 62.27
+        },
+        {
+          "date": "2021-09-06",
+          "value": 64.2
+        }
+      ]
+    },
+    {
+      "code": "rmssd",
+      "label": "Heart rate variability (RMSSD) (window mean)",
+      "unit": "ms",
+      "reading_count": 0,
+      "trajectory_available": false,
+      "latest": null,
+      "readings": []
+    },
+    {
+      "code": "nightly_temperature",
+      "label": "Nightly skin temperature (window mean)",
+      "unit": "Cel",
+      "reading_count": 0,
+      "trajectory_available": false,
+      "latest": null,
+      "readings": []
+    },
+    {
+      "code": "41950-7",
+      "label": "Number of steps in 24 hour Measured",
+      "unit": "steps",
+      "reading_count": 90,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2021-09-06",
+        "value": 12080.0
+      },
+      "readings": [
+        {
+          "date": "2021-06-09",
+          "value": 7157.0
+        },
+        {
+          "date": "2021-06-10",
+          "value": 5461.0
+        },
+        {
+          "date": "2021-06-11",
+          "value": 8601.0
+        },
+        {
+          "date": "2021-06-12",
+          "value": 1395.0
+        },
+        {
+          "date": "2021-06-13",
+          "value": 4787.0
+        },
+        {
+          "date": "2021-06-14",
+          "value": 4451.0
+        },
+        {
+          "date": "2021-06-15",
+          "value": 5867.0
+        },
+        {
+          "date": "2021-06-16",
+          "value": 4573.0
+        },
+        {
+          "date": "2021-06-17",
+          "value": 9620.0
+        },
+        {
+          "date": "2021-06-18",
+          "value": 10640.0
+        },
+        {
+          "date": "2021-06-19",
+          "value": 4711.0
+        },
+        {
+          "date": "2021-06-20",
+          "value": 1394.0
+        },
+        {
+          "date": "2021-06-21",
+          "value": 7785.0
+        },
+        {
+          "date": "2021-06-22",
+          "value": 11640.0
+        },
+        {
+          "date": "2021-06-23",
+          "value": 4277.0
+        },
+        {
+          "date": "2021-06-24",
+          "value": 8225.0
+        },
+        {
+          "date": "2021-06-25",
+          "value": 1014.0
+        },
+        {
+          "date": "2021-06-26",
+          "value": 9165.0
+        },
+        {
+          "date": "2021-06-27",
+          "value": 2424.0
+        },
+        {
+          "date": "2021-06-28",
+          "value": 7654.0
+        },
+        {
+          "date": "2021-06-29",
+          "value": 4498.0
+        },
+        {
+          "date": "2021-06-30",
+          "value": 6318.0
+        },
+        {
+          "date": "2021-07-01",
+          "value": 11870.0
+        },
+        {
+          "date": "2021-07-02",
+          "value": 5188.0
+        },
+        {
+          "date": "2021-07-03",
+          "value": 6869.0
+        },
+        {
+          "date": "2021-07-04",
+          "value": 5991.0
+        },
+        {
+          "date": "2021-07-05",
+          "value": 6056.0
+        },
+        {
+          "date": "2021-07-06",
+          "value": 2989.0
+        },
+        {
+          "date": "2021-07-07",
+          "value": 3366.0
+        },
+        {
+          "date": "2021-07-08",
+          "value": 13220.0
+        },
+        {
+          "date": "2021-07-09",
+          "value": 4414.0
+        },
+        {
+          "date": "2021-07-10",
+          "value": 2949.0
+        },
+        {
+          "date": "2021-07-11",
+          "value": 3137.0
+        },
+        {
+          "date": "2021-07-12",
+          "value": 5647.0
+        },
+        {
+          "date": "2021-07-13",
+          "value": 13760.0
+        },
+        {
+          "date": "2021-07-14",
+          "value": 8574.0
+        },
+        {
+          "date": "2021-07-15",
+          "value": 11050.0
+        },
+        {
+          "date": "2021-07-16",
+          "value": 4944.0
+        },
+        {
+          "date": "2021-07-17",
+          "value": 16020.0
+        },
+        {
+          "date": "2021-07-18",
+          "value": 24450.0
+        },
+        {
+          "date": "2021-07-19",
+          "value": 14680.0
+        },
+        {
+          "date": "2021-07-20",
+          "value": 7264.0
+        },
+        {
+          "date": "2021-07-21",
+          "value": 7615.0
+        },
+        {
+          "date": "2021-07-22",
+          "value": 6840.0
+        },
+        {
+          "date": "2021-07-23",
+          "value": 3713.0
+        },
+        {
+          "date": "2021-07-24",
+          "value": 2689.0
+        },
+        {
+          "date": "2021-07-25",
+          "value": 3921.0
+        },
+        {
+          "date": "2021-07-26",
+          "value": 2959.0
+        },
+        {
+          "date": "2021-07-27",
+          "value": 6266.0
+        },
+        {
+          "date": "2021-07-28",
+          "value": 3717.0
+        },
+        {
+          "date": "2021-07-29",
+          "value": 12490.0
+        },
+        {
+          "date": "2021-07-30",
+          "value": 4159.0
+        },
+        {
+          "date": "2021-07-31",
+          "value": 10180.0
+        },
+        {
+          "date": "2021-08-01",
+          "value": 18540.0
+        },
+        {
+          "date": "2021-08-02",
+          "value": 17660.0
+        },
+        {
+          "date": "2021-08-03",
+          "value": 13980.0
+        },
+        {
+          "date": "2021-08-04",
+          "value": 1536.0
+        },
+        {
+          "date": "2021-08-05",
+          "value": 10680.0
+        },
+        {
+          "date": "2021-08-06",
+          "value": 2518.0
+        },
+        {
+          "date": "2021-08-07",
+          "value": 1807.0
+        },
+        {
+          "date": "2021-08-08",
+          "value": 7654.0
+        },
+        {
+          "date": "2021-08-09",
+          "value": 9127.0
+        },
+        {
+          "date": "2021-08-10",
+          "value": 14900.0
+        },
+        {
+          "date": "2021-08-11",
+          "value": 11030.0
+        },
+        {
+          "date": "2021-08-12",
+          "value": 3356.0
+        },
+        {
+          "date": "2021-08-13",
+          "value": 8016.0
+        },
+        {
+          "date": "2021-08-14",
+          "value": 1598.0
+        },
+        {
+          "date": "2021-08-15",
+          "value": 2853.0
+        },
+        {
+          "date": "2021-08-16",
+          "value": 3379.0
+        },
+        {
+          "date": "2021-08-17",
+          "value": 2660.0
+        },
+        {
+          "date": "2021-08-18",
+          "value": 1353.0
+        },
+        {
+          "date": "2021-08-19",
+          "value": 18240.0
+        },
+        {
+          "date": "2021-08-20",
+          "value": 2811.0
+        },
+        {
+          "date": "2021-08-21",
+          "value": 12430.0
+        },
+        {
+          "date": "2021-08-22",
+          "value": 10440.0
+        },
+        {
+          "date": "2021-08-23",
+          "value": 6198.0
+        },
+        {
+          "date": "2021-08-24",
+          "value": 9281.0
+        },
+        {
+          "date": "2021-08-25",
+          "value": 10980.0
+        },
+        {
+          "date": "2021-08-26",
+          "value": 10760.0
+        },
+        {
+          "date": "2021-08-27",
+          "value": 6743.0
+        },
+        {
+          "date": "2021-08-28",
+          "value": 3406.0
+        },
+        {
+          "date": "2021-08-29",
+          "value": 10000.0
+        },
+        {
+          "date": "2021-08-30",
+          "value": 11260.0
+        },
+        {
+          "date": "2021-08-31",
+          "value": 2395.0
+        },
+        {
+          "date": "2021-09-01",
+          "value": 11390.0
+        },
+        {
+          "date": "2021-09-02",
+          "value": 8858.0
+        },
+        {
+          "date": "2021-09-03",
+          "value": 10630.0
+        },
+        {
+          "date": "2021-09-04",
+          "value": 11170.0
+        },
+        {
+          "date": "2021-09-05",
+          "value": 8293.0
+        },
+        {
+          "date": "2021-09-06",
+          "value": 12080.0
+        }
+      ]
+    },
+    {
+      "code": "59408-5",
+      "label": "Oxygen saturation in Arterial blood by Pulse oximetry (window mean)",
+      "unit": "%",
+      "reading_count": 0,
+      "trajectory_available": false,
+      "latest": null,
+      "readings": []
+    },
+    {
+      "code": "9279-1",
+      "label": "Respiratory rate (during sleep) (window mean)",
+      "unit": "breaths/minute",
+      "reading_count": 0,
+      "trajectory_available": false,
+      "latest": null,
+      "readings": []
+    },
+    {
+      "code": "sedentary_minutes",
+      "label": "Sedentary minutes (window mean)",
+      "unit": "min",
+      "reading_count": 0,
+      "trajectory_available": false,
+      "latest": null,
+      "readings": []
+    },
+    {
+      "code": "sleep_duration",
+      "label": "Sleep duration",
+      "unit": "h",
+      "reading_count": 88,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2021-09-06",
+        "value": 5.45
+      },
+      "readings": [
+        {
+          "date": "2021-06-09",
+          "value": 6.22
+        },
+        {
+          "date": "2021-06-10",
+          "value": 6.82
+        },
+        {
+          "date": "2021-06-11",
+          "value": 9.77
+        },
+        {
+          "date": "2021-06-12",
+          "value": 7.78
+        },
+        {
+          "date": "2021-06-13",
+          "value": 4.57
+        },
+        {
+          "date": "2021-06-14",
+          "value": 5.22
+        },
+        {
+          "date": "2021-06-15",
+          "value": 8.95
+        },
+        {
+          "date": "2021-06-16",
+          "value": 10.07
+        },
+        {
+          "date": "2021-06-17",
+          "value": 7.13
+        },
+        {
+          "date": "2021-06-18",
+          "value": 5.82
+        },
+        {
+          "date": "2021-06-19",
+          "value": 4.9
+        },
+        {
+          "date": "2021-06-20",
+          "value": 9.28
+        },
+        {
+          "date": "2021-06-21",
+          "value": 4.1
+        },
+        {
+          "date": "2021-06-22",
+          "value": 4.8
+        },
+        {
+          "date": "2021-06-23",
+          "value": 7.15
+        },
+        {
+          "date": "2021-06-24",
+          "value": 6.72
+        },
+        {
+          "date": "2021-06-26",
+          "value": 3.22
+        },
+        {
+          "date": "2021-06-27",
+          "value": 6.88
+        },
+        {
+          "date": "2021-06-28",
+          "value": 6.95
+        },
+        {
+          "date": "2021-06-29",
+          "value": 3.53
+        },
+        {
+          "date": "2021-06-30",
+          "value": 8.55
+        },
+        {
+          "date": "2021-07-01",
+          "value": 4.75
+        },
+        {
+          "date": "2021-07-02",
+          "value": 5.48
+        },
+        {
+          "date": "2021-07-03",
+          "value": 9.05
+        },
+        {
+          "date": "2021-07-04",
+          "value": 5.4
+        },
+        {
+          "date": "2021-07-05",
+          "value": 6.8
+        },
+        {
+          "date": "2021-07-06",
+          "value": 8.95
+        },
+        {
+          "date": "2021-07-07",
+          "value": 10.03
+        },
+        {
+          "date": "2021-07-08",
+          "value": 5.53
+        },
+        {
+          "date": "2021-07-09",
+          "value": 6.57
+        },
+        {
+          "date": "2021-07-10",
+          "value": 7.0
+        },
+        {
+          "date": "2021-07-11",
+          "value": 4.6
+        },
+        {
+          "date": "2021-07-12",
+          "value": 9.17
+        },
+        {
+          "date": "2021-07-13",
+          "value": 6.53
+        },
+        {
+          "date": "2021-07-14",
+          "value": 8.55
+        },
+        {
+          "date": "2021-07-15",
+          "value": 6.37
+        },
+        {
+          "date": "2021-07-16",
+          "value": 8.02
+        },
+        {
+          "date": "2021-07-17",
+          "value": 6.35
+        },
+        {
+          "date": "2021-07-18",
+          "value": 5.12
+        },
+        {
+          "date": "2021-07-19",
+          "value": 9.12
+        },
+        {
+          "date": "2021-07-20",
+          "value": 9.82
+        },
+        {
+          "date": "2021-07-21",
+          "value": 6.22
+        },
+        {
+          "date": "2021-07-22",
+          "value": 8.25
+        },
+        {
+          "date": "2021-07-23",
+          "value": 8.42
+        },
+        {
+          "date": "2021-07-24",
+          "value": 9.23
+        },
+        {
+          "date": "2021-07-25",
+          "value": 6.88
+        },
+        {
+          "date": "2021-07-26",
+          "value": 9.1
+        },
+        {
+          "date": "2021-07-27",
+          "value": 4.02
+        },
+        {
+          "date": "2021-07-28",
+          "value": 7.1
+        },
+        {
+          "date": "2021-07-29",
+          "value": 6.07
+        },
+        {
+          "date": "2021-07-31",
+          "value": 9.08
+        },
+        {
+          "date": "2021-08-01",
+          "value": 5.83
+        },
+        {
+          "date": "2021-08-02",
+          "value": 7.32
+        },
+        {
+          "date": "2021-08-03",
+          "value": 8.47
+        },
+        {
+          "date": "2021-08-04",
+          "value": 7.68
+        },
+        {
+          "date": "2021-08-05",
+          "value": 6.5
+        },
+        {
+          "date": "2021-08-06",
+          "value": 6.5
+        },
+        {
+          "date": "2021-08-07",
+          "value": 8.92
+        },
+        {
+          "date": "2021-08-08",
+          "value": 9.78
+        },
+        {
+          "date": "2021-08-09",
+          "value": 8.97
+        },
+        {
+          "date": "2021-08-10",
+          "value": 7.37
+        },
+        {
+          "date": "2021-08-11",
+          "value": 8.1
+        },
+        {
+          "date": "2021-08-12",
+          "value": 5.48
+        },
+        {
+          "date": "2021-08-13",
+          "value": 8.52
+        },
+        {
+          "date": "2021-08-14",
+          "value": 5.97
+        },
+        {
+          "date": "2021-08-15",
+          "value": 4.93
+        },
+        {
+          "date": "2021-08-16",
+          "value": 8.3
+        },
+        {
+          "date": "2021-08-17",
+          "value": 6.67
+        },
+        {
+          "date": "2021-08-18",
+          "value": 4.62
+        },
+        {
+          "date": "2021-08-19",
+          "value": 7.75
+        },
+        {
+          "date": "2021-08-20",
+          "value": 6.12
+        },
+        {
+          "date": "2021-08-21",
+          "value": 6.57
+        },
+        {
+          "date": "2021-08-22",
+          "value": 5.48
+        },
+        {
+          "date": "2021-08-23",
+          "value": 7.78
+        },
+        {
+          "date": "2021-08-24",
+          "value": 7.13
+        },
+        {
+          "date": "2021-08-25",
+          "value": 5.42
+        },
+        {
+          "date": "2021-08-26",
+          "value": 7.63
+        },
+        {
+          "date": "2021-08-27",
+          "value": 8.4
+        },
+        {
+          "date": "2021-08-28",
+          "value": 10.55
+        },
+        {
+          "date": "2021-08-29",
+          "value": 9.07
+        },
+        {
+          "date": "2021-08-30",
+          "value": 7.62
+        },
+        {
+          "date": "2021-08-31",
+          "value": 5.17
+        },
+        {
+          "date": "2021-09-01",
+          "value": 6.72
+        },
+        {
+          "date": "2021-09-02",
+          "value": 5.1
+        },
+        {
+          "date": "2021-09-03",
+          "value": 8.75
+        },
+        {
+          "date": "2021-09-04",
+          "value": 5.78
+        },
+        {
+          "date": "2021-09-05",
+          "value": 6.72
+        },
+        {
+          "date": "2021-09-06",
+          "value": 5.45
+        }
+      ]
+    },
+    {
+      "code": "sleep_efficiency",
+      "label": "Sleep efficiency",
+      "unit": "%",
+      "reading_count": 88,
+      "trajectory_available": true,
+      "latest": {
+        "date": "2021-09-06",
+        "value": 92.0
+      },
+      "readings": [
+        {
+          "date": "2021-06-09",
+          "value": 78.0
+        },
+        {
+          "date": "2021-06-10",
+          "value": 88.0
+        },
+        {
+          "date": "2021-06-11",
+          "value": 87.0
+        },
+        {
+          "date": "2021-06-12",
+          "value": 89.0
+        },
+        {
+          "date": "2021-06-13",
+          "value": 84.0
+        },
+        {
+          "date": "2021-06-14",
+          "value": 94.0
+        },
+        {
+          "date": "2021-06-15",
+          "value": 82.0
+        },
+        {
+          "date": "2021-06-16",
+          "value": 88.0
+        },
+        {
+          "date": "2021-06-17",
+          "value": 89.0
+        },
+        {
+          "date": "2021-06-18",
+          "value": 88.0
+        },
+        {
+          "date": "2021-06-19",
+          "value": 95.0
+        },
+        {
+          "date": "2021-06-20",
+          "value": 86.0
+        },
+        {
+          "date": "2021-06-21",
+          "value": 87.0
+        },
+        {
+          "date": "2021-06-22",
+          "value": 84.0
+        },
+        {
+          "date": "2021-06-23",
+          "value": 81.0
+        },
+        {
+          "date": "2021-06-24",
+          "value": 92.0
+        },
+        {
+          "date": "2021-06-26",
+          "value": 90.0
+        },
+        {
+          "date": "2021-06-27",
+          "value": 91.0
+        },
+        {
+          "date": "2021-06-28",
+          "value": 88.0
+        },
+        {
+          "date": "2021-06-29",
+          "value": 91.0
+        },
+        {
+          "date": "2021-06-30",
+          "value": 92.0
+        },
+        {
+          "date": "2021-07-01",
+          "value": 86.0
+        },
+        {
+          "date": "2021-07-02",
+          "value": 94.0
+        },
+        {
+          "date": "2021-07-03",
+          "value": 84.0
+        },
+        {
+          "date": "2021-07-04",
+          "value": 92.0
+        },
+        {
+          "date": "2021-07-05",
+          "value": 87.0
+        },
+        {
+          "date": "2021-07-06",
+          "value": 86.0
+        },
+        {
+          "date": "2021-07-07",
+          "value": 84.0
+        },
+        {
+          "date": "2021-07-08",
+          "value": 89.0
+        },
+        {
+          "date": "2021-07-09",
+          "value": 90.0
+        },
+        {
+          "date": "2021-07-10",
+          "value": 91.0
+        },
+        {
+          "date": "2021-07-11",
+          "value": 86.0
+        },
+        {
+          "date": "2021-07-12",
+          "value": 86.0
+        },
+        {
+          "date": "2021-07-13",
+          "value": 88.0
+        },
+        {
+          "date": "2021-07-14",
+          "value": 88.0
+        },
+        {
+          "date": "2021-07-15",
+          "value": 90.0
+        },
+        {
+          "date": "2021-07-16",
+          "value": 93.0
+        },
+        {
+          "date": "2021-07-17",
+          "value": 89.0
+        },
+        {
+          "date": "2021-07-18",
+          "value": 94.0
+        },
+        {
+          "date": "2021-07-19",
+          "value": 89.0
+        },
+        {
+          "date": "2021-07-20",
+          "value": 89.0
+        },
+        {
+          "date": "2021-07-21",
+          "value": 92.0
+        },
+        {
+          "date": "2021-07-22",
+          "value": 92.0
+        },
+        {
+          "date": "2021-07-23",
+          "value": 91.0
+        },
+        {
+          "date": "2021-07-24",
+          "value": 84.0
+        },
+        {
+          "date": "2021-07-25",
+          "value": 92.0
+        },
+        {
+          "date": "2021-07-26",
+          "value": 88.0
+        },
+        {
+          "date": "2021-07-27",
+          "value": 94.0
+        },
+        {
+          "date": "2021-07-28",
+          "value": 88.0
+        },
+        {
+          "date": "2021-07-29",
+          "value": 90.0
+        },
+        {
+          "date": "2021-07-31",
+          "value": 91.0
+        },
+        {
+          "date": "2021-08-01",
+          "value": 86.0
+        },
+        {
+          "date": "2021-08-02",
+          "value": 88.0
+        },
+        {
+          "date": "2021-08-03",
+          "value": 87.0
+        },
+        {
+          "date": "2021-08-04",
+          "value": 83.0
+        },
+        {
+          "date": "2021-08-05",
+          "value": 89.0
+        },
+        {
+          "date": "2021-08-06",
+          "value": 92.0
+        },
+        {
+          "date": "2021-08-07",
+          "value": 85.0
+        },
+        {
+          "date": "2021-08-08",
+          "value": 86.0
+        },
+        {
+          "date": "2021-08-09",
+          "value": 81.0
+        },
+        {
+          "date": "2021-08-10",
+          "value": 84.0
+        },
+        {
+          "date": "2021-08-11",
+          "value": 84.0
+        },
+        {
+          "date": "2021-08-12",
+          "value": 85.0
+        },
+        {
+          "date": "2021-08-13",
+          "value": 85.0
+        },
+        {
+          "date": "2021-08-14",
+          "value": 88.0
+        },
+        {
+          "date": "2021-08-15",
+          "value": 86.0
+        },
+        {
+          "date": "2021-08-16",
+          "value": 93.0
+        },
+        {
+          "date": "2021-08-17",
+          "value": 89.0
+        },
+        {
+          "date": "2021-08-18",
+          "value": 90.0
+        },
+        {
+          "date": "2021-08-19",
+          "value": 86.0
+        },
+        {
+          "date": "2021-08-20",
+          "value": 94.0
+        },
+        {
+          "date": "2021-08-21",
+          "value": 86.0
+        },
+        {
+          "date": "2021-08-22",
+          "value": 92.0
+        },
+        {
+          "date": "2021-08-23",
+          "value": 85.0
+        },
+        {
+          "date": "2021-08-24",
+          "value": 91.0
+        },
+        {
+          "date": "2021-08-25",
+          "value": 90.0
+        },
+        {
+          "date": "2021-08-26",
+          "value": 86.0
+        },
+        {
+          "date": "2021-08-27",
+          "value": 88.0
+        },
+        {
+          "date": "2021-08-28",
+          "value": 84.0
+        },
+        {
+          "date": "2021-08-29",
+          "value": 91.0
+        },
+        {
+          "date": "2021-08-30",
+          "value": 86.0
+        },
+        {
+          "date": "2021-08-31",
+          "value": 88.0
+        },
+        {
+          "date": "2021-09-01",
+          "value": 88.0
+        },
+        {
+          "date": "2021-09-02",
+          "value": 87.0
+        },
+        {
+          "date": "2021-09-03",
+          "value": 89.0
+        },
+        {
+          "date": "2021-09-04",
+          "value": 92.0
+        },
+        {
+          "date": "2021-09-05",
+          "value": 89.0
+        },
+        {
+          "date": "2021-09-06",
+          "value": 92.0
+        }
+      ]
+    },
+    {
+      "code": "8480-6",
+      "label": "Systolic blood pressure",
+      "unit": "mm[Hg]",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2018-10-22",
+        "value": 125.0
+      },
+      "readings": [
+        {
+          "date": "2018-10-22",
+          "value": 125.0
+        }
+      ]
+    },
+    {
+      "code": "very_active_minutes",
+      "label": "Very active minutes (window mean)",
+      "unit": "min",
+      "reading_count": 0,
+      "trajectory_available": false,
+      "latest": null,
+      "readings": []
+    },
+    {
+      "code": "weight_trajectory",
+      "label": "Weight trajectory summary",
+      "unit": "kg",
+      "reading_count": 0,
+      "trajectory_available": false,
+      "latest": null,
+      "readings": []
+    },
+    {
+      "code": "mood_alert",
+      "label": "alert",
+      "unit": "%",
+      "reading_count": 0,
+      "trajectory_available": false,
+      "latest": null,
+      "readings": []
+    },
+    {
+      "code": "place_entertainment",
+      "label": "entertainment",
+      "unit": "%",
+      "reading_count": 0,
+      "trajectory_available": false,
+      "latest": null,
+      "readings": []
+    },
+    {
+      "code": "place_gym",
+      "label": "gym",
+      "unit": "%",
+      "reading_count": 0,
+      "trajectory_available": false,
+      "latest": null,
+      "readings": []
+    },
+    {
+      "code": "mood_happy",
+      "label": "happy",
+      "unit": "%",
+      "reading_count": 0,
+      "trajectory_available": false,
+      "latest": null,
+      "readings": []
+    },
+    {
+      "code": "place_home",
+      "label": "home",
+      "unit": "%",
+      "reading_count": 0,
+      "trajectory_available": false,
+      "latest": null,
+      "readings": []
+    },
+    {
+      "code": "place_home_office",
+      "label": "home_office",
+      "unit": "%",
+      "reading_count": 0,
+      "trajectory_available": false,
+      "latest": null,
+      "readings": []
+    },
+    {
+      "code": "mood_neutral",
+      "label": "neutral",
+      "unit": "%",
+      "reading_count": 0,
+      "trajectory_available": false,
+      "latest": null,
+      "readings": []
+    },
+    {
+      "code": "place_other",
+      "label": "other",
+      "unit": "%",
+      "reading_count": 0,
+      "trajectory_available": false,
+      "latest": null,
+      "readings": []
+    },
+    {
+      "code": "place_outdoors",
+      "label": "outdoors",
+      "unit": "%",
+      "reading_count": 0,
+      "trajectory_available": false,
+      "latest": null,
+      "readings": []
+    },
+    {
+      "code": "mood_rested_relaxed",
+      "label": "rested_relaxed",
+      "unit": "%",
+      "reading_count": 0,
+      "trajectory_available": false,
+      "latest": null,
+      "readings": []
+    },
+    {
+      "code": "mood_sad",
+      "label": "sad",
+      "unit": "%",
+      "reading_count": 0,
+      "trajectory_available": false,
+      "latest": null,
+      "readings": []
+    },
+    {
+      "code": "mood_tense_anxious",
+      "label": "tense_anxious",
+      "unit": "%",
+      "reading_count": 0,
+      "trajectory_available": false,
+      "latest": null,
+      "readings": []
+    },
+    {
+      "code": "mood_tired",
+      "label": "tired",
+      "unit": "%",
+      "reading_count": 0,
+      "trajectory_available": false,
+      "latest": null,
+      "readings": []
+    },
+    {
+      "code": "place_transit",
+      "label": "transit",
+      "unit": "%",
+      "reading_count": 0,
+      "trajectory_available": false,
+      "latest": null,
+      "readings": []
+    },
+    {
+      "code": "place_work_school",
+      "label": "work_school",
+      "unit": "%",
+      "reading_count": 0,
+      "trajectory_available": false,
+      "latest": null,
+      "readings": []
+    }
+  ],
+  "qualitative_observations": [
+    {
+      "code": "bedtime",
+      "label": "Sleep onset clock time",
+      "reading_count": 88,
+      "latest": {
+        "date": "2021-09-06",
+        "value": "2021-09-06 04:13"
+      },
+      "readings": [
+        {
+          "date": "2021-06-09",
+          "value": "2021-06-09 05:49"
+        },
+        {
+          "date": "2021-06-10",
+          "value": "2021-06-10 03:06"
+        },
+        {
+          "date": "2021-06-11",
+          "value": "2021-06-11 01:04"
+        },
+        {
+          "date": "2021-06-12",
+          "value": "2021-06-12 05:12"
+        },
+        {
+          "date": "2021-06-13",
+          "value": "2021-06-13 08:24"
+        },
+        {
+          "date": "2021-06-14",
+          "value": "2021-06-14 03:27"
+        },
+        {
+          "date": "2021-06-15",
+          "value": "2021-06-15 02:03"
+        },
+        {
+          "date": "2021-06-16",
+          "value": "2021-06-16 02:17"
+        },
+        {
+          "date": "2021-06-17",
+          "value": "2021-06-17 02:20"
+        },
+        {
+          "date": "2021-06-18",
+          "value": "2021-06-18 01:52"
+        },
+        {
+          "date": "2021-06-19",
+          "value": "2021-06-19 03:19"
+        },
+        {
+          "date": "2021-06-20",
+          "value": "2021-06-20 02:05"
+        },
+        {
+          "date": "2021-06-21",
+          "value": "2021-06-21 03:40"
+        },
+        {
+          "date": "2021-06-22",
+          "value": "2021-06-22 05:45"
+        },
+        {
+          "date": "2021-06-23",
+          "value": "2021-06-23 02:45"
+        },
+        {
+          "date": "2021-06-24",
+          "value": "2021-06-24 04:10"
+        },
+        {
+          "date": "2021-06-26",
+          "value": "2021-06-26 06:56"
+        },
+        {
+          "date": "2021-06-27",
+          "value": "2021-06-27 02:16"
+        },
+        {
+          "date": "2021-06-28",
+          "value": "2021-06-28 01:57"
+        },
+        {
+          "date": "2021-06-29",
+          "value": "2021-06-29 06:59"
+        },
+        {
+          "date": "2021-06-30",
+          "value": "2021-06-30 01:11"
+        },
+        {
+          "date": "2021-07-01",
+          "value": "2021-07-01 05:40"
+        },
+        {
+          "date": "2021-07-02",
+          "value": "2021-07-02 01:57"
+        },
+        {
+          "date": "2021-07-03",
+          "value": "2021-07-03 01:33"
+        },
+        {
+          "date": "2021-07-04",
+          "value": "2021-07-04 06:56"
+        },
+        {
+          "date": "2021-07-05",
+          "value": "2021-07-05 02:45"
+        },
+        {
+          "date": "2021-07-06",
+          "value": "2021-07-06 02:28"
+        },
+        {
+          "date": "2021-07-07",
+          "value": "2021-07-07 01:04"
+        },
+        {
+          "date": "2021-07-08",
+          "value": "2021-07-08 01:42"
+        },
+        {
+          "date": "2021-07-09",
+          "value": "2021-07-09 05:33"
+        },
+        {
+          "date": "2021-07-10",
+          "value": "2021-07-10 02:53"
+        },
+        {
+          "date": "2021-07-11",
+          "value": "2021-07-11 07:08"
+        },
+        {
+          "date": "2021-07-12",
+          "value": "2021-07-12 01:32"
+        },
+        {
+          "date": "2021-07-13",
+          "value": "2021-07-13 02:48"
+        },
+        {
+          "date": "2021-07-14",
+          "value": "2021-07-14 03:43"
+        },
+        {
+          "date": "2021-07-15",
+          "value": "2021-07-15 01:12"
+        },
+        {
+          "date": "2021-07-16",
+          "value": "2021-07-16 02:43"
+        },
+        {
+          "date": "2021-07-17",
+          "value": "2021-07-17 02:24"
+        },
+        {
+          "date": "2021-07-18",
+          "value": "2021-07-18 02:37"
+        },
+        {
+          "date": "2021-07-19",
+          "value": "2021-07-19 00:48"
+        },
+        {
+          "date": "2021-07-20",
+          "value": "2021-07-20 00:26"
+        },
+        {
+          "date": "2021-07-21",
+          "value": "2021-07-21 02:19"
+        },
+        {
+          "date": "2021-07-22",
+          "value": "2021-07-22 01:21"
+        },
+        {
+          "date": "2021-07-23",
+          "value": "2021-07-23 02:41"
+        },
+        {
+          "date": "2021-07-24",
+          "value": "2021-07-24 01:23"
+        },
+        {
+          "date": "2021-07-25",
+          "value": "2021-07-25 04:55"
+        },
+        {
+          "date": "2021-07-26",
+          "value": "2021-07-25 23:21"
+        },
+        {
+          "date": "2021-07-27",
+          "value": "2021-07-27 04:13"
+        },
+        {
+          "date": "2021-07-28",
+          "value": "2021-07-28 02:40"
+        },
+        {
+          "date": "2021-07-29",
+          "value": "2021-07-29 04:57"
+        },
+        {
+          "date": "2021-07-31",
+          "value": "2021-07-31 03:36"
+        },
+        {
+          "date": "2021-08-01",
+          "value": "2021-08-01 06:18"
+        },
+        {
+          "date": "2021-08-02",
+          "value": "2021-08-02 01:52"
+        },
+        {
+          "date": "2021-08-03",
+          "value": "2021-08-03 00:52"
+        },
+        {
+          "date": "2021-08-04",
+          "value": "2021-08-04 02:58"
+        },
+        {
+          "date": "2021-08-05",
+          "value": "2021-08-05 02:59"
+        },
+        {
+          "date": "2021-08-06",
+          "value": "2021-08-06 02:04"
+        },
+        {
+          "date": "2021-08-07",
+          "value": "2021-08-07 01:19"
+        },
+        {
+          "date": "2021-08-08",
+          "value": "2021-08-07 22:55"
+        },
+        {
+          "date": "2021-08-09",
+          "value": "2021-08-08 23:24"
+        },
+        {
+          "date": "2021-08-10",
+          "value": "2021-08-10 02:01"
+        },
+        {
+          "date": "2021-08-11",
+          "value": "2021-08-11 01:56"
+        },
+        {
+          "date": "2021-08-12",
+          "value": "2021-08-12 04:31"
+        },
+        {
+          "date": "2021-08-13",
+          "value": "2021-08-13 02:16"
+        },
+        {
+          "date": "2021-08-14",
+          "value": "2021-08-14 04:43"
+        },
+        {
+          "date": "2021-08-15",
+          "value": "2021-08-15 00:33"
+        },
+        {
+          "date": "2021-08-16",
+          "value": "2021-08-16 01:45"
+        },
+        {
+          "date": "2021-08-17",
+          "value": "2021-08-17 03:20"
+        },
+        {
+          "date": "2021-08-18",
+          "value": "2021-08-18 03:26"
+        },
+        {
+          "date": "2021-08-19",
+          "value": "2021-08-19 02:37"
+        },
+        {
+          "date": "2021-08-20",
+          "value": "2021-08-20 02:35"
+        },
+        {
+          "date": "2021-08-21",
+          "value": "2021-08-21 01:14"
+        },
+        {
+          "date": "2021-08-22",
+          "value": "2021-08-22 02:52"
+        },
+        {
+          "date": "2021-08-23",
+          "value": "2021-08-23 02:22"
+        },
+        {
+          "date": "2021-08-24",
+          "value": "2021-08-24 03:03"
+        },
+        {
+          "date": "2021-08-25",
+          "value": "2021-08-25 04:03"
+        },
+        {
+          "date": "2021-08-26",
+          "value": "2021-08-26 02:30"
+        },
+        {
+          "date": "2021-08-27",
+          "value": "2021-08-27 01:52"
+        },
+        {
+          "date": "2021-08-28",
+          "value": "2021-08-28 02:26"
+        },
+        {
+          "date": "2021-08-29",
+          "value": "2021-08-29 02:18"
+        },
+        {
+          "date": "2021-08-30",
+          "value": "2021-08-30 03:07"
+        },
+        {
+          "date": "2021-08-31",
+          "value": "2021-08-31 02:49"
+        },
+        {
+          "date": "2021-09-01",
+          "value": "2021-09-01 03:26"
+        },
+        {
+          "date": "2021-09-02",
+          "value": "2021-09-02 02:48"
+        },
+        {
+          "date": "2021-09-03",
+          "value": "2021-09-02 23:32"
+        },
+        {
+          "date": "2021-09-04",
+          "value": "2021-09-04 04:21"
+        },
+        {
+          "date": "2021-09-05",
+          "value": "2021-09-05 04:51"
+        },
+        {
+          "date": "2021-09-06",
+          "value": "2021-09-06 04:13"
+        }
+      ]
+    },
+    {
+      "code": "72166-2",
+      "label": "Tobacco smoking status",
+      "reading_count": 0,
+      "latest": null,
+      "readings": []
+    }
+  ],
+  "conditions": [
+    {
+      "code": "406506008",
+      "label": "Attention deficit hyperactivity disorder (disorder)",
+      "clinical_status": "active",
+      "onset": "2005-12-04",
+      "recorded_date": null,
+      "abatement": null
+    },
+    {
+      "code": "73595000",
+      "label": "Stress (finding)",
+      "clinical_status": "resolved",
+      "onset": "2011-10-11",
+      "recorded_date": null,
+      "abatement": "2018-10-23"
+    },
+    {
+      "code": "384709000",
+      "label": "Sprain (morphologic abnormality)",
+      "clinical_status": "resolved",
+      "onset": "2018-08-13",
+      "recorded_date": null,
+      "abatement": "2018-09-16"
+    },
+    {
+      "code": "44465007",
+      "label": "Sprain of ankle (disorder)",
+      "clinical_status": "resolved",
+      "onset": "2018-08-13",
+      "recorded_date": null,
+      "abatement": "2018-09-16"
+    },
+    {
+      "code": "162864005",
+      "label": "Body mass index 30+ - obesity (finding)",
+      "clinical_status": "active",
+      "onset": "2018-10-23",
+      "recorded_date": null,
+      "abatement": null
+    }
+  ],
+  "medications": [
+    {
+      "code": "1091392",
+      "text": "Methylphenidate Hydrochloride 20 MG Oral Tablet",
+      "status": "active",
+      "as_needed": false,
+      "dosage": null,
+      "first_authored": "2005-12-03",
+      "last_authored": "2005-12-03",
+      "requester": null,
+      "fill_count": 1
+    }
+  ],
+  "allergies": [],
+  "encounters": {
+    "total": 0,
+    "recent": []
+  }
+}

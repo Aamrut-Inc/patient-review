@@ -1,0 +1,123 @@
+{
+  "source_file": "hypothyroidism_patient_Lasonya941_Goodwin327.json",
+  "biomarkers": [
+    {
+      "code": "3016-3",
+      "label": "Thyrotropin [Units/volume] in Serum or Plasma",
+      "unit": "m[IU]/L",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2025-07-19T08:46:53+05:30",
+        "value": 4.7408
+      },
+      "readings": [
+        {
+          "date": "2025-07-19T08:46:53+05:30",
+          "value": 4.7408
+        }
+      ]
+    },
+    {
+      "code": "3024-7",
+      "label": "Thyroxine (T4) free [Mass/volume] in Serum or Plasma",
+      "unit": "ng/dl",
+      "reading_count": 1,
+      "trajectory_available": false,
+      "latest": {
+        "date": "2025-07-19T08:46:53+05:30",
+        "value": 0.18308
+      },
+      "readings": [
+        {
+          "date": "2025-07-19T08:46:53+05:30",
+          "value": 0.18308
+        }
+      ]
+    }
+  ],
+  "qualitative_observations": [],
+  "conditions": [
+    {
+      "code": "83664006",
+      "label": "Idiopathic atrophic hypothyroidism (disorder)",
+      "clinical_status": "active",
+      "onset": "2025-07-26T08:46:53+05:30",
+      "recorded_date": "2025-07-26T08:46:53+05:30",
+      "abatement": null
+    }
+  ],
+  "medications": [
+    {
+      "code": "966222",
+      "text": "Levothyroxine Sodium 0.075 MG Oral Tablet",
+      "status": "active",
+      "as_needed": false,
+      "dosage": "1x per 60.0 day",
+      "first_authored": "2025-07-26T08:46:53+05:30",
+      "last_authored": "2025-07-26T08:46:53+05:30",
+      "requester": "Dr. Miguel815 Roberts511",
+      "fill_count": 1
+    }
+  ],
+  "allergies": [],
+  "encounters": {
+    "total": 9,
+    "recent": [
+      {
+        "start": "2025-10-04T08:46:53+05:30",
+        "end": "2025-10-04T09:01:53+05:30",
+        "type": "General examination of patient (procedure)",
+        "location": "BRAINTREE FAMILY PHYSICIAN INC"
+      },
+      {
+        "start": "2025-07-26T08:46:53+05:30",
+        "end": "2025-07-26T09:01:53+05:30",
+        "type": "Encounter for problem (procedure)",
+        "location": "SOUTH SHORE HOSPITAL INC."
+      },
+      {
+        "start": "2025-07-19T08:46:53+05:30",
+        "end": "2025-07-19T09:01:53+05:30",
+        "type": "Encounter for problem (procedure)",
+        "location": "SOUTH SHORE HOSPITAL INC."
+      },
+      {
+        "start": "2024-09-28T08:46:53+05:30",
+        "end": "2024-09-28T09:01:53+05:30",
+        "type": "General examination of patient (procedure)",
+        "location": "BRAINTREE FAMILY PHYSICIAN INC"
+      },
+      {
+        "start": "2023-09-23T08:46:53+05:30",
+        "end": "2023-09-23T09:01:53+05:30",
+        "type": "General examination of patient (procedure)",
+        "location": "BRAINTREE FAMILY PHYSICIAN INC"
+      },
+      {
+        "start": "2022-09-17T08:46:53+05:30",
+        "end": "2022-09-17T09:01:53+05:30",
+        "type": "General examination of patient (procedure)",
+        "location": "BRAINTREE FAMILY PHYSICIAN INC"
+      },
+      {
+        "start": "2021-09-11T08:46:53+05:30",
+        "end": "2021-09-11T09:01:53+05:30",
+        "type": "General examination of patient (procedure)",
+        "location": "BRAINTREE FAMILY PHYSICIAN INC"
+      },
+      {
+        "start": "2019-10-05T08:46:53+05:30",
+        "end": "2019-10-05T09:01:53+05:30",
+        "type": "General examination of patient (procedure)",
+        "location": "BRAINTREE FAMILY PHYSICIAN INC"
+      },
+      {
+        "start": "2017-09-30T08:46:53+05:30",
+        "end": "2017-09-30T09:01:53+05:30",
+        "type": "General examination of patient (procedure)",
+        "location": "BRAINTREE FAMILY PHYSICIAN INC"
+      }
+    ]
+  }
+}

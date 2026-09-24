@@ -1,0 +1,53 @@
+{
+  "narrative": [
+    "Marcus, 34, is a software engineer training for a half-marathon whose progress has stalled and whose energy has dropped — which he's chalked up to training harder without results.",
+    "He doesn't know it yet, but a routine physical 8 months ago showed a borderline-high TSH he never followed up on.",
+    "This profile is a composite: the wearable data is a real, unmodified 90-day Fitbit record from a different person.",
+    "The diagnosed condition (idiopathic atrophic hypothyroidism) and Levothyroxine prescription come from a separate synthetic FHIR patient — stitched together by narrative only, not a shared identity."
+  ],
+  "primary_conditions": [
+    "83664006"
+  ],
+  "medication_groups": [
+    {
+      "label": "Thyroid",
+      "codes": [
+        "Levothyroxine Sodium 0.075 MG Oral Tablet"
+      ]
+    }
+  ],
+  "conditions_extra": {
+    "83664006": {
+      "detail": true,
+      "diagnosed_label": "Diagnosed 2025-07-26 (clinical layer)",
+      "pathway": "Idiopathic atrophic (autoimmune) hypothyroidism causes a metabolic slowdown — fatigue, cold intolerance, and a training plateau despite steadily rising step counts, which is exactly what the wearable trend shows for this profile.",
+      "relevant_biomarker_codes": [
+        "3016-3"
+      ],
+      "relevant_wearables": [
+        "resting_hr",
+        "sleep_efficiency"
+      ],
+      "relevant_medication_codes": [
+        "Levothyroxine Sodium 0.075 MG Oral Tablet"
+      ]
+    }
+  },
+  "wearable_relevance": {
+    "steps": "high",
+    "resting_hr": "high",
+    "spo2": "low",
+    "sleep_efficiency": "medium",
+    "stress_score": "low"
+  },
+  "flags": [],
+  "version": 1,
+  "version_history": [
+    {
+      "version": 1,
+      "date": "2026-07-28",
+      "change": "Initial profile import from generation pipeline",
+      "by": "System"
+    }
+  ]
+}

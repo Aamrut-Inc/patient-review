@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign in &mdash; Chart QA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@600&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<!-- Self-contained styles: everything else on the site is behind sign-in. -->
+<style>
+  :root { --paper: #F6F5F1; --surface: #FFFFFF; --ink: #1B1D22; --muted: #6B6F76; --border: #E3E1DA; --rust: #B8461E; }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 16px;
+         background: var(--paper); color: var(--ink); font-family: "IBM Plex Sans", -apple-system, sans-serif; }
+  .card { width: 100%; max-width: 380px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 32px 28px; text-align: center; }
+  h1 { font-family: "Newsreader", Georgia, serif; font-weight: 600; font-size: 28px; margin: 0 0 6px; }
+  p { color: var(--muted); font-size: 14px; line-height: 1.5; margin: 0 0 22px; }
+  form { display: flex; flex-direction: column; gap: 10px; text-align: left; }
+  label { font-size: 13px; font-weight: 500; }
+  input { width: 100%; padding: 10px 12px; margin-top: 4px; border: 1px solid var(--border); border-radius: 5px; font: inherit; font-size: 14px; }
+  button { margin-top: 6px; padding: 10px 14px; border: none; border-radius: 5px; background: var(--ink); color: var(--paper); font: inherit; font-size: 14px; font-weight: 500; cursor: pointer; }
+  button:disabled { opacity: .6; cursor: default; }
+  .divider { display: none; color: var(--muted); font-size: 12.5px; margin: 18px 0 14px; }
+  #google-button { display: flex; justify-content: center; }
+  #error { color: var(--rust); font-size: 13.5px; margin: 16px 0 0; min-height: 1em; }
+</style>
+</head>
+<body>
+<main class="card">
+  <h1>Chart QA</h1>
+  <p id="lede">Sign in to review patient charts.</p>
+  <form id="password-form">
+    <label>Work email<input type="email" id="email" autocomplete="email" required></label>
+    <label>Team password<input type="password" id="password" autocomplete="current-password" required></label>
+    <button type="submit" id="submit">Sign in</button>
+  </form>
+  <p class="divider" id="divider">or</p>
+  <div id="google-button"></div>
+  <p id="error" role="alert"></p>
+</main>
+
+<script>
+  const errorEl = document.getElementById("error");
+
+  // Only same-site paths, so ?next= can't bounce people to another site.
+  function nextPath() {
+    const next = new URLSearchParams(location.search).get("next") || "/index.html";
+    return next.startsWith("/") && !next.startsWith("//") ? next : "/index.html";
+  }
+
+  async function signIn(path, body) {
+    errorEl.textContent = "";
+    try {
+      const res = await fetch(path, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(body),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) throw new Error(data.error || `Sign-in failed (HTTP ${res.status})`);
+      location.replace(nextPath());
+    } catch (e) {
+      errorEl.textContent = e.message;
+    }
+  }
+  const onCredential = response => signIn("/api/auth/google", { credential: response.credential });
+
+  document.getElementById("password-form").addEventListener("submit", async e => {
+    e.preventDefault();
+    const btn = document.getElementById("submit");
+    btn.disabled = true;
+    await signIn("/api/auth/password", {
+      email: document.getElementById("email").value,
+      password: document.getElementById("password").value,
+    });
+    btn.disabled = false;
+  });
+
+  let config = null;
+  fetch("/api/auth/config").then(r => r.json()).then(c => {
+    config = c;
+    document.getElementById("email").placeholder = `you@${c.domain}`;
+    if (c.client_id && window.google) initGoogle();
+  }).catch(() => {});
+
+  // Google's button only appears once GOOGLE_CLIENT_ID is configured.
+  function initGoogle() {
+    if (!config || !config.client_id || initGoogle.done) return;
+    initGoogle.done = true;
+    document.getElementById("divider").style.display = "block";
+    google.accounts.id.initialize({
+      client_id: config.client_id,
+      callback: onCredential,
+      hd: config.domain,           // hint Google to offer only work accounts
+      ux_mode: "popup",
+    });
+    google.accounts.id.renderButton(document.getElementById("google-button"), { theme: "outline", size: "large", text: "signin_with", width: 280 });
+  }
+
+  window.onGoogleLibraryLoad = initGoogle;
+</script>
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+</body>
+</html>

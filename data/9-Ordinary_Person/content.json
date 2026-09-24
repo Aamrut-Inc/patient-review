@@ -1,0 +1,28 @@
+{
+  "narrative": [
+    "Elena, 34, is an elementary school teacher with a steady routine — dog walks, a weekend yoga class, regular meals — and deliberately nothing else going on.",
+    "No chronic conditions, no active medications, no mental-health history.",
+    "Her chart's only notable entries: a fully resolved foot laceration, three uncomplicated pregnancies, two courses of oral contraceptives, one UTI, and one bout of viral pharyngitis — an ordinary life, kept rather than scrubbed clean.",
+    "Exists as a plain baseline for general-safety and 'same answer for anyone' questions."
+  ],
+  "primary_conditions": [],
+  "medication_groups": [],
+  "conditions_extra": {},
+  "wearable_relevance": {
+    "steps": "medium",
+    "resting_hr": "medium",
+    "spo2": "low",
+    "sleep_efficiency": "medium",
+    "stress_score": "low"
+  },
+  "flags": [],
+  "version": 1,
+  "version_history": [
+    {
+      "version": 1,
+      "date": "2026-07-28",
+      "change": "Initial profile import from generation pipeline",
+      "by": "System"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "narrative": [
+    "Vernon Wunsch, 68, has no personal chronic conditions.",
+    "But he has a strong bilateral and sibling family history of the same diabetic-nephropathy pathway: Type 2 diabetes to hypertension to progressive CKD.",
+    "Currently asymptomatic, with an overweight-range BMI and high-normal blood pressure — an early-risk, pre-disease profile.",
+    "No chronic medications. The only prescription on file is a dental fluoride treatment tied to a 2025 gingivitis episode."
+  ],
+  "primary_conditions": [],
+  "medication_groups": [],
+  "conditions_extra": {},
+  "wearable_relevance": {
+    "steps": "medium",
+    "resting_hr": "medium",
+    "spo2": "low",
+    "sleep_efficiency": "low",
+    "stress_score": "low"
+  },
+  "flags": [],
+  "version": 1,
+  "version_history": [
+    {
+      "version": 1,
+      "date": "2026-07-28",
+      "change": "Initial profile import from generation pipeline",
+      "by": "System"
+    }
+  ]
+}

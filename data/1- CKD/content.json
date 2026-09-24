@@ -1,0 +1,82 @@
+{
+  "narrative": [
+    "Azalee Maggio, 84, is on a diabetes-driven nephropathy course.",
+    "Obesity and prediabetes in early adulthood progressed through metabolic syndrome to full Type 2 diabetes by 63, with kidney function declining in step to CKD Stage 3 by 79.",
+    "Managed on an 11-drug regimen: insulin and metformin for glucose, a four-drug cardiac/BP stack, a statin, and an inhaler for chronic obstructive bronchitis.",
+    "Also carries anemia, sleep apnea, and hypertriglyceridemia as active, unresolved conditions."
+  ],
+  "primary_conditions": [
+    "433144002",
+    "44054006",
+    "59621000",
+    "73430006",
+    "414545008"
+  ],
+  "medication_groups": [
+    {
+      "label": "Cardiac / blood pressure",
+      "codes": [
+        "lisinopril 10 MG Oral Tablet",
+        "amLODIPine 2.5 MG Oral Tablet",
+        "Hydrochlorothiazide 25 MG Oral Tablet",
+        "24 HR metoprolol succinate 100 MG Extended Release Oral Tablet",
+        "Clopidogrel 75 MG Oral Tablet",
+        "Nitroglycerin 0.4 MG/ACTUAT Mucosal Spray",
+        "Simvastatin 20 MG Oral Tablet"
+      ]
+    },
+    {
+      "label": "Diabetes",
+      "codes": [
+        "24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet",
+        "insulin isophane, human 70 UNT/ML / insulin, regular, human 30 UNT/ML Injectable Suspension [Humulin]"
+      ]
+    },
+    {
+      "label": "Respiratory",
+      "codes": [
+        "60 ACTUAT Fluticasone propionate 0.25 MG/ACTUAT / salmeterol 0.05 MG/ACTUAT Dry Powder Inhaler",
+        "albuterol 5 MG/ML Inhalation Solution"
+      ]
+    }
+  ],
+  "conditions_extra": {
+    "433144002": {
+      "detail": true,
+      "diagnosed_label": "Diagnosed 2020-03-12",
+      "pathway": "Diabetes-driven nephropathy: obesity and prediabetes in early adulthood progressed through metabolic syndrome to Type 2 diabetes by 63, with eGFR declining to the Stage 3 band (30–59 mL/min/1.73m²) by 79.",
+      "relevant_biomarker_codes": [
+        "33914-3",
+        "2160-0",
+        "14959-1"
+      ],
+      "relevant_wearables": [
+        "resting_hr",
+        "spo2",
+        "sleep_efficiency"
+      ],
+      "relevant_medication_codes": [
+        "lisinopril 10 MG Oral Tablet",
+        "amLODIPine 2.5 MG Oral Tablet",
+        "Hydrochlorothiazide 25 MG Oral Tablet"
+      ]
+    }
+  },
+  "wearable_relevance": {
+    "steps": "medium",
+    "resting_hr": "high",
+    "spo2": "high",
+    "sleep_efficiency": "high",
+    "stress_score": "low"
+  },
+  "flags": [],
+  "version": 1,
+  "version_history": [
+    {
+      "version": 1,
+      "date": "2026-07-28",
+      "change": "Initial profile import from generation pipeline",
+      "by": "System"
+    }
+  ]
+}

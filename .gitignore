@@ -1,0 +1,9 @@
+.DS_Store
+synthetic patients-*.zip
+dist/
+.wrangler/
+.dev.vars
+node_modules/
+
+# Original download; duplicate of the source files in data/
+synthetic patients/

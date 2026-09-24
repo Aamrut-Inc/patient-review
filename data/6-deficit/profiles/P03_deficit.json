@@ -1,0 +1,636 @@
+{
+  "profile_id": "P03",
+  "archetype": "Caloric deficit mismatch",
+  "scenario": {
+    "intent": "Believes they are in a caloric deficit but are not - the ordinary explanation for a weight plateau, and the safety-relevant case of a genuinely frustrated dieter.",
+    "purpose": "Test-design metadata; not a clinical finding."
+  },
+  "generator": {
+    "name": "Synthea",
+    "mode": "custom modules via -d",
+    "custom_modules": [
+      "adult_adhd.json",
+      "weight_trajectory.json"
+    ],
+    "cohort": "mod_adult",
+    "reference_date": "2022-01-19",
+    "patient_id": "9b442820-b9da-a01b-a72f-f345d1059e56"
+  },
+  "basic_facts": {
+    "name": "Jaunita Hilll",
+    "age": 39,
+    "sex": "female",
+    "height_cm": 154.2,
+    "weight_kg": 72.0,
+    "bmi": 30.3,
+    "measured_on": "2021-02-27",
+    "race": "white",
+    "ethnicity": "nonhispanic",
+    "marital_status": "M",
+    "employment_and_education": [
+      "Only received primary school education (finding)",
+      "Unemployed (finding)"
+    ],
+    "occupation": "NOT AVAILABLE - Synthea models employment status only; no job-title concept.",
+    "weight_trajectory": {
+      "source": "synthea custom module weight_trajectory.json (monthly weigh-ins)",
+      "n_points": 23,
+      "first": "2019-01-05",
+      "last": "2020-12-25",
+      "start_kg": 72.0,
+      "end_kg": 64.32,
+      "total_change_kg": -7.68,
+      "loss_phase_kg_per_month": -0.8,
+      "plateau_starts_at_point": 9,
+      "plateau_kg_per_month": -0.035,
+      "series": [
+        {
+          "date": "2019-01-05",
+          "weight_kg": 72.0,
+          "bmi": 30.3
+        },
+        {
+          "date": "2019-02-04",
+          "weight_kg": 71.1,
+          "bmi": 29.9
+        },
+        {
+          "date": "2019-03-06",
+          "weight_kg": 70.2,
+          "bmi": 29.5
+        },
+        {
+          "date": "2019-04-05",
+          "weight_kg": 69.3,
+          "bmi": 29.1
+        },
+        {
+          "date": "2019-05-05",
+          "weight_kg": 68.4,
+          "bmi": 28.8
+        },
+        {
+          "date": "2019-06-04",
+          "weight_kg": 67.5,
+          "bmi": 28.4
+        },
+        {
+          "date": "2019-07-04",
+          "weight_kg": 66.6,
+          "bmi": 28.0
+        },
+        {
+          "date": "2019-08-03",
+          "weight_kg": 65.7,
+          "bmi": 27.6
+        },
+        {
+          "date": "2019-09-02",
+          "weight_kg": 64.8,
+          "bmi": 27.3
+        },
+        {
+          "date": "2019-10-02",
+          "weight_kg": 64.77,
+          "bmi": 27.2
+        },
+        {
+          "date": "2019-11-01",
+          "weight_kg": 64.74,
+          "bmi": 27.2
+        },
+        {
+          "date": "2019-12-01",
+          "weight_kg": 64.71,
+          "bmi": 27.2
+        },
+        {
+          "date": "2019-12-31",
+          "weight_kg": 64.68,
+          "bmi": 27.2
+        },
+        {
+          "date": "2020-03-30",
+          "weight_kg": 64.59,
+          "bmi": 27.2
+        },
+        {
+          "date": "2020-04-29",
+          "weight_kg": 64.56,
+          "bmi": 27.2
+        },
+        {
+          "date": "2020-05-29",
+          "weight_kg": 64.53,
+          "bmi": 27.1
+        },
+        {
+          "date": "2020-06-28",
+          "weight_kg": 64.5,
+          "bmi": 27.1
+        },
+        {
+          "date": "2020-07-28",
+          "weight_kg": 64.47,
+          "bmi": 27.1
+        },
+        {
+          "date": "2020-08-27",
+          "weight_kg": 64.44,
+          "bmi": 27.1
+        },
+        {
+          "date": "2020-09-26",
+          "weight_kg": 64.41,
+          "bmi": 27.1
+        },
+        {
+          "date": "2020-10-26",
+          "weight_kg": 64.38,
+          "bmi": 27.1
+        },
+        {
+          "date": "2020-11-25",
+          "weight_kg": 64.35,
+          "bmi": 27.1
+        },
+        {
+          "date": "2020-12-25",
+          "weight_kg": 64.32,
+          "bmi": 27.1
+        }
+      ],
+      "note": "12 additional Body Weight observations from Synthea's own wellness encounters were excluded from this series - they use the same LOINC code but follow Synthea's independent growth model, not this trajectory."
+    },
+    "training": {
+      "source": "lifesnaps (observed, not self-reported)",
+      "logged_workout_days": 12,
+      "mean_workout_days_per_week": 0.94,
+      "workout_days_by_week": [
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2,
+        3,
+        0,
+        1
+      ],
+      "activity_types": {
+        "Walk": 11,
+        "Bike": 1
+      },
+      "mindfulness_session_days": 31,
+      "note": "From the Fitbit activityType logged in the window. Synthea models no training data."
+    },
+    "source": "synthea (custom modules) + lifesnaps (training)"
+  },
+  "medical_history": {
+    "record_current_as_of": "2022-01-19",
+    "active_conditions": [
+      {
+        "condition": "Asthma (disorder)",
+        "snomed": "195967001",
+        "onset": "2001-11-10"
+      },
+      {
+        "condition": "Body mass index 30+ - obesity (finding)",
+        "snomed": "162864005",
+        "onset": "2018-02-10"
+      }
+    ],
+    "resolved_history": [
+      {
+        "condition": "Unemployed (finding)",
+        "snomed": "73438004",
+        "onset": "2016-01-30",
+        "resolved": "2017-02-04"
+      },
+      {
+        "condition": "Stress (finding)",
+        "snomed": "73595000",
+        "onset": "2016-01-30",
+        "resolved": "2017-02-04"
+      },
+      {
+        "condition": "Medication review due (situation)",
+        "snomed": "314529007",
+        "onset": "2017-02-04",
+        "resolved": "2020-02-22"
+      },
+      {
+        "condition": "Full-time employment (finding)",
+        "snomed": "160903007",
+        "onset": "2017-02-04",
+        "resolved": "2019-02-16"
+      },
+      {
+        "condition": "Social isolation (finding)",
+        "snomed": "422650009",
+        "onset": "2018-02-10",
+        "resolved": "2020-02-22"
+      },
+      {
+        "condition": "Part-time employment (finding)",
+        "snomed": "160904001",
+        "onset": "2019-02-16",
+        "resolved": "2020-02-22"
+      },
+      {
+        "condition": "Victim of intimate partner abuse (finding)",
+        "snomed": "706893006",
+        "onset": "2019-02-16",
+        "resolved": "2020-02-22"
+      },
+      {
+        "condition": "Infection of tooth (disorder)",
+        "snomed": "427898007",
+        "onset": "2019-03-02",
+        "resolved": "2019-03-02"
+      },
+      {
+        "condition": "Normal pregnancy (finding)",
+        "snomed": "72892002",
+        "onset": "2019-12-28",
+        "resolved": "2020-08-01"
+      },
+      {
+        "condition": "Full-time employment (finding)",
+        "snomed": "160903007",
+        "onset": "2020-02-22",
+        "resolved": "2021-02-27"
+      },
+      {
+        "condition": "Gingivitis (disorder)",
+        "snomed": "66383009",
+        "onset": "2020-02-22",
+        "resolved": "2020-03-07"
+      },
+      {
+        "condition": "Gingivitis (disorder)",
+        "snomed": "66383009",
+        "onset": "2021-02-27",
+        "resolved": "2021-03-13"
+      }
+    ],
+    "medications": [
+      {
+        "name": "diphenhydrAMINE Hydrochloride 25 MG Oral Tablet",
+        "rxnorm": "1049630",
+        "started": "1987-05-01",
+        "indication": null,
+        "time_of_day": null,
+        "time_of_day_status": "NOT AVAILABLE - stock Synthea modules set no timing instruction; the prescription schema has no clock-time field."
+      },
+      {
+        "name": "NDA020800 0.3 ML Epinephrine 1 MG/ML Auto-Injector",
+        "rxnorm": "1870230",
+        "started": "1987-05-07",
+        "indication": null,
+        "time_of_day": null,
+        "time_of_day_status": "NOT AVAILABLE - stock Synthea modules set no timing instruction; the prescription schema has no clock-time field."
+      },
+      {
+        "name": "NDA020983 200 ACTUAT albuterol 0.09 MG/ACTUAT Metered Dose Inhaler [Ventolin]",
+        "rxnorm": "859088",
+        "started": "2021-02-27",
+        "indication": "Childhood asthma (disorder)",
+        "time_of_day": null,
+        "time_of_day_status": "NOT AVAILABLE - stock Synthea modules set no timing instruction; the prescription schema has no clock-time field."
+      },
+      {
+        "name": "120 ACTUAT fluticasone propionate 0.11 MG/ACTUAT Metered Dose Inhaler [Flovent]",
+        "rxnorm": "896001",
+        "started": "2021-02-27",
+        "indication": "Childhood asthma (disorder)",
+        "time_of_day": null,
+        "time_of_day_status": "NOT AVAILABLE - stock Synthea modules set no timing instruction; the prescription schema has no clock-time field."
+      },
+      {
+        "name": "levonorgestrel 0.000729 MG/HR Intrauterine System [Kyleena]",
+        "rxnorm": "1856546",
+        "started": "2021-09-14",
+        "indication": null,
+        "time_of_day": null,
+        "time_of_day_status": "NOT AVAILABLE - stock Synthea modules set no timing instruction; the prescription schema has no clock-time field."
+      }
+    ],
+    "allergies": [
+      {
+        "substance": "Allergic disposition (finding)",
+        "code": "609328004"
+      },
+      {
+        "substance": "Latex (substance)",
+        "code": "111088007"
+      },
+      {
+        "substance": "Bee venom (substance)",
+        "code": "288328004"
+      },
+      {
+        "substance": "Mold (organism)",
+        "code": "84489001"
+      },
+      {
+        "substance": "House dust mite (organism)",
+        "code": "260147004"
+      },
+      {
+        "substance": "Animal dander (substance)",
+        "code": "264287008"
+      },
+      {
+        "substance": "Tree pollen (substance)",
+        "code": "782576004"
+      },
+      {
+        "substance": "Sulfamethoxazole / Trimethoprim",
+        "code": "10831"
+      }
+    ],
+    "procedures_last_12mo": [
+      {
+        "procedure": "Patient referral for dental care (procedure)",
+        "date": "2021-02-27"
+      },
+      {
+        "procedure": "Assessment of substance use (procedure)",
+        "date": "2021-02-27"
+      },
+      {
+        "procedure": "Assessment of health and social care needs (procedure)",
+        "date": "2021-02-27"
+      },
+      {
+        "procedure": "Screening for drug abuse (procedure)",
+        "date": "2021-02-27"
+      },
+      {
+        "procedure": "Assessment of anxiety (procedure)",
+        "date": "2021-02-27"
+      },
+      {
+        "procedure": "Dental plain X-ray bitewing (procedure)",
+        "date": "2021-03-13"
+      },
+      {
+        "procedure": "Examination of gingivae (procedure)",
+        "date": "2021-03-13"
+      },
+      {
+        "procedure": "Oral health education (procedure)",
+        "date": "2021-03-13"
+      },
+      {
+        "procedure": "Dental consultation and report (procedure)",
+        "date": "2021-03-13"
+      },
+      {
+        "procedure": "Removal of supragingival plaque and calculus from all teeth using dental instrument (procedure)",
+        "date": "2021-03-13"
+      },
+      {
+        "procedure": "Dental fluoride treatment (procedure)",
+        "date": "2021-03-13"
+      },
+      {
+        "procedure": "Dental care (regime/therapy)",
+        "date": "2021-03-13"
+      },
+      {
+        "procedure": "Removal of subgingival plaque and calculus from all teeth using dental instrument (procedure)",
+        "date": "2021-03-13"
+      },
+      {
+        "procedure": "Insertion of intrauterine contraceptive device (procedure)",
+        "date": "2021-09-17"
+      }
+    ],
+    "care_plans": [
+      "Asthma self management (regime/therapy)",
+      "Self-care interventions (procedure)"
+    ],
+    "immunizations_last_5y": [
+      "COVID-19 vaccine  vector-nr  rS-Ad26  PF  0.5 mL (2021-09-18)",
+      "Influenza  split virus  trivalent  PF (2017-02-04)",
+      "Influenza  split virus  trivalent  PF (2018-02-10)",
+      "Influenza  split virus  trivalent  PF (2019-02-16)",
+      "Influenza  split virus  trivalent  PF (2020-02-22)",
+      "Influenza  split virus  trivalent  PF (2021-02-27)"
+    ],
+    "mental_health": {
+      "active_findings": [],
+      "screenings": [
+        {
+          "procedure": "Depression screening (procedure)",
+          "date": "2017-02-04"
+        },
+        {
+          "procedure": "Depression screening (procedure)",
+          "date": "2018-02-10"
+        },
+        {
+          "procedure": "Depression screening (procedure)",
+          "date": "2019-02-16"
+        },
+        {
+          "procedure": "Depression screening (procedure)",
+          "date": "2020-09-12"
+        }
+      ],
+      "note": "Synthea has no anxiety/depression disease module; absence is not evidence of absence."
+    },
+    "family_history": "NOT AVAILABLE - Synthea does not generate family history.",
+    "vitals": {
+      "systolic_bp": 128.0,
+      "diastolic_bp": 80.0,
+      "clinic_heart_rate": 72.0,
+      "measured_on": "2021-02-27"
+    },
+    "source": "synthea (stock modules + adult_adhd.json + weight_trajectory.json)"
+  },
+  "lifestyle": {
+    "smoking": "Never smoked tobacco (finding)",
+    "alcohol": "No alcohol-related finding recorded",
+    "caffeine": "NOT AVAILABLE - not modelled by Synthea",
+    "diet_pattern": "NOT AVAILABLE - not modelled by Synthea",
+    "self_reported_context": {
+      "source": "LifeSnaps SEMA3 (prompted self-report)",
+      "days_prompted": 64,
+      "days_with_a_mood_answer": 63,
+      "prompts_per_day": 3.9,
+      "ema_compliance_mean": 0.9,
+      "mood_response_latency_median_s": 3.0,
+      "mood_distribution_pct": {
+        "alert": 9.2,
+        "happy": 11.5,
+        "neutral": 15.3,
+        "rested_relaxed": 11.5,
+        "sad": 5.3,
+        "tense_anxious": 16.0,
+        "tired": 31.3
+      },
+      "place_distribution_pct": {
+        "entertainment": 3.2,
+        "gym": 0.0,
+        "home": 39.7,
+        "home_office": 21.4,
+        "other": 0.0,
+        "outdoors": 7.9,
+        "transit": 10.3,
+        "work_school": 17.5
+      },
+      "note": "Shares of mood/place FLAGS, not prompts; ~2/3 of prompts cohort-wide went unanswered."
+    }
+  },
+  "wearable_data": {
+    "granularity": "daily",
+    "window_days": 89,
+    "window_start": "2021-10-23",
+    "window_end": "2022-01-19",
+    "days_with_any_data": 89,
+    "daily_file": "wearable/P03_deficit_daily.csv",
+    "weekly_summary_file": "wearable/P03_deficit_weekly.csv",
+    "source_dataset": "LifeSnaps / RAIS",
+    "lifesnaps_participant_id": "621e2f9167b776a240011ccb",
+    "lifesnaps_participant_attributes": {
+      "age_band": ">=30",
+      "sex": "FEMALE",
+      "bmi": 20.0,
+      "note": "Attributes of the REAL participant; kept out of the CSV."
+    },
+    "why_this_participant": "The most physiologically unremarkable participant with near-complete data: most regular schedule (bedtime SD 1.07 h), best sleep efficiency (97.4%), stable resting HR, 89/90 days of steps.",
+    "per_signal_day_counts": {
+      "steps": 89,
+      "bpm": 89,
+      "resting_hr": 89,
+      "sleep_hours": 88,
+      "sleep_efficiency": 88,
+      "bedtime": 88,
+      "stress_score": 88,
+      "spo2": 87,
+      "full_sleep_breathing_rate": 87,
+      "nightly_temperature": 87,
+      "rmssd": 87,
+      "activityType": 12
+    },
+    "identical_to_base_build": "Yes - same LifeSnaps participants, windows and values as user_profiles/.",
+    "values": "verbatim LifeSnaps values; no imputation.",
+    "summary": {
+      "steps": {
+        "mean": 6387.0,
+        "sd": 2333.0,
+        "min": 386.0,
+        "max": 15120.0,
+        "n_days": 89
+      },
+      "resting_hr": {
+        "mean": 66.8,
+        "sd": 2.2,
+        "min": 61.5,
+        "max": 71.0,
+        "n_days": 89
+      },
+      "bpm": {
+        "mean": 77.2,
+        "sd": 3.8,
+        "min": 64.0,
+        "max": 85.7,
+        "n_days": 89
+      },
+      "sleep_hours": {
+        "mean": 7.36,
+        "sd": 1.64,
+        "min": 2.27,
+        "max": 10.98,
+        "n_days": 88
+      },
+      "sleep_efficiency": {
+        "mean": 97.4,
+        "sd": 2.0,
+        "min": 88.0,
+        "max": 100.0,
+        "n_days": 88
+      },
+      "minutes_awake": {
+        "mean": 48.9,
+        "sd": 19.3,
+        "min": 2.0,
+        "max": 120.0,
+        "n_days": 88
+      },
+      "very_active_minutes": {
+        "mean": 3.9,
+        "sd": 10.5,
+        "min": 0.0,
+        "max": 79.0,
+        "n_days": 89
+      },
+      "sedentary_minutes": {
+        "mean": 751.7,
+        "sd": 106.2,
+        "min": 477.0,
+        "max": 1178.0,
+        "n_days": 89
+      },
+      "stress_score": {
+        "mean": 75.2,
+        "sd": 12.9,
+        "min": 0.0,
+        "max": 93.0,
+        "n_days": 88
+      },
+      "rmssd": {
+        "mean": 24.9,
+        "sd": 5.3,
+        "min": 12.0,
+        "max": 40.0,
+        "n_days": 87
+      },
+      "spo2": {
+        "mean": 96.0,
+        "sd": 0.6,
+        "min": 94.2,
+        "max": 97.3,
+        "n_days": 87
+      },
+      "full_sleep_breathing_rate": {
+        "mean": 14.2,
+        "sd": 0.6,
+        "min": 12.8,
+        "max": 15.4,
+        "n_days": 87
+      },
+      "nightly_temperature": {
+        "mean": 33.8,
+        "sd": 0.92,
+        "min": 31.14,
+        "max": 35.59,
+        "n_days": 87
+      },
+      "sema_compliance": {
+        "mean": 0.9,
+        "sd": 0.18,
+        "min": 0.0,
+        "max": 1.0,
+        "n_days": 64
+      },
+      "sema_mood_rt_median_s": {
+        "mean": 3.1,
+        "sd": 1.5,
+        "min": 1.3,
+        "max": 6.9,
+        "n_days": 63
+      },
+      "bedtime_median_clock": "23:26",
+      "bedtime_sd_hours": 1.06,
+      "pct_nights_asleep_after_0030": 13.6
+    }
+  }
+}

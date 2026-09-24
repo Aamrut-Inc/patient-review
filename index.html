@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Patient Review &mdash; Chart QA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="app-shell">
+  <header class="top-bar" id="topbar"></header>
+  <div class="status-banner" id="status-banner"></div>
+  <main class="page-body">
+    <div class="narrative" id="narrative"></div>
+
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="overview" type="button">Patient overview</button>
+      <button class="tab-btn" data-tab="assistant" type="button">Ask the assistant</button>
+    </div>
+
+    <div class="tab-panel active" id="tab-overview">
+      <div class="accordion" id="accordion"></div>
+    </div>
+    <div class="tab-panel" id="tab-assistant"></div>
+  </main>
+</div>
+
+<script src="assets/js/app.js"></script>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/charts.js"></script>
+<script src="assets/js/shared.js"></script>
+<script src="assets/js/assistant.js"></script>
+<script src="assets/js/review.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+{
+  "narrative": [
+    "Jaunita Hilll, 39, is built around a caloric-deficit mismatch archetype: she believes she's eating at a deficit sufficient to keep losing weight, but isn't.",
+    "Her chart shows a 23-point monthly weight trajectory — an early loss phase, then a plateau from month 9 onward.",
+    "Backdrop of obesity and asthma, managed with fluticasone and albuterol, plus an epinephrine auto-injector on file.",
+    "Also resolved histories of social isolation and intimate partner abuse victimization, and a levonorgestrel IUD for contraception."
+  ],
+  "primary_conditions": [
+    "162864005",
+    "195967001"
+  ],
+  "medication_groups": [
+    {
+      "label": "Respiratory",
+      "codes": [
+        "120 ACTUAT fluticasone propionate 0.11 MG/ACTUAT Metered Dose Inhaler [Flovent]",
+        "NDA020983 200 ACTUAT albuterol 0.09 MG/ACTUAT Metered Dose Inhaler [Ventolin]",
+        "NDA020800 0.3 ML Epinephrine 1 MG/ML Auto-Injector"
+      ]
+    },
+    {
+      "label": "Other",
+      "codes": [
+        "diphenhydrAMINE Hydrochloride 25 MG Oral Tablet",
+        "levonorgestrel 0.000729 MG/HR Intrauterine System [Kyleena]"
+      ]
+    }
+  ],
+  "conditions_extra": {
+    "162864005": {
+      "detail": true,
+      "diagnosed_label": "Noted 2018-02-10",
+      "pathway": "The caloric-deficit-mismatch archetype: a patient who believes their intake is low enough to keep losing weight, tested against a monthly weight trajectory that shows the same loss-then-plateau pattern as the companion profiles.",
+      "relevant_biomarker_codes": [
+        "29463-7",
+        "39156-5"
+      ],
+      "relevant_wearables": [
+        "steps",
+        "sleep_efficiency"
+      ],
+      "relevant_medication_codes": []
+    }
+  },
+  "wearable_relevance": {
+    "steps": "high",
+    "resting_hr": "medium",
+    "spo2": "medium",
+    "sleep_efficiency": "medium",
+    "stress_score": "medium"
+  },
+  "flags": [],
+  "version": 1,
+  "version_history": [
+    {
+      "version": 1,
+      "date": "2026-07-28",
+      "change": "Initial profile import from generation pipeline",
+      "by": "System"
+    }
+  ]
+}
