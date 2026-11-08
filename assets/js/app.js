@@ -82,7 +82,10 @@ function mountStatusBanner(state) {
     <div class="stat fixed clickable" id="stat-fixed"><div class="num mono">${c.fixed}</div><div class="lbl">Fixed &amp; verified</div></div>
     <div class="stat"><div class="num mono">${Object.values(state.comments).reduce((a, arr) => a + arr.length, 0)}</div><div class="lbl">Total notes</div></div>
     <div class="stat"><div class="num mono">v${state.version}</div><div class="lbl">Current version</div></div>
-    <a class="banner-link" href="#" id="version-history-link">Version history &amp; roll back ›</a>
+    <div class="banner-links">
+      <a class="banner-link" href="#" id="version-history-link">Version history &amp; roll back ›</a>
+      <a class="banner-link" href="#" id="bin-link">Bin${(state.bin || []).length ? ` (${state.bin.length})` : ""} ›</a>
+    </div>
   `;
   document.getElementById("version-history-link").addEventListener("click", e => {
     e.preventDefault();

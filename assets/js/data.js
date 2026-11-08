@@ -122,6 +122,9 @@ async function getAllPatientStates() {
      {op: "add_comment", flag_id, text}
      {op: "fix_flags", flag_ids: [...]}   — one version bump per batch
      {op: "revert_to_version", version}   — reopen everything fixed after it
+     {op: "delete_flag", flag_id}         — unresolved flags only; moves it to the bin
+     {op: "restore_flag", flag_id}        — bin → back to open flags
+     {op: "purge_flag", flag_id}          — remove from the bin for good
    The dashboard's activity feed is reconstructed from this structured state
    (flags/comments), so there's exactly one source of truth per event. */
 async function applyReviewOp(patientId, state, op) {

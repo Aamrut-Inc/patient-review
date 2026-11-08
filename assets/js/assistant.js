@@ -21,6 +21,10 @@ function loadChatHistory(patientId) {
 function saveChatHistory(patientId, history) {
   localStorage.setItem(chatKey(patientId), JSON.stringify(history.slice(-30)));
 }
+// Stable per-message id so a flag can point at one assistant answer ("chat:<id>").
+function newMessageId() {
+  return "m" + Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
+}
 function isErrorBubble(h) {
   return h.error || (h.role === "assistant" && h.content.startsWith("⚠"));
 }
@@ -360,7 +364,7 @@ function buildPatientContext(patient, index, wearable, content, state) {
   lines.push(WEARABLE_FEATURES.map(f => summarizeWearableForAgent(f, wearable.daily)).join("\n"));
 
   lines.push("\nDOCTOR-FLAGGED INCONSISTENCIES:");
-  lines.push(openFlags.length ? openFlags.map(f => `- [OPEN, ${f.severity} urgency] ${f.title}: ${f.description}${f.proposed_fix ? ` Proposed fix: ${f.proposed_fix}` : ""}`).join("\n") : "- no open flags");
+  lines.push(openFlags.length ? openFlags.map(f => `- [OPEN, ${f.severity} urgency] ${f.title}${f.anchor ? ` (at ${f.anchor.label}${f.anchor.quote ? `: "${f.anchor.quote.slice(0, 200)}"` : ""})` : ""}: ${f.description || "(no details)"}${f.proposed_fix ? ` Proposed fix: ${f.proposed_fix}` : ""}`).join("\n") : "- no open flags");
   if (fixedFlags.length) lines.push(fixedFlags.map(f => `- [FIXED] ${f.title}`).join("\n"));
 
   return lines.join("\n");
@@ -512,25 +516,27 @@ function renderAssistant(patient, index, wearable, content, state) {
 
   const log = document.getElementById("chat-log");
   let history = loadChatHistory(patient.id);
+  history.forEach(h => { if (!h.id) h.id = newMessageId(); });
   let busy = false;
 
   function bubble(h) {
     if (h.role === "user") return `<div class="bubble user">${escapeHtml(h.content)}</div>`;
     if (isErrorBubble(h)) return `<div class="bubble assistant">${escapeHtml(h.content)}</div>`;
-    return `<div class="bubble assistant md">${renderMarkdown(h.content)}</div>`;
+    return `<div class="bubble assistant md" data-anchor="chat:${escapeHtml(h.id)}" data-anchor-label="Assistant answer">${renderMarkdown(h.content)}</div>`;
   }
   function renderLog() {
     log.innerHTML = history.length
       ? history.map(bubble).join("")
       : `<div class="bubble assistant">I have ${escapeHtml(patient.name)}'s complete chart — every lab reading, visit, note, medication order and wearable day — plus the generator's profile, limitations and methodology documents. Ask me anything, or use a quick prompt above.</div>`;
     log.scrollTop = log.scrollHeight;
+    if (typeof decorateAnchors === "function") decorateAnchors();
   }
   renderLog();
 
   async function send(text) {
     if (!text.trim() || busy) return;
     busy = true;
-    history.push({ role: "user", content: text });
+    history.push({ id: newMessageId(), role: "user", content: text });
     saveChatHistory(patient.id, history);
     renderLog();
     log.insertAdjacentHTML("beforeend", `<div class="bubble assistant thinking" id="thinking-bubble">Thinking…</div>`);
@@ -542,9 +548,9 @@ function renderAssistant(patient, index, wearable, content, state) {
 
     try {
       const reply = await callAssistant(patient, index, wearable, content, state, history, onProgress);
-      history.push({ role: "assistant", content: reply });
+      history.push({ id: newMessageId(), role: "assistant", content: reply });
     } catch (e) {
-      history.push({ role: "assistant", content: `⚠ ${e.message}`, error: true });
+      history.push({ id: newMessageId(), role: "assistant", content: `⚠ ${e.message}`, error: true });
     }
     busy = false;
     saveChatHistory(patient.id, history);

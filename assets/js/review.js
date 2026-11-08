@@ -14,12 +14,29 @@ function isExcludedFromClinical(b) {
   return CLINICAL_EXCLUDE_KEYWORDS.some(k => l.includes(k));
 }
 
+/* data-anchor attributes mark a spot an inconsistency can be pinned to (see flagging.js). */
+function anchorAttrs(key, label) {
+  return `data-anchor="${escapeHtml(key)}" data-anchor-label="${escapeHtml(label)}"`;
+}
+
+/* A chart is its own flaggable location ("graph:<row key>"), with an add
+   button under the x-axis; clicking a dot flags that one reading. */
+function graphBlock(rowKey, label, chartHtml) {
+  return `<div class="graph-wrap" ${anchorAttrs("graph:" + rowKey, "Graph: " + label)}>
+    ${chartHtml}
+    <div class="graph-actions">
+      <button class="btn graph-flag-btn" data-graph-flag type="button">+ Add inconsistency on this graph</button>
+      <span class="graph-hint">or click a point to flag that reading</span>
+    </div>
+  </div>`;
+}
+
 function sanitizeId(s) {
   return String(s).replace(/[^a-zA-Z0-9]/g, "-");
 }
 
 function accRow(id, title, count, bodyHtml, opts = {}) {
-  return `<div class="acc-row ${opts.open ? "open" : ""}" data-acc="${id}">
+  return `<div class="acc-row ${opts.open ? "open" : ""}" data-acc="${id}" ${anchorAttrs("section:" + id, title)}>
     <button class="acc-head" type="button">
       <h3>${escapeHtml(title)}</h3>
       ${count != null ? `<span class="acc-count">${count}</span>` : ""}
@@ -37,7 +54,7 @@ function renderConditions(content, index) {
   const pastUnclosed = open.filter(c => !primary.has(c.code));
 
   function pill(c, cls) {
-    return `<span class="pill ${cls}">${escapeHtml(cleanLabel(c.label))}</span>`;
+    return `<span class="pill ${cls}" ${anchorAttrs("cond:" + c.code, "Condition: " + cleanLabel(c.label))}>${escapeHtml(cleanLabel(c.label))}</span>`;
   }
 
   let html = `<div class="cond-group-title">Current struggles</div>`;
@@ -70,7 +87,7 @@ function medRow(m, asOf) {
   const freq = m.dosage || "—";
   const span = formatSpan(m.first_authored, asOf);
   const since = m.first_authored ? `${m.first_authored.slice(0, 10)}${span ? ` · ${span}` : ""}` : "—";
-  return `<tr>
+  return `<tr ${anchorAttrs("med:" + (m.code || sanitizeId(m.text)), "Medication: " + drug)}>
     <td>${escapeHtml(drug)}</td>
     <td class="mono">${escapeHtml(dose)}</td>
     <td>${escapeHtml(freq)}</td>
@@ -112,10 +129,10 @@ function biomarkerBandRow(b) {
   const latest = b.latest ? `${b.latest.value}${unit ? " " + unit : ""}` : "—";
   const id = "clin-" + sanitizeId(b.code);
   const chart = b.trajectory_available
-    ? renderLineChart(b.readings.map(r => ({ date: r.date, value: r.value })), { unit: unit ? " " + unit : "" })
+    ? graphBlock("bio:" + b.code, cleanLabel(b.label), renderLineChart(b.readings.map(r => ({ date: r.date, value: r.value })), { unit: unit ? " " + unit : "" }))
     : `<div class="empty-note">Only single value recorded.</div>`;
   const safeRange = band ? `<div class="band-safe-range"><span class="dot-key"></span>Safe range: ${band.low}–${band.high} ${band.unit} (${escapeHtml(band.label)})</div>` : "";
-  return `<div class="band-row" data-band-row="${id}">
+  return `<div class="band-row" data-band-row="${id}" ${anchorAttrs("bio:" + b.code, "Clinical number: " + cleanLabel(b.label))}>
     <button class="band-head" type="button" data-band-toggle="${id}">
       <span class="band-name">${escapeHtml(cleanLabel(b.label))}</span>
       <span class="band-val mono">${escapeHtml(latest)}</span>
@@ -126,7 +143,7 @@ function biomarkerBandRow(b) {
 }
 
 function qualitativeRow(q) {
-  return `<div class="band-row band-row-static">
+  return `<div class="band-row band-row-static" ${anchorAttrs("qual:" + (q.code || sanitizeId(q.label)), "Finding: " + cleanLabel(q.label))}>
     <div class="band-head">
       <span class="band-name">${escapeHtml(cleanLabel(q.label))}</span>
       <span class="band-val mono">${escapeHtml(q.latest ? String(q.latest.value) : "—")}</span>
@@ -189,9 +206,9 @@ function wearableBandRow(feature, daily) {
   const id = "wear-" + sanitizeId(feature.key);
   const unit = feature.unit ? ` ${feature.unit}` : "";
   const chart = vals.length
-    ? renderLineChart(series, { unit })
+    ? graphBlock("wear:" + feature.key, feature.label, renderLineChart(series, { unit }))
     : `<div class="empty-note">Not recorded for this patient.</div>`;
-  return `<div class="band-row" data-band-row="${id}">
+  return `<div class="band-row" data-band-row="${id}" ${anchorAttrs("wear:" + feature.key, "Wearable: " + feature.label)}>
     <button class="band-head" type="button" data-band-toggle="${id}">
       <span class="band-name">${escapeHtml(feature.label)}</span>
       <span class="band-val mono">${avg != null ? round1(avg) + unit : "not recorded"}</span>
@@ -213,16 +230,23 @@ function flagCardHtml(f, state, selected) {
   return `<div class="flag-card" data-flag="${f.id}">
     <div class="flag-head">
       ${selected ? `<input type="checkbox" class="flag-select" data-select-flag="${f.id}" aria-label="Select ${escapeHtml(f.title)}" ${selected.has(f.id) ? "checked" : ""}>` : ""}
-      <span class="flag-title">${escapeHtml(f.title)}</span>
+      ${f.anchor
+        ? `<button class="flag-title linklike" data-goto-flag="${f.id}" type="button" title="Go to location">${escapeHtml(f.title)}</button>`
+        : `<span class="flag-title">${escapeHtml(f.title)}</span>`}
       <span class="tag ${statusClass}">${f.status === "fixed" ? "Fixed" : "Open"}</span>
     </div>
-    <div class="flag-desc">${escapeHtml(f.description)}</div>
+    <div class="flag-loc">${f.anchor
+      ? `${escapeHtml(f.anchor.label)} · <button class="linklike" data-goto-flag="${f.id}" type="button">Go to location ›</button>`
+      : "General — no specific location"}</div>
+    ${f.anchor && f.anchor.quote ? `<blockquote class="flag-quote">${escapeHtml(f.anchor.quote)}</blockquote>` : ""}
+    ${f.description ? `<div class="flag-desc">${escapeHtml(f.description)}</div>` : ""}
     ${f.proposed_fix ? `<div class="flag-desc"><strong>Proposed fix:</strong> ${escapeHtml(f.proposed_fix)}</div>` : ""}
     <div class="flag-tags"><span class="tag ${sevClass}">${escapeHtml(f.severity)} urgency</span></div>
     <div class="flag-audit">${f.status === "fixed" ? `Fixed by ${escapeHtml(f.fixed_by)} · ${escapeHtml(f.fixed_date)}` : `Flagged by ${escapeHtml(f.opened_by)} · ${escapeHtml(f.opened_date)}`}</div>
     ${comments.length ? `<div class="flag-comments">${comments.map(c => `<div class="flag-comment"><span class="who">${escapeHtml(c.who)}</span> · ${escapeHtml(c.date)}: ${escapeHtml(c.text)}</div>`).join("")}</div>` : ""}
     <div class="flag-actions">
       <button class="btn" data-comment-toggle="${f.id}" type="button">Add comment</button>
+      ${f.status !== "fixed" ? `<button class="btn btn-danger" data-delete-flag="${f.id}" type="button">Delete</button>` : ""}
     </div>
     <div class="comment-input-row" id="comment-row-${f.id}" style="display:none;">
       <input type="text" placeholder="Add a note..." id="comment-input-${f.id}">
@@ -256,7 +280,8 @@ function wireTabs() {
   mountDrawer(patients, patient.id);
   mountTopBar({ patient, page: "review" });
 
-  document.getElementById("narrative").innerHTML = content.narrative.map(line => `<p>${escapeHtml(line)}</p>`).join("");
+  document.getElementById("narrative").innerHTML = content.narrative
+    .map((line, i) => `<p ${anchorAttrs("narrative:" + i, `Summary, paragraph ${i + 1}`)}>${escapeHtml(line)}</p>`).join("");
 
   function renderAccordion() {
     const el = document.getElementById("accordion");
@@ -275,25 +300,32 @@ function wireTabs() {
   renderAssistant(patient, index, wearable, content, state);
 
   /* ---- Flag panels (modals) ---- */
-  let currentPanelType = null;
+  // The open modal panel: {type: "open" | "fixed" | "location", keys?, title?}
+  let currentPanel = null;
   // Open flags ticked for the next "mark fixed" batch; survives panel re-renders.
   const selectedForFix = new Set();
-  function showFlagsPanel(type) {
-    currentPanelType = type;
-    const flags = state.flags.filter(f => type === "open" ? f.status !== "fixed" : f.status === "fixed");
-    [...selectedForFix].forEach(id => { if (!flags.some(f => f.id === id)) selectedForFix.delete(id); });
+  function showFlagsPanel(panel) {
+    currentPanel = panel;
+    const { type } = panel;
+    let flags = type === "location"
+      ? state.flags.filter(f => f.anchor && panel.keys.includes(f.anchor.key))
+          .sort((a, b) => (a.status === "fixed") - (b.status === "fixed"))
+      : state.flags.filter(f => type === "open" ? f.status !== "fixed" : f.status === "fixed");
+    const openIds = new Set(flags.filter(f => f.status !== "fixed").map(f => f.id));
+    [...selectedForFix].forEach(id => { if (!openIds.has(id)) selectedForFix.delete(id); });
     let body = flags.length
-      ? flags.map(f => flagCardHtml(f, state, type === "open" ? selectedForFix : null)).join("")
+      ? flags.map(f => flagCardHtml(f, state, f.status !== "fixed" ? selectedForFix : null)).join("")
       : `<div class="empty-note">Nothing here yet.</div>`;
-    if (type === "open" && flags.length) {
+    if (openIds.size) {
       const n = selectedForFix.size;
       body = `<div class="fix-bar">
-        <label class="fix-bar-all"><input type="checkbox" id="select-all-flags" ${n === flags.length ? "checked" : ""}> Select all</label>
+        <label class="fix-bar-all"><input type="checkbox" id="select-all-flags" ${n === openIds.size ? "checked" : ""}> Select all open</label>
         <button class="btn primary" id="mark-fixed" type="button" ${n ? "" : "disabled"}>${n ? `Mark ${n} fixed` : "Mark fixed"}</button>
       </div>
       <p class="section-note fix-bar-note">Fixes marked together count as one new profile version.</p>` + body;
     }
-    openModal(type === "open" ? "Open inconsistencies" : "Fixed & verified", body);
+    const title = type === "open" ? "Open inconsistencies" : type === "fixed" ? "Fixed & verified" : panel.title;
+    openModal(title, body);
   }
   // Updates the batch bar in place (re-rendering the modal would lose scroll position).
   function updateFixBar() {
@@ -305,29 +337,38 @@ function wireTabs() {
     if (all) all.checked = boxes.length > 0 && n === boxes.length;
   }
   function refreshPanelIfOpen() {
-    if (currentPanelType) showFlagsPanel(currentPanelType);
+    if (!currentPanel || !document.getElementById("modal-overlay")) return;
+    currentPanel.type === "bin" ? showBin() : showFlagsPanel(currentPanel);
+  }
+  function showBin() {
+    currentPanel = { type: "bin" };
+    const bin = [...(state.bin || [])].reverse();
+    openModal("Bin", bin.length
+      ? `<p class="section-note bin-note">Deleted inconsistencies, with their comments. Restore one to put it back in open flags.</p>` +
+        bin.map(({ flag: f, comments, deleted_by, deleted_date }) => `<div class="flag-card">
+          <div class="flag-head"><span class="flag-title">${escapeHtml(f.title)}</span><span class="tag">Deleted</span></div>
+          <div class="flag-loc">${f.anchor ? escapeHtml(f.anchor.label) : "General — no specific location"}</div>
+          ${f.anchor && f.anchor.quote ? `<blockquote class="flag-quote">${escapeHtml(f.anchor.quote)}</blockquote>` : ""}
+          ${f.description ? `<div class="flag-desc">${escapeHtml(f.description)}</div>` : ""}
+          <div class="flag-audit">Flagged by ${escapeHtml(f.opened_by)} · ${escapeHtml(f.opened_date)} — deleted by ${escapeHtml(deleted_by)} · ${escapeHtml(deleted_date)}${comments.length ? ` · ${comments.length} comment${comments.length === 1 ? "" : "s"}` : ""}</div>
+          <div class="flag-actions">
+            <button class="btn primary" data-restore-flag="${f.id}" type="button">Restore</button>
+            <button class="btn btn-danger" data-purge-flag="${f.id}" type="button">Delete forever</button>
+          </div>
+        </div>`).join("")
+      : `<div class="empty-note">The bin is empty.</div>`);
   }
   function refreshBanner() {
     mountStatusBanner(state);
-    document.getElementById("stat-open").addEventListener("click", () => showFlagsPanel("open"));
-    document.getElementById("stat-fixed").addEventListener("click", () => showFlagsPanel("fixed"));
+    document.getElementById("stat-open").addEventListener("click", () => showFlagsPanel({ type: "open" }));
+    document.getElementById("stat-fixed").addEventListener("click", () => showFlagsPanel({ type: "fixed" }));
+    document.getElementById("bin-link").addEventListener("click", e => { e.preventDefault(); showBin(); });
+    decorateAnchors();
   }
   refreshBanner();
+  initFlagging({ patient, state, showFlagsPanel, onChanged: () => { refreshBanner(); refreshPanelIfOpen(); } });
 
-  document.getElementById("add-flag-btn").addEventListener("click", () => {
-    openModal("Add inconsistency", `
-      <div>
-        <input type="text" id="new-flag-title" placeholder="Title" style="width:100%;padding:8px 10px;border:1px solid var(--border);border-radius:5px;font-family:inherit;font-size:13.5px;margin-bottom:8px;">
-        <textarea id="new-flag-desc" placeholder="Description" rows="2" style="width:100%;padding:8px 10px;border:1px solid var(--border);border-radius:5px;font-family:inherit;font-size:13.5px;margin-bottom:8px;"></textarea>
-        <textarea id="new-flag-fix" placeholder="Proposed fix" rows="2" style="width:100%;padding:8px 10px;border:1px solid var(--border);border-radius:5px;font-family:inherit;font-size:13.5px;margin-bottom:8px;"></textarea>
-        <select id="new-flag-urgency" style="width:100%;padding:8px 10px;border:1px solid var(--border);border-radius:5px;font-family:inherit;font-size:13.5px;margin-bottom:10px;">
-          <option value="High">High urgency</option>
-          <option value="Medium" selected>Medium urgency</option>
-          <option value="Low">Low urgency</option>
-        </select>
-        <button class="btn primary" id="submit-new-flag" type="button">Add flag</button>
-      </div>`);
-  });
+  document.getElementById("add-flag-btn").addEventListener("click", () => openQuickAdd(null));
 
   /* Saves one change to the shared server state, disabling the clicked
      button meanwhile so a double-click can't submit twice. */
@@ -368,6 +409,30 @@ function wireTabs() {
       }
       return;
     }
+    if (t.dataset && t.dataset.gotoFlag) {
+      goToFlagLocation(state.flags.find(f => f.id === t.dataset.gotoFlag));
+      return;
+    }
+    if (t.dataset && t.dataset.deleteFlag) {
+      const flag = state.flags.find(f => f.id === t.dataset.deleteFlag);
+      if (!flag || !confirm(`Delete "${flag.title}"?\n\nUse this when it turns out not to be an inconsistency. It moves to the Bin (in the top ribbon), where anyone can restore it.`)) return;
+      saveOp(t, { op: "delete_flag", flag_id: flag.id }, () => {
+        selectedForFix.delete(flag.id);
+        refreshPanelIfOpen();
+        refreshBanner();
+      });
+      return;
+    }
+    if (t.dataset && t.dataset.restoreFlag) {
+      saveOp(t, { op: "restore_flag", flag_id: t.dataset.restoreFlag }, () => { refreshPanelIfOpen(); refreshBanner(); });
+      return;
+    }
+    if (t.dataset && t.dataset.purgeFlag) {
+      const entry = (state.bin || []).find(b => b.flag.id === t.dataset.purgeFlag);
+      if (!entry || !confirm(`Permanently delete "${entry.flag.title}"?\n\nThis can't be undone.`)) return;
+      saveOp(t, { op: "purge_flag", flag_id: entry.flag.id }, () => { refreshPanelIfOpen(); refreshBanner(); });
+      return;
+    }
     if (t.dataset && t.dataset.selectFlag) {
       t.checked ? selectedForFix.add(t.dataset.selectFlag) : selectedForFix.delete(t.dataset.selectFlag);
       updateFixBar();
@@ -399,20 +464,6 @@ function wireTabs() {
         refreshPanelIfOpen();
         refreshBanner();
       });
-      return;
-    }
-    if (t.id === "submit-new-flag") {
-      const title = document.getElementById("new-flag-title").value.trim();
-      const desc = document.getElementById("new-flag-desc").value.trim();
-      const fix = document.getElementById("new-flag-fix").value.trim();
-      const urgency = document.getElementById("new-flag-urgency").value;
-      if (title && desc) {
-        saveOp(t, { op: "add_flag", title, description: desc, proposed_fix: fix, severity: urgency }, () => {
-          refreshBanner();
-          const root = document.getElementById("modal-root");
-          if (root) root.innerHTML = "";
-        });
-      }
       return;
     }
   });

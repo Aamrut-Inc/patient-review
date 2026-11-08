@@ -166,6 +166,9 @@ button { font-family: var(--font-body); cursor: pointer; }
   color: var(--muted); text-decoration: none; white-space: nowrap;
 }
 .banner-link:hover { color: var(--ink); }
+.banner-links { display: flex; flex-direction: column; justify-content: center; padding: 4px 0; }
+.banner-links .banner-link { padding: 4px 20px; }
+.bin-note { margin: 0 0 12px; }
 
 /* ===== Tabs ===== */
 .tabs { display: flex; gap: 4px; margin: 20px 0 18px; border-bottom: 1px solid var(--border); }
@@ -261,6 +264,8 @@ button.band-head:hover { background: var(--paper); }
 .flag-fix-tag { font-family: var(--font-mono); font-size: 11.5px; }
 .flag-audit { font-size: 12px; color: var(--muted); margin-bottom: 8px; }
 .flag-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+.btn-danger { color: var(--rust); margin-left: auto; }
+.btn-danger:hover { background: var(--rust-bg); border-color: #F1C9B6; }
 .flag-select { width: 16px; height: 16px; margin: 2px 2px 0 0; accent-color: var(--ink); cursor: pointer; flex-shrink: 0; }
 .fix-bar { position: sticky; top: -22px; z-index: 1; display: flex; align-items: center; justify-content: space-between; gap: 12px;
   margin: 0 0 4px; padding: 10px 0; background: var(--surface); border-bottom: 1px solid var(--border); }
@@ -314,6 +319,8 @@ button.band-head:hover { background: var(--paper); }
 /* ===== Charts (SVG) ===== */
 .line-chart { width: 100%; height: auto; display: block; }
 .line-chart .axis-line { stroke: var(--border); stroke-width: 1; }
+.line-chart .grid-line { stroke: var(--border); stroke-width: 1; stroke-dasharray: 2 3; opacity: .7; }
+.line-chart .tick-label { fill: var(--muted); opacity: .85; }
 .line-chart .axis-tick { stroke: var(--muted); stroke-width: 1; }
 .line-chart .line { fill: none; stroke: var(--ink); stroke-width: 1.4; }
 .line-chart .dot { fill: var(--ink); cursor: pointer; }
@@ -360,3 +367,53 @@ button.band-head:hover { background: var(--paper); }
   .med-table { font-size: 12.5px; }
   .med-table th:nth-child(4), .med-table td:nth-child(4) { display: none; }
 }
+
+/* ===== Location-aware flagging (flagging.js) ===== */
+.ctx-menu { position: fixed; z-index: 120; min-width: 220px; max-width: 320px; background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); box-shadow: 0 8px 24px rgba(27,29,34,.14); padding: 4px; }
+.ctx-menu button { display: block; width: 100%; text-align: left; border: none; background: none; padding: 8px 10px; border-radius: var(--radius-sm);
+  font-family: var(--font-body); font-size: 13px; color: var(--ink); cursor: pointer; }
+.ctx-menu button:hover { background: var(--gray-bg); }
+.ctx-sub { display: block; color: var(--muted); font-size: 12px; margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.sel-flag-btn { position: fixed; z-index: 110; padding: 6px 11px; border: none; border-radius: 100px; background: var(--rust); color: #fff;
+  font-family: var(--font-body); font-size: 12.5px; font-weight: 500; box-shadow: 0 4px 14px rgba(184,70,30,.35); cursor: pointer; }
+.sel-flag-btn:hover { filter: brightness(1.08); }
+
+.loc-badge { display: inline-flex; align-items: center; margin-left: 8px; padding: 1px 8px; border-radius: 100px; font-family: var(--font-body);
+  font-size: 11.5px; font-weight: 500; line-height: 1.6; white-space: nowrap; cursor: pointer; vertical-align: middle; }
+.loc-badge.open { background: var(--rust-bg); color: var(--rust); border: 1px solid #F1C9B6; }
+.loc-badge.fixed { background: var(--teal-bg); color: var(--teal); border: 1px solid #C4DDD6; }
+.loc-badge:hover, .loc-badge:focus-visible { filter: brightness(.96); outline: 2px solid currentColor; outline-offset: 1px; }
+.acc-head h3 .loc-badge { font-size: 11.5px; }
+
+mark.flag-mark { background: #FBE3D6; color: inherit; border-bottom: 2px solid var(--rust); padding: 0 1px; border-radius: 2px; }
+
+[data-anchor].flash { animation: flag-flash 2.4s ease-out; border-radius: var(--radius-sm); }
+@keyframes flag-flash { 0%, 30% { box-shadow: 0 0 0 3px var(--rust); background-color: var(--rust-bg); } 100% { box-shadow: 0 0 0 3px transparent; } }
+
+.flag-loc { font-size: 12.5px; color: var(--muted); margin: 2px 0 6px; }
+.linklike { border: none; background: none; padding: 0; font: inherit; color: var(--ink); text-decoration: underline; text-underline-offset: 2px; cursor: pointer; }
+.flag-title.linklike { text-decoration: none; font-weight: 600; text-align: left; }
+.flag-title.linklike:hover { text-decoration: underline; }
+.flag-quote { margin: 6px 0 8px; padding: 6px 10px; border-left: 3px solid var(--rust); background: var(--paper); font-size: 13px; color: var(--ink);
+  white-space: pre-wrap; max-height: 120px; overflow-y: auto; }
+.flag-context { font-size: 12.5px; color: var(--muted); white-space: pre-wrap; max-height: 240px; overflow-y: auto; border: 1px solid var(--border);
+  border-radius: var(--radius-sm); padding: 8px 10px; }
+
+.quick-add { display: flex; flex-direction: column; gap: 8px; }
+.quick-add input, .quick-add textarea, .quick-add select { width: 100%; padding: 8px 10px; border: 1px solid var(--border); border-radius: var(--radius-sm);
+  font-family: inherit; font-size: 13.5px; }
+.qa-loc { font-size: 13px; color: var(--muted); }
+.qa-row { display: flex; gap: 8px; }
+.qa-row select { flex: 1; }
+.qa-error { color: var(--rust); font-size: 13px; margin: 0; min-height: 1em; }
+
+/* Graph flagging: add button under the x-axis; flagged readings drawn larger in rust */
+.graph-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; margin-top: 6px; }
+.graph-flag-btn { color: var(--rust); border-color: #F1C9B6; }
+.graph-flag-btn:hover { background: var(--rust-bg); }
+.graph-hint { font-size: 12px; color: var(--muted); }
+.graph-actions .loc-badge { margin-left: 0; }
+.line-chart .dot:hover { r: 3.2; }
+.line-chart .dot.flagged { fill: var(--rust); r: 3.6; stroke: #fff; stroke-width: 1; }
