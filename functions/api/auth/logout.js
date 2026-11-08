@@ -1,8 +1,13 @@
+/* Sign out: clear the session cookie(s) and go back to the sign-in page.
+   Both the host-only and the shared cross-portal cookie are cleared, so a
+   reviewer who signed in through the hub is signed out here too. */
 import { clearedSessionCookie } from "../../../lib/auth.js";
 
-export async function onRequest({ request }) {
-  return new Response(null, {
-    status: 302,
-    headers: { Location: new URL("/login.html", request.url).toString(), "Set-Cookie": clearedSessionCookie() },
-  });
+function redirect(request, env) {
+  const headers = new Headers({ Location: new URL("/login.html", request.url).toString() });
+  for (const cookie of clearedSessionCookie(env)) headers.append("Set-Cookie", cookie);
+  return new Response(null, { status: 302, headers });
 }
+
+export const onRequestGet = ({ request, env }) => redirect(request, env);
+export const onRequestPost = ({ request, env }) => redirect(request, env);
